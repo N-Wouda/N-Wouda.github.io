@@ -140,9 +140,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("https://www.linkedin.com/in/nawouda/", "fa fa-linkedin"),
+        ("https://github.com/N-Wouda", "fa fa-github"),
+        ("/rss.xml", "fa fa-rss"),
     ),
 }
 
@@ -154,7 +154,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "hemingway"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
