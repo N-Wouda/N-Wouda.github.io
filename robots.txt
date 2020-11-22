@@ -1,0 +1,4 @@
+Sitemap: https://nielswouda.com/sitemapindex.xml
+
+User-Agent: *
+Host: nielswouda.com
