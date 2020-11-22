@@ -1,2 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Niels' site</title><link>https://nielswouda.com/</link><description>Personal blog and homepage.</description><atom:link href="https://nielswouda.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:nielswouda@gmail.com"&gt;Niels Wouda&lt;/a&gt; </copyright><lastBuildDate>Sun, 22 Nov 2020 18:50:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs></channel></rss>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Niels' site</title><link>https://nielswouda.com/</link><description>Personal blog and homepage.</description><atom:link href="https://nielswouda.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2020 &lt;a href="mailto:nielswouda@gmail.com"&gt;Niels Wouda&lt;/a&gt; </copyright><lastBuildDate>Sun, 22 Nov 2020 22:12:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Test</title><link>https://nielswouda.com/posts/test/</link><dc:creator>Niels Wouda</dc:creator><description>&lt;div&gt;&lt;p&gt;First post using Nikola. I use this to compare how things render in various
+themes.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;inline code block&lt;/code&gt; and &lt;em&gt;emphasis&lt;/em&gt; and &lt;strong&gt;bold&lt;/strong&gt; and &lt;del&gt;crossed out&lt;/del&gt;.&lt;/p&gt;
+&lt;p&gt;Code block (see also &lt;a href="https://www.python.org/dev/peps/pep-0020/"&gt;here&lt;/a&gt;):&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;this&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;And a quote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Something some guy said once.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Header 1&lt;/th&gt;
+&lt;th&gt;Header 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Value 1&lt;/td&gt;
+&lt;td&gt;Value 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Many heading levels:&lt;/p&gt;
+&lt;h2&gt;Test 1&lt;/h2&gt;
+&lt;p&gt;Filler text.&lt;/p&gt;
+&lt;h3&gt;Test 2&lt;/h3&gt;
+&lt;p&gt;Filler text.&lt;/p&gt;
+&lt;h4&gt;Test 3&lt;/h4&gt;
+&lt;p&gt;Filler text.&lt;/p&gt;
+&lt;h5&gt;Test 4&lt;/h5&gt;
+&lt;p&gt;Filler text.&lt;/p&gt;
+&lt;h6&gt;Test 5&lt;/h6&gt;
+&lt;p&gt;Filler text.&lt;/p&gt;
+&lt;h6&gt;Test 6&lt;/h6&gt;
+&lt;p&gt;Filler text.&lt;/p&gt;&lt;/div&gt;</description><guid>https://nielswouda.com/posts/test/</guid><pubDate>Sun, 22 Nov 2020 21:22:40 GMT</pubDate></item></channel></rss>

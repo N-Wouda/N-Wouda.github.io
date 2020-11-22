@@ -7,11 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://nielswouda.com/</loc>
-  <lastmod>2020-11-22T19:00:00Z</lastmod>
+  <lastmod>2020-11-22T20:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/2020/</loc>
+  <lastmod>2020-11-22T20:57:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/archive.html</loc>
-  <lastmod>2020-11-22T19:31:00Z</lastmod>
+  <lastmod>2020-11-22T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/categories/</loc>
@@ -27,6 +31,14 @@
  </url>
  <url>
   <loc>https://nielswouda.com/pages/</loc>
-  <lastmod>2020-11-22T19:02:00Z</lastmod>
+  <lastmod>2020-11-22T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/pages/resume/</loc>
+  <lastmod>2020-11-22T21:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/posts/test/</loc>
+  <lastmod>2020-11-22T20:57:00Z</lastmod>
  </url>
 </urlset>
