@@ -2,6 +2,7 @@
 .. title: Links
 .. slug: links
 .. date: 2020-11-23 19:15:58 UTC+01:00
+.. updated: 2020-11-23 19:34:04 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -19,5 +20,5 @@ I frequently use.
 - Ben Kuhn's _Essays on programming I think about a lot_, [here](https://www.benkuhn.net/progessays/).
   Equally interesting are the many blogs people reference in the comments.
 - Robert L. Read's _How to be a Programmer_, [here](https://braydie.gitbooks.io/how-to-be-a-programmer/content/en/).
-  I particularly like the long treatment of various soft skills, particularly in the
+  I like the long treatment of various soft skills, particularly in the
   "Intermediate" and "Advanced" sections of the book.
