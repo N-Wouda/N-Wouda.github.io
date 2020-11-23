@@ -144,3 +144,7 @@ cython_debug/
 cache
 .doit.db*
 output
+
+# Default installed with Nikola, but also a useful resource to have here.
+themes/bootstrap4
+themes/base
