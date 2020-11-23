@@ -24,7 +24,7 @@
 % for post in posts:
 
     <article>
-      <h2 class="subtitle is-6">${post.formatted_date(date_format)|h}</h2>
+      <h2 class="subtitle is-6">${messages("Posted at")} ${post.formatted_date(date_format)|h}</h2>
       <h1 class="title"><a href="${post.permalink()}">${post.title()|h}</a></h1>
       <div class="content">
     %if index_teasers:

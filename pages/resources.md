@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2020-11-23 20:07 UTC+01:00
+.. updated: 2020-11-23 23:42 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -15,7 +15,7 @@ packages I frequently use. I will add more as I remember them.
 
 # Readings in programming
 
-Various materials available on the web:
+Various materials available online:
 
 - Peter Norvig's classic _Teach Yourself Programming in Ten Years_, [here](https://norvig.com/21-days.html).
 
@@ -28,23 +28,23 @@ Various materials available on the web:
   I like the long treatment of various soft skills, particularly in the
   "Intermediate" and "Advanced" sections of the book.
 
-Physical books, in no particular order:
+Physical books:
 
 - GoF's _Design Patterns_. This is best read once or twice, and then kept as a
   reference book.
   
-- Martin Fowler's _Refactoring_. Combined with GoF, this is a magnificent book
-  on how to do OOP right, and improve the structure of existing code. 
+- Martin Fowler's _Refactoring_. Combined with GoF, this is a great resource on
+  how to do OOP right, and improve the structure of existing code. 
 
-- Kent Beck's _Test-driven development_. This book is short, to the point, and
-  really hammers in the basic premises of TDD.
-  I often sin against the TDD premise of "test first, code later", but do agree
-  that (almost all) code should - and can - be supported by meaningful tests.
+- Kent Beck's _Test-Driven Development_. This book is short, to the point, and
+  really hammers down the concepts of TDD. I often sin against the TDD premise 
+  of "test first, code later", but do agree that (almost all) code should - and
+  can - be supported by meaningful tests.
   
 - Andrew Hunt and David Thomas' _The Pragmatic Programmer_. This book is a classic,
   touching upon many aspects of software development.
 
-I'm currently reading Eric Evans' _Domain-Driven Design_, aka "the blue book".
+I am reading Eric Evans' _Domain-Driven Design_, aka the "blue book".
 
 # Software
 

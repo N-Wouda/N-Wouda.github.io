@@ -1,5 +1,5 @@
 <!--
-.. title: Test
+.. title: Test post
 .. slug: test
 .. date: 2020-11-22 22:22:40 UTC+01:00
 .. tags: 
@@ -9,10 +9,11 @@
 .. type: text
 -->
 
-First post using Nikola. I use this to compare how things render in various
+First post using Nikola. I use this post to compare how things render in various
 themes.
+<!-- TEASER_END -->
 
-`inline code block` and _emphasis_ and **bold** and ~~crossed out~~.
+`inline code` and _emphasis_ and **strong** and ~~crossed out~~.
 
 Code block (see also [here](https://www.python.org/dev/peps/pep-0020/)):
 ```python
@@ -22,6 +23,8 @@ import this
 And a quote:
 
 > Something some guy said once.
+
+A table:
 
 | Header 1 | Header 2 |
 | --- | --- |

@@ -140,6 +140,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/pages/about", "About me"),
         ("/pages/projects", "Projects"),
         ("/pages/resources", "Useful resources"),
     ),
@@ -933,7 +934,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -949,7 +950,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # }}                            A literal } (U+007D RIGHT CURLY BRACKET)
 
 # 'Read more...' for the index page, if INDEX_TEASERS is True (translatable)
-INDEX_READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
+INDEX_READ_MORE_LINK = '<a class="button is-link" href="{link}" style="height:28px"> {read_more} <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a>'
 # 'Read more...' for the feeds, if FEED_TEASERS is True (translatable)
 FEED_READ_MORE_LINK = '<p><a href="{link}">{read_more}…</a> ({min_remaining_read})</p>'
 
@@ -1123,7 +1124,9 @@ PRETTY_URLS = True
 # markdown.extensions.meta is required for Markdown metadata.
 MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code',
                        'markdown.extensions.codehilite',
-                       'markdown.extensions.extra']
+                       'markdown.extensions.extra',
+                       'markdown.extensions.admonition',
+                       'markdown.extensions.toc']
 
 # Options to be passed to markdown extensions (See https://python-markdown.github.io/reference/)
 # Default is {} (no config at all)

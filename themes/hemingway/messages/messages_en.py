@@ -1,3 +1,4 @@
 MESSAGES = {
-    "Last updated on": "Last updated on",
+    "Last updated at": "Last updated at",
+    "Posted at": "Posted at",
 }
