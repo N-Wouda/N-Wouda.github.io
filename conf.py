@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Niels Wouda"  # (translatable)
-BLOG_TITLE = "Niels' site"  # (translatable)
+BLOG_TITLE = "Niels Wouda"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://nielswouda.com/"
@@ -141,7 +141,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/pages/projects", "Projects"),
-        ("/pages/links", "Links"),
+        ("/pages/resources", "Useful resources"),
     ),
 }
 

@@ -10,7 +10,7 @@
     <div class="content">
     ${post.text()}
     </div>
-    <h2 class="subtitle is-6">${messages("Last updated on:")} ${post.formatted_updated(date_format)|h}.</h2>
+    <h2 class="subtitle is-6">${messages("Last updated on")} ${post.formatted_updated(date_format)|h}.</h2>
     % if not post.meta('nocomments') and site_has_comments:
     </div>
 </section>
