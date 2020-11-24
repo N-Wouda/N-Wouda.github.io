@@ -6,7 +6,7 @@
 <%inherit file="post.tmpl"/>
 
 <%block name="content">
-    <h2 class="subtitle is-6">${messages("Last updated at")} ${post.formatted_updated(date_format)|h}</h2>
+    <h2 class="subtitle is-6">${messages("Last updated on")} ${post.formatted_updated(date_format)|h}</h2>
     <h1 class="title">${post.title()|h}</h1>
     <div class="content">
     ${post.text()}
