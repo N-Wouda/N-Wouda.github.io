@@ -142,7 +142,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/pages/about", "About me"),
         ("/pages/projects", "Projects"),
-        ("/pages/resources", "Useful resources"),
+        ("/pages/resources", "Resources"),
     ),
 }
 
@@ -242,6 +242,7 @@ POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.md", "pages", "page.tmpl"),
@@ -1064,7 +1065,7 @@ PRETTY_URLS = True
 # Generally, you want FUTURE_IS_NOW and DEPLOY_FUTURE to be the same value.
 # DEPLOY_FUTURE = False
 # If False, draft posts will not be deployed
-# DEPLOY_DRAFTS = True
+DEPLOY_DRAFTS = False
 
 # Allows scheduling of posts using the rule specified here (new_post -s)
 # Specify an iCal Recurrence Rule: http://www.kanzaki.com/docs/ical/rrule.html
@@ -1077,21 +1078,21 @@ PRETTY_URLS = True
 
 # If you want support for the $.$ syntax (which may conflict with running
 # text!), just use this config:
-# MATHJAX_CONFIG = """
-# <script type="text/x-mathjax-config">
-# MathJax.Hub.Config({
-#     tex2jax: {
-#         inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
-#         displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
-#         processEscapes: true
-#     },
-#     displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
-#     "HTML-CSS": {
-#         styles: {'.MathJax_Display': {"margin": 0}}
-#     }
-# });
-# </script>
-# """
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+"""
 
 # Want to use KaTeX instead of MathJax? While KaTeX may not support every
 # feature yet, it's faster and the output looks better.
