@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2020-11-23 23:42 UTC+01:00
+.. updated: 2020-11-24 13:05 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -10,8 +10,9 @@
 .. type: text
 -->
 
-This page contains a number of essays and books I (re-)read often, and software
-packages I frequently use. I will add more as I remember them.
+This page contains a number of essays and books I found particularly instructive,
+and software packages I frequently use. The resource list below is obviously not
+exhaustive.
 
 # Readings in programming
 
@@ -39,7 +40,7 @@ Physical books:
 - Kent Beck's _Test-Driven Development_. This book is short, to the point, and
   really hammers down the concepts of TDD. I often sin against the TDD premise 
   of "test first, code later", but do agree that (almost all) code should - and
-  can - be supported by meaningful tests.
+  can - be supported by meaningful tests or validation tools.
   
 - Andrew Hunt and David Thomas' _The Pragmatic Programmer_. This book is a classic,
   touching upon many aspects of software development.
@@ -48,4 +49,23 @@ I am reading Eric Evans' _Domain-Driven Design_, aka the "blue book".
 
 # Software
 
-Coming soon..
+Most of my personal projects are in Python because that language covers almost
+all of my needs, is extremely flexible, and I find its code structure visually
+pleasing. When better performance is needed, I often switch to C or C++, 
+sometimes with Python bindings.
+
+Most of my projects use numbers in some way, so in Python I often work with 
+[numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/) and the like.
+In C++ I use [Armadillo](http://arma.sourceforge.net/) (`arma`) as a
+`numpy`-replacement. 
+
+Interfacing C++ and Python is achieved by the excellent [pybind11](https://github.com/pybind/pybind11)
+project. I complement `pybind11` with [carma](https://github.com/RUrlus/carma) 
+for the conversion between `numpy` and `arma` types.
+
+My mathematical programming problems are mostly solved with [Gurobi](https://www.gurobi.com/), 
+but I have also used IBM's [CPLEX](https://www.ibm.com/analytics/cplex-optimizer)
+and Google's [OR-Tools](https://developers.google.com/optimization) in the past. 
+For an open-source project, `OR-Tools` works really well and I intend to use it
+more often in the future.
+

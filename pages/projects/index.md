@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2020-11-23 19:01:23 UTC+01:00
+.. updated: 2020-11-24 12:35 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -28,4 +28,25 @@
 
 # Past projects
 
-Coming soon..
+A selection:
+
+- A Python implementation of the adaptive large neighbourhood search (ALNS)
+  metaheuristic that has received 50+ stars on GitHub. The package is available
+  on the Python package index as `alns`; the repository is available
+  [here](https://github.com/N-Wouda/ALNS).
+
+- A metaheuristic for a vehicle routing problem with complex loading constraints,
+  using the `alns` package. The repository is available [here](https://github.com/N-Wouda/OR-Analysis).
+
+- A metaheuristic for an hourly learner timetabling problem arising in Dutch
+  secondary education, when learners are scheduled by their preferences for
+  various courses and modules (a variant of personalised learning). This project 
+  is a complete rewrite of my bachelor's thesis, and prompted me to write the
+  `alns` package. The repository is available [here](https://github.com/N-Wouda/PL-Heuristic).
+
+- A simulation model and web application studying the feasibility of personalised
+  learning in Dutch secondary education.
+
+- A serious game introducing inventory management and logistics to learners
+  between ten and twelve years old. The game is available [here](http://ontdeklogistiek.nl/game/)
+  (both in Dutch and English - switch languages via the menu).

@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width">
 <title>Useful resources | Niels Wouda</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
@@ -13,16 +15,19 @@
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../../assets/css/style.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <meta name="author" content="Niels Wouda">
 <meta property="og:site_name" content="Niels Wouda">
 <meta property="og:title" content="Useful resources">
 <meta property="og:url" content="https://nielswouda.com/pages/resources/">
-<meta property="og:description" content="This page contains a number of essays and books I (re-)read often, and software
-packages I frequently use. I will add more as I remember them.
+<meta property="og:description" content="This page contains a number of essays and books I found particularly instructive,
+and software packages I frequently use. The resource list below is obviously not
+exhaustive.
 Readings in programming
-Various materials available onlin">
+V">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2020-11-23T19:15:58+01:00">
 </head>
@@ -62,18 +67,19 @@ Various materials available onlin">
             <a class="level-item" href="../projects">Projects</a>
           </div>
           <div class="nav-item is-mobile">
-            <a class="level-item" href="../resources">Useful resources</a>
+            <a class="level-item" href="../resources">Resources</a>
           </div>
       </nav>
 </div>
 </section><section class="section"><div class="container" id="content">
     
-    <h2 class="subtitle is-6">Last updated at 2020-11-23 23:42</h2>
+    <h2 class="subtitle is-6">Last updated at 2020-11-24 13:05</h2>
     <h1 class="title">Useful resources</h1>
     <div class="content">
     <div>
-<p>This page contains a number of essays and books I (re-)read often, and software
-packages I frequently use. I will add more as I remember them.</p>
+<p>This page contains a number of essays and books I found particularly instructive,
+and software packages I frequently use. The resource list below is obviously not
+exhaustive.</p>
 <h2 id="readings-in-programming">Readings in programming</h2>
 <p>Various materials available online:</p>
 <ul>
@@ -107,7 +113,7 @@ packages I frequently use. I will add more as I remember them.</p>
 <p>Kent Beck's <em>Test-Driven Development</em>. This book is short, to the point, and
   really hammers down the concepts of TDD. I often sin against the TDD premise 
   of "test first, code later", but do agree that (almost all) code should - and
-  can - be supported by meaningful tests.</p>
+  can - be supported by meaningful tests or validation tools.</p>
 </li>
 <li>
 <p>Andrew Hunt and David Thomas' <em>The Pragmatic Programmer</em>. This book is a classic,
@@ -116,7 +122,22 @@ packages I frequently use. I will add more as I remember them.</p>
 </ul>
 <p>I am reading Eric Evans' <em>Domain-Driven Design</em>, aka the "blue book".</p>
 <h2 id="software">Software</h2>
-<p>Coming soon..</p>
+<p>Most of my personal projects are in Python because that language covers almost
+all of my needs, is extremely flexible, and I find its code structure visually
+pleasing. When better performance is needed, I often switch to C or C++, 
+sometimes with Python bindings.</p>
+<p>Most of my projects use numbers in some way, so in Python I often work with 
+<a href="https://numpy.org/">numpy</a>, <a href="https://pandas.pydata.org/">pandas</a> and the like.
+In C++ I use <a href="http://arma.sourceforge.net/">Armadillo</a> (<code>arma</code>) as a
+<code>numpy</code>-replacement. </p>
+<p>Interfacing C++ and Python is achieved by the excellent <a href="https://github.com/pybind/pybind11">pybind11</a>
+project. I complement <code>pybind11</code> with <a href="https://github.com/RUrlus/carma">carma</a> 
+for the conversion between <code>numpy</code> and <code>arma</code> types.</p>
+<p>My mathematical programming problems are mostly solved with <a href="https://www.gurobi.com/">Gurobi</a>, 
+but I have also used IBM's <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX</a>
+and Google's <a href="https://developers.google.com/optimization">OR-Tools</a> in the past. 
+For an open-source project, <code>OR-Tools</code> works really well and I intend to use it
+more often in the future.</p>
 </div>
     </div>
     
