@@ -19,6 +19,13 @@
 }
 
 /*
+    Test stuff.
+ */
+p {
+    text-align: justify !important;
+}
+
+/*
     This is part of the notebook CSS sheet, but is also required on the front
     page, as sometimes the first part of a notebook is rendered (and we want to
     hide the grey input field there also).
