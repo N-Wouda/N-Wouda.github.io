@@ -22,6 +22,6 @@ div.cell table {
 }
 
 p.fig-caption {
+    margin: 0 calc(45px + .4em);
     font-size: 12px;
-    margin: 0 120px;
 }
