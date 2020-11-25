@@ -242,7 +242,7 @@ POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
-    ("posts/*.ipynb", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post_ipynb.tmpl"),
 )
 PAGES = (
     ("pages/*.md", "pages", "page.tmpl"),

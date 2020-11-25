@@ -1,0 +1,27 @@
+div.output_stderr,
+div a.anchor-link {
+    display: none;
+}
+
+div.cell .input {
+    height: initial;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.cell .highlight {
+    font-size: 14px;
+}
+
+div.prompt {
+    margin-right: 0 !important;
+}
+
+div.cell table {
+    width: initial !important;
+}
+
+p.fig-caption {
+    font-size: 12px;
+    margin: 0 120px;
+}
