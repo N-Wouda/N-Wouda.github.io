@@ -15,11 +15,15 @@
  </url>
  <url>
   <loc>https://nielswouda.com/archive.html</loc>
-  <lastmod>2020-11-28T12:29:00Z</lastmod>
+  <lastmod>2020-11-29T11:16:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/categories/</loc>
-  <lastmod>2020-11-22T18:50:00Z</lastmod>
+  <lastmod>2020-11-29T11:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/categories/mathjax/</loc>
+  <lastmod>2020-11-29T11:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/galleries/</loc>
@@ -40,14 +44,6 @@
  <url>
   <loc>https://nielswouda.com/pages/resources/</loc>
   <lastmod>2020-11-23T18:51:00Z</lastmod>
- </url>
- <url>
-  <loc>https://nielswouda.com/pages/slides/</loc>
-  <lastmod>2020-11-28T12:22:00Z</lastmod>
- </url>
- <url>
-  <loc>https://nielswouda.com/posts/concolic-testing-in-python/</loc>
-  <lastmod>2020-11-26T21:10:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/population-and-market-integration-in-the-roman-hinterland/</loc>

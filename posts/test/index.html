@@ -110,6 +110,8 @@ themes.
 <td>Value 2</td>
 </tr></tbody>
 </table>
+<p>A bit of inline math, like $x = 3$, or display math, like:
+$$\sum_{k=1}^n = \frac{n(n + 1)}{2}$$</p>
 <p>Many heading levels:</p>
 <h2 id="test-1">Test 1</h2>
 <p>Filler text.</p>
@@ -126,7 +128,17 @@ themes.
 </div>
     </div>
     </div>
-</section><section class="section"></section><script src="../../assets/js/all-nocdn.js"></script><script>
+</section><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/SVG"],
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center' // Change this to 'left' if you want left-aligned equations.
+});
+</script><section class="section"></section><script src="../../assets/js/all-nocdn.js"></script><script>
   baguetteBox.run('div#content', {
     ignoreClass: 'islink',
     captions: function (element) {
