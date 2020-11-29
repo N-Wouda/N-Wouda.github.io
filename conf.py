@@ -1081,15 +1081,13 @@ DEPLOY_DRAFTS = False
 MATHJAX_CONFIG = """
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
+    jax: ["input/TeX", "output/SVG"],
     tex2jax: {
         inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
         displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
         processEscapes: true
     },
-    displayAlign: 'center', // Change this to 'left' if you want left-aligned equations.
-    "HTML-CSS": {
-        styles: {'.MathJax_Display': {"margin": 0}}
-    }
+    displayAlign: 'center' // Change this to 'left' if you want left-aligned equations.
 });
 </script>
 """

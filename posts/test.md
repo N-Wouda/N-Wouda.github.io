@@ -2,7 +2,8 @@
 .. title: Test post
 .. slug: test
 .. date: 2020-11-22 22:22:40 UTC+01:00
-.. tags: 
+.. tags:
+.. has_math: true
 .. category:  
 .. link: 
 .. description: 
@@ -29,6 +30,9 @@ A table:
 | Header 1 | Header 2 |
 | --- | --- |
 | Value 1 | Value 2 |
+
+A bit of inline math, like $x = 3$, or display math, like:
+$$\sum_{k=1}^n = \frac{n(n + 1)}{2}$$
 
 Many heading levels:
 
