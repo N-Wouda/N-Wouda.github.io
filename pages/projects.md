@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2020-11-25 20:38 UTC+01:00
+.. updated: 2021-01-09 20:24 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -22,9 +22,14 @@
   database. The RHP combines archaeological survey data collected over the past 
   70 years in the territory of Rome to create the largest integrated regional 
   dataset for the hinterland of any ancient Mediterranean city.
+  <br>
+  In early 2021, I gave two presentations about my work on the RHP. The first,
+  [here](https://nielswouda.com/slides/rhp_tech), explains the implementation 
+  process. The second, [here](https://nielswouda.com/slides/rhp_user), explains 
+  several common queries one might perform.
 
 - My master's thesis, on the planning of green hydrogen production on the Dutch
-  North Sea.
+  North Sea. A presentation is available [here](https://nielswouda.com/slides/msc_thesis).
 
 # Past projects
 

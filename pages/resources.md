@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2020-12-06 21:09 UTC+01:00
+.. updated: 2021-01-09 20:20 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -50,7 +50,9 @@ Physical books:
   can - be supported by meaningful tests or validation tools.
   
 - Andrew Hunt and David Thomas' _The Pragmatic Programmer_. This book is a classic,
-  touching upon many aspects of software development.
+  touching upon many aspects of software development. I like this book so much, it
+  has not been on my book shelf for years: I keep lending it to friends and 
+  colleagues to read.
 
 I am reading Eric Evans' _Domain-Driven Design_, aka the "blue book".
 
@@ -58,8 +60,9 @@ I am reading Eric Evans' _Domain-Driven Design_, aka the "blue book".
 
 Most of my personal projects are in Python because that language covers almost
 all of my needs, is extremely flexible, and I find its code structure visually
-pleasing. When better performance is needed, I often switch to C or C++, 
-sometimes with Python bindings.
+pleasing (I am the first to concede all these points are extremely subjective).
+When performance is critical for a particular application, I often switch to C or
+C++, sometimes with Python bindings.
 
 Most of my projects use numbers in some way, so in Python I often work with 
 [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/) and the like.
