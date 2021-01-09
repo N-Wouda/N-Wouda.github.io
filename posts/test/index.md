@@ -32,7 +32,7 @@ A table:
 | Value 1 | Value 2 |
 
 A bit of inline math, like $x = 3$, or display math, like:
-$$\sum_{k=1}^n = \frac{n(n + 1)}{2}$$
+$$\sum_{k=1}^n k = \frac{n(n + 1)}{2}$$
 
 Many heading levels:
 
