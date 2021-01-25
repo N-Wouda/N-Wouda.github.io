@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2021-01-09 20:24 UTC+01:00
+.. updated: 2021-01-25 09:44 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -18,7 +18,7 @@
   (the irony of me writing my own is not lost on me - 
   [obligatory XKCD](https://xkcd.com/927/)).
 
-- The [Roman Hinterland Project](http://comparativesurveyarchaeology.org/) (RHP)
+- The [Rome Hinterland Project](http://comparativesurveyarchaeology.org/) (RHP)
   database. The RHP combines archaeological survey data collected over the past 
   70 years in the territory of Rome to create the largest integrated regional 
   dataset for the hinterland of any ancient Mediterranean city.
@@ -28,12 +28,12 @@
   process. The second, [here](https://nielswouda.com/slides/rhp_user), explains 
   several common queries one might perform.
 
-- My master's thesis, on the planning of green hydrogen production on the Dutch
-  North Sea. A presentation is available [here](https://nielswouda.com/slides/msc_thesis).
-
 # Past projects
 
 A selection:
+
+- My master's thesis, on the planning of green hydrogen production on the Dutch
+  North Sea. I wrote my thesis during an internship at ORTEC.
 
 - A Python implementation of the adaptive large neighbourhood search (ALNS)
   metaheuristic that has received 50+ stars on GitHub. The package is available
