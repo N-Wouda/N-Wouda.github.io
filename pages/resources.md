@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2021-01-09 20:20 UTC+01:00
+.. updated: 2021-01-25 10:04 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -67,7 +67,7 @@ C++, sometimes with Python bindings.
 Most of my projects use numbers in some way, so in Python I often work with 
 [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/) and the like.
 In C++ I use [Armadillo](http://arma.sourceforge.net/) (`arma`) as a
-`numpy`-replacement. 
+`numpy`-equivalent. 
 
 Interfacing C++ and Python is achieved by the excellent [pybind11](https://github.com/pybind/pybind11)
 project. I complement `pybind11` with [carma](https://github.com/RUrlus/carma) 
