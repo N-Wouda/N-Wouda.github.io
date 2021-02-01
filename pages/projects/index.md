@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2021-01-25 09:44 UTC+01:00
+.. updated: 2021-02-01 19:46 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -32,13 +32,12 @@
 
 A selection:
 
-- My master's thesis, on the planning of green hydrogen production on the Dutch
-  North Sea. I wrote my thesis during an internship at ORTEC.
+- My master's thesis, on the planning of green hydrogen production on the Dutch North Sea.
+  A slideshow is available [here](https://nielswouda.com/slides/msc_thesis/).
+  I wrote my thesis during an internship at ORTEC.
 
-- A Python implementation of the adaptive large neighbourhood search (ALNS)
-  metaheuristic that has received 50+ stars on GitHub. The package is available
-  on the Python package index as `alns`; the repository is available
-  [here](https://github.com/N-Wouda/ALNS).
+- A Python implementation of the adaptive large neighbourhood search (ALNS) metaheuristic.
+  The package is available on the Python package index as `alns`; the repository is available [here](https://github.com/N-Wouda/ALNS).
 
 - A metaheuristic for a vehicle routing problem with complex loading constraints,
   using the `alns` package. The repository is available [here](https://github.com/N-Wouda/OR-Analysis).
