@@ -34,7 +34,6 @@ A selection:
 
 - My master's thesis, on the planning of green hydrogen production on the Dutch North Sea.
   A slideshow is available [here](https://nielswouda.com/slides/msc_thesis/).
-  I wrote my thesis during an internship at ORTEC.
 
 - A Python implementation of the adaptive large neighbourhood search (ALNS) metaheuristic.
   The package is available on the Python package index as `alns`; the repository is available [here](https://github.com/N-Wouda/ALNS).
