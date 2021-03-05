@@ -7,15 +7,19 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://nielswouda.com/</loc>
-  <lastmod>2020-11-22T20:57:00Z</lastmod>
+  <lastmod>2021-02-04T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/2020/</loc>
   <lastmod>2020-11-22T20:57:00Z</lastmod>
  </url>
  <url>
+  <loc>https://nielswouda.com/2021/</loc>
+  <lastmod>2021-02-04T16:39:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://nielswouda.com/archive.html</loc>
-  <lastmod>2020-12-06T20:15:00Z</lastmod>
+  <lastmod>2021-03-05T13:24:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/categories/</loc>
@@ -40,6 +44,14 @@
  <url>
   <loc>https://nielswouda.com/pages/resources/</loc>
   <lastmod>2020-11-23T18:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/posts/automated-test-generation-in-python/</loc>
+  <lastmod>2021-02-04T16:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/posts/het-rivm-de-nos-en-het-coronavirus-snapt-u-het-nog/</loc>
+  <lastmod>2021-02-04T16:39:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/population-and-market-integration-in-the-roman-hinterland/</loc>
