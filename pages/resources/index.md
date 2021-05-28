@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2021-01-25 10:04 UTC+01:00
+.. updated: 2021-05-28 17:41 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -54,8 +54,6 @@ Physical books:
   has not been on my book shelf for years: I keep lending it to friends and 
   colleagues to read.
 
-I am reading Eric Evans' _Domain-Driven Design_, aka the "blue book".
-
 # Software
 
 Most of my personal projects are in Python because that language covers almost
@@ -78,4 +76,3 @@ but I have also used IBM's [CPLEX](https://www.ibm.com/analytics/cplex-optimizer
 and Google's [OR-Tools](https://developers.google.com/optimization) in the past. 
 For an open-source project, `OR-Tools` works really well and I intend to use it
 more often in the future.
-
