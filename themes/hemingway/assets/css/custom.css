@@ -1,26 +1,22 @@
-/*
-    Navbar stuff.
- */
 .navbar.nav-center {
     margin-top: 10px;
     border-bottom: 1px solid #42464c;
     border-top: 1px solid #42464c;
 }
 
-/*
-    Title stuff.
- */
 .subtitle+.title {
     margin-top: 0 !important;
 }
 
-.content h1:not(:first-child), .content h2:not(:first-child), .content h3:not(:first-child), .content h4:not(:first-child), .content h5:not(:first-child), .content h6:not(:first-child) {
+.content h1:not(:first-child),
+.content h2:not(:first-child),
+.content h3:not(:first-child),
+.content h4:not(:first-child),
+.content h5:not(:first-child),
+.content h6:not(:first-child) {
     margin-top: 60px !important;
 }
 
-/*
-    Test stuff.
- */
 p {
     text-align: justify !important;
 }
