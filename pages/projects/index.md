@@ -38,7 +38,7 @@ A selection:
   The package is available on the Python package index as `alns`; the repository is available [here](https://github.com/N-Wouda/ALNS).
 
 - A metaheuristic for a vehicle routing problem with complex loading constraints,
-  using the `alns` package. The repository is available [here](https://github.com/N-Wouda/OR-Analy
+  using the `alns` package. The repository is available [here](https://github.com/N-Wouda/OR-Analysis).
 
 - A simulation model and web application studying the feasibility of personalised
   learning in Dutch secondary education.
