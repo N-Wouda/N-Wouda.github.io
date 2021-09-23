@@ -121,10 +121,10 @@ extension is used to load SQL data directly in notebook cells.</p>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">pysal.explore.esda</span> <span class="k">import</span> <span class="n">Moran</span>
-<span class="kn">from</span> <span class="nn">pysal.lib</span> <span class="k">import</span> <span class="n">weights</span>
-<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="k">import</span> <span class="n">triang</span>
-<span class="kn">from</span> <span class="nn">shapely</span> <span class="k">import</span> <span class="n">wkb</span>
+<span class="kn">from</span> <span class="nn">pysal.explore.esda</span> <span class="kn">import</span> <span class="n">Moran</span>
+<span class="kn">from</span> <span class="nn">pysal.lib</span> <span class="kn">import</span> <span class="n">weights</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">triang</span>
+<span class="kn">from</span> <span class="nn">shapely</span> <span class="kn">import</span> <span class="n">wkb</span>
 </pre></div>
 
     </div>
@@ -208,18 +208,18 @@ used in simulation studies when no further information is available.</p>
 <div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> habitation &lt;&lt;
-WITH RECURSIVE tree AS (
-    SELECT id_parent, id_interpretation
-    FROM rhp.interpretation_hierarchy
-    WHERE id_parent = 1  -- Habitation interpretation ID
-UNION ALL
-    SELECT ih.id_parent, ih.id_interpretation
-    FROM rhp.interpretation_hierarchy ih
-    JOIN tree ON ih.id_parent = tree.id_interpretation
-)
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> <span class="n">habitation</span> <span class="o">&lt;&lt;</span>
+<span class="k">WITH</span> <span class="k">RECURSIVE</span> <span class="n">tree</span> <span class="k">AS</span> <span class="p">(</span>
+    <span class="k">SELECT</span> <span class="n">id_parent</span><span class="p">,</span> <span class="n">id_interpretation</span>
+    <span class="k">FROM</span> <span class="n">rhp</span><span class="p">.</span><span class="n">interpretation_hierarchy</span>
+    <span class="k">WHERE</span> <span class="n">id_parent</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1">-- Habitation interpretation ID</span>
+<span class="k">UNION</span> <span class="k">ALL</span>
+    <span class="k">SELECT</span> <span class="n">ih</span><span class="p">.</span><span class="n">id_parent</span><span class="p">,</span> <span class="n">ih</span><span class="p">.</span><span class="n">id_interpretation</span>
+    <span class="k">FROM</span> <span class="n">rhp</span><span class="p">.</span><span class="n">interpretation_hierarchy</span> <span class="n">ih</span>
+    <span class="k">JOIN</span> <span class="n">tree</span> <span class="k">ON</span> <span class="n">ih</span><span class="p">.</span><span class="n">id_parent</span> <span class="o">=</span> <span class="n">tree</span><span class="p">.</span><span class="n">id_interpretation</span>
+<span class="p">)</span>
 
-SELECT * FROM tree;
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">tree</span><span class="p">;</span>
 </pre></div>
 
     </div>
@@ -277,23 +277,23 @@ are reasonably certain.</p>
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> sites &lt;&lt;
-SELECT int.name, loc.id_origin, proj.abbreviation, per.start_year,
-       per.end_year, loc_int.id_period, loc_int.id_interpretation
-FROM locations as loc
-JOIN location_types AS loc_typ ON loc.id_location_type = loc_typ.id_location_type
-JOIN location_interpretations AS loc_int ON loc.id_location = loc_int.id_location
-JOIN interpretations AS int ON loc_int.id_interpretation = int.id_interpretation
-JOIN periods AS per ON loc_int.id_period = per.id_period
-JOIN certainties AS per_cert ON per_cert.id_certainty = loc_int.id_period_certainty
-JOIN certainties AS int_cert ON int_cert.id_certainty = loc_int.id_interpretation_certainty
-JOIN projects AS proj ON loc.id_project = proj.id_project
-WHERE int.id_project = 1  -- RHP project ID
-    AND loc_typ.name = 'site'
-    AND loc_int.id_interpretation IN :interps  -- defined above
-    AND (int_cert.name = 'certain' OR int_cert.name = 'probable')
-    AND (per_cert.name = 'certain' OR per_cert.name = 'probable')
-    AND per.start_year &lt; 500 AND per.end_year &gt; -500
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> <span class="n">sites</span> <span class="o">&lt;&lt;</span>
+<span class="k">SELECT</span> <span class="nb">int</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_origin</span><span class="p">,</span> <span class="n">proj</span><span class="p">.</span><span class="n">abbreviation</span><span class="p">,</span> <span class="n">per</span><span class="p">.</span><span class="n">start_year</span><span class="p">,</span>
+       <span class="n">per</span><span class="p">.</span><span class="n">end_year</span><span class="p">,</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_period</span><span class="p">,</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_interpretation</span>
+<span class="k">FROM</span> <span class="n">locations</span> <span class="k">as</span> <span class="n">loc</span>
+<span class="k">JOIN</span> <span class="n">location_types</span> <span class="k">AS</span> <span class="n">loc_typ</span> <span class="k">ON</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location_type</span> <span class="o">=</span> <span class="n">loc_typ</span><span class="p">.</span><span class="n">id_location_type</span>
+<span class="k">JOIN</span> <span class="n">location_interpretations</span> <span class="k">AS</span> <span class="n">loc_int</span> <span class="k">ON</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location</span> <span class="o">=</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_location</span>
+<span class="k">JOIN</span> <span class="n">interpretations</span> <span class="k">AS</span> <span class="nb">int</span> <span class="k">ON</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_interpretation</span> <span class="o">=</span> <span class="nb">int</span><span class="p">.</span><span class="n">id_interpretation</span>
+<span class="k">JOIN</span> <span class="n">periods</span> <span class="k">AS</span> <span class="n">per</span> <span class="k">ON</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_period</span> <span class="o">=</span> <span class="n">per</span><span class="p">.</span><span class="n">id_period</span>
+<span class="k">JOIN</span> <span class="n">certainties</span> <span class="k">AS</span> <span class="n">per_cert</span> <span class="k">ON</span> <span class="n">per_cert</span><span class="p">.</span><span class="n">id_certainty</span> <span class="o">=</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_period_certainty</span>
+<span class="k">JOIN</span> <span class="n">certainties</span> <span class="k">AS</span> <span class="n">int_cert</span> <span class="k">ON</span> <span class="n">int_cert</span><span class="p">.</span><span class="n">id_certainty</span> <span class="o">=</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_interpretation_certainty</span>
+<span class="k">JOIN</span> <span class="n">projects</span> <span class="k">AS</span> <span class="n">proj</span> <span class="k">ON</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_project</span> <span class="o">=</span> <span class="n">proj</span><span class="p">.</span><span class="n">id_project</span>
+<span class="k">WHERE</span> <span class="nb">int</span><span class="p">.</span><span class="n">id_project</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1">-- RHP project ID</span>
+    <span class="k">AND</span> <span class="n">loc_typ</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'site'</span>
+    <span class="k">AND</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_interpretation</span> <span class="k">IN</span> <span class="p">:</span><span class="n">interps</span>  <span class="c1">-- defined above</span>
+    <span class="k">AND</span> <span class="p">(</span><span class="n">int_cert</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'certain'</span> <span class="k">OR</span> <span class="n">int_cert</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'probable'</span><span class="p">)</span>
+    <span class="k">AND</span> <span class="p">(</span><span class="n">per_cert</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'certain'</span> <span class="k">OR</span> <span class="n">per_cert</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'probable'</span><span class="p">)</span>
+    <span class="k">AND</span> <span class="n">per</span><span class="p">.</span><span class="n">start_year</span> <span class="o">&lt;</span> <span class="mi">500</span> <span class="k">AND</span> <span class="n">per</span><span class="p">.</span><span class="n">end_year</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">500</span>
 </pre></div>
 
     </div>
@@ -909,19 +909,19 @@ of <em>Unknown</em> provenances.</p>
 <div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> amphorae &lt;&lt;
-SELECT DISTINCT artefacts.id_artefact, artefact_forms.provenance,
-                artefact_forms.start_year, artefact_forms.end_year, loc.point,
-                loc.id_location, proj.id_project, proj.name
-FROM artefacts
-JOIN artefact_forms ON artefact_forms.id_artefact_form = artefacts.id_artefact_form
-JOIN artefact_locations AS art_loc ON art_loc.id_artefact = artefacts.id_artefact
-JOIN locations AS loc ON loc.id_location = art_loc.id_location
-JOIN location_types AS loc_typ ON loc_typ.id_location_type = loc.id_location_type
-JOIN projects AS proj ON proj.id_project = loc.id_project
-WHERE artefact_forms.type = 'Amphora'
-    AND artefact_forms.name NOT LIKE 'Unid%'  -- exclude unidentified types
-    AND loc_typ.name = 'site'
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> <span class="n">amphorae</span> <span class="o">&lt;&lt;</span>
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">artefacts</span><span class="p">.</span><span class="n">id_artefact</span><span class="p">,</span> <span class="n">artefact_forms</span><span class="p">.</span><span class="n">provenance</span><span class="p">,</span>
+                <span class="n">artefact_forms</span><span class="p">.</span><span class="n">start_year</span><span class="p">,</span> <span class="n">artefact_forms</span><span class="p">.</span><span class="n">end_year</span><span class="p">,</span> <span class="n">loc</span><span class="p">.</span><span class="n">point</span><span class="p">,</span>
+                <span class="n">loc</span><span class="p">.</span><span class="n">id_location</span><span class="p">,</span> <span class="n">proj</span><span class="p">.</span><span class="n">id_project</span><span class="p">,</span> <span class="n">proj</span><span class="p">.</span><span class="n">name</span>
+<span class="k">FROM</span> <span class="n">artefacts</span>
+<span class="k">JOIN</span> <span class="n">artefact_forms</span> <span class="k">ON</span> <span class="n">artefact_forms</span><span class="p">.</span><span class="n">id_artefact_form</span> <span class="o">=</span> <span class="n">artefacts</span><span class="p">.</span><span class="n">id_artefact_form</span>
+<span class="k">JOIN</span> <span class="n">artefact_locations</span> <span class="k">AS</span> <span class="n">art_loc</span> <span class="k">ON</span> <span class="n">art_loc</span><span class="p">.</span><span class="n">id_artefact</span> <span class="o">=</span> <span class="n">artefacts</span><span class="p">.</span><span class="n">id_artefact</span>
+<span class="k">JOIN</span> <span class="n">locations</span> <span class="k">AS</span> <span class="n">loc</span> <span class="k">ON</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location</span> <span class="o">=</span> <span class="n">art_loc</span><span class="p">.</span><span class="n">id_location</span>
+<span class="k">JOIN</span> <span class="n">location_types</span> <span class="k">AS</span> <span class="n">loc_typ</span> <span class="k">ON</span> <span class="n">loc_typ</span><span class="p">.</span><span class="n">id_location_type</span> <span class="o">=</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location_type</span>
+<span class="k">JOIN</span> <span class="n">projects</span> <span class="k">AS</span> <span class="n">proj</span> <span class="k">ON</span> <span class="n">proj</span><span class="p">.</span><span class="n">id_project</span> <span class="o">=</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_project</span>
+<span class="k">WHERE</span> <span class="n">artefact_forms</span><span class="p">.</span><span class="k">type</span> <span class="o">=</span> <span class="s1">'Amphora'</span>
+    <span class="k">AND</span> <span class="n">artefact_forms</span><span class="p">.</span><span class="n">name</span> <span class="k">NOT</span> <span class="k">LIKE</span> <span class="s1">'Unid%'</span>  <span class="c1">-- exclude unidentified types</span>
+    <span class="k">AND</span> <span class="n">loc_typ</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'site'</span>
 </pre></div>
 
     </div>
@@ -1388,21 +1388,21 @@ farms and villas, which account for the majority of sites.</p>
 <div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> site_amphorae &lt;&lt;
-SELECT DISTINCT art.id_artefact, art_forms.provenance, art_forms.start_year,
-                art_forms.end_year, loc.id_location, int.name, art.id_project
-FROM artefacts AS art
-JOIN artefact_forms AS art_forms ON art_forms.id_artefact_form = art.id_artefact_form
-JOIN artefact_locations AS art_loc ON art_loc.id_artefact = art.id_artefact
-JOIN locations AS loc ON loc.id_location = art_loc.id_location
-JOIN location_types AS loc_typ ON loc_typ.id_location_type = loc.id_location_type
-JOIN location_interpretations AS loc_int ON loc_int.id_location = loc.id_location
-JOIN interpretations AS int ON int.id_interpretation = loc_int.id_interpretation
-WHERE art_forms.type = 'Amphora'
-    AND art_forms.name NOT LIKE 'Unid%'
-    AND loc_typ.name = 'site'
-    AND int.id_project = 1 -- RHP project ID
-    AND int.name IN ('Villa', 'Farm', 'Large farm')
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span> <span class="n">site_amphorae</span> <span class="o">&lt;&lt;</span>
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">art</span><span class="p">.</span><span class="n">id_artefact</span><span class="p">,</span> <span class="n">art_forms</span><span class="p">.</span><span class="n">provenance</span><span class="p">,</span> <span class="n">art_forms</span><span class="p">.</span><span class="n">start_year</span><span class="p">,</span>
+                <span class="n">art_forms</span><span class="p">.</span><span class="n">end_year</span><span class="p">,</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location</span><span class="p">,</span> <span class="nb">int</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">art</span><span class="p">.</span><span class="n">id_project</span>
+<span class="k">FROM</span> <span class="n">artefacts</span> <span class="k">AS</span> <span class="n">art</span>
+<span class="k">JOIN</span> <span class="n">artefact_forms</span> <span class="k">AS</span> <span class="n">art_forms</span> <span class="k">ON</span> <span class="n">art_forms</span><span class="p">.</span><span class="n">id_artefact_form</span> <span class="o">=</span> <span class="n">art</span><span class="p">.</span><span class="n">id_artefact_form</span>
+<span class="k">JOIN</span> <span class="n">artefact_locations</span> <span class="k">AS</span> <span class="n">art_loc</span> <span class="k">ON</span> <span class="n">art_loc</span><span class="p">.</span><span class="n">id_artefact</span> <span class="o">=</span> <span class="n">art</span><span class="p">.</span><span class="n">id_artefact</span>
+<span class="k">JOIN</span> <span class="n">locations</span> <span class="k">AS</span> <span class="n">loc</span> <span class="k">ON</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location</span> <span class="o">=</span> <span class="n">art_loc</span><span class="p">.</span><span class="n">id_location</span>
+<span class="k">JOIN</span> <span class="n">location_types</span> <span class="k">AS</span> <span class="n">loc_typ</span> <span class="k">ON</span> <span class="n">loc_typ</span><span class="p">.</span><span class="n">id_location_type</span> <span class="o">=</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location_type</span>
+<span class="k">JOIN</span> <span class="n">location_interpretations</span> <span class="k">AS</span> <span class="n">loc_int</span> <span class="k">ON</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_location</span> <span class="o">=</span> <span class="n">loc</span><span class="p">.</span><span class="n">id_location</span>
+<span class="k">JOIN</span> <span class="n">interpretations</span> <span class="k">AS</span> <span class="nb">int</span> <span class="k">ON</span> <span class="nb">int</span><span class="p">.</span><span class="n">id_interpretation</span> <span class="o">=</span> <span class="n">loc_int</span><span class="p">.</span><span class="n">id_interpretation</span>
+<span class="k">WHERE</span> <span class="n">art_forms</span><span class="p">.</span><span class="k">type</span> <span class="o">=</span> <span class="s1">'Amphora'</span>
+    <span class="k">AND</span> <span class="n">art_forms</span><span class="p">.</span><span class="n">name</span> <span class="k">NOT</span> <span class="k">LIKE</span> <span class="s1">'Unid%'</span>
+    <span class="k">AND</span> <span class="n">loc_typ</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'site'</span>
+    <span class="k">AND</span> <span class="nb">int</span><span class="p">.</span><span class="n">id_project</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">-- RHP project ID</span>
+    <span class="k">AND</span> <span class="nb">int</span><span class="p">.</span><span class="n">name</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">'Villa'</span><span class="p">,</span> <span class="s1">'Farm'</span><span class="p">,</span> <span class="s1">'Large farm'</span><span class="p">)</span>
 </pre></div>
 
     </div>
