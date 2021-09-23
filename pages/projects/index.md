@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2021-05-28 17:39 UTC+01:00
+.. updated: 2021-09-23 22:40 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -12,15 +12,22 @@
 
 # Current projects
 
-- A metaheuristic for an hourly learner timetabling problem arising in Dutch 
-  secondary education, when learners are scheduled by their preferences for
-  various courses and modules (a variant of personalised learning).
-  The repository is available [here](https://github.com/N-Wouda/PL-Heuristic).
+- My first PhD project, on optimising supply chain network design problems under 
+  supply and demand uncertainty. In particular, we develop and extend a decomposition
+  approach based on row generation. Computation experiments show our extensions are
+  much more performant than what's known so far. We will extend this project with a
+  green hydrogen case study based on my master's thesis work.
 
 # Past projects
 
 A selection:
 
+- A metaheuristic for an hourly learner timetabling problem arising in Dutch
+  secondary education, when learners are scheduled by their preferences for
+  various courses and modules (a variant of personalised learning).
+  The repository is available [here](https://github.com/N-Wouda/PL-Heuristic).
+  An article has been submitted for publication in _Computers and Operations Research_. 
+  
 - The [Rome Hinterland Project](http://comparativesurveyarchaeology.org/) (RHP)
   database. The RHP combines archaeological survey data collected over the past
   70 years in the territory of Rome to create the largest integrated regional
@@ -37,12 +44,5 @@ A selection:
 - A Python implementation of the adaptive large neighbourhood search (ALNS) metaheuristic.
   The package is available on the Python package index as `alns`; the repository is available [here](https://github.com/N-Wouda/ALNS).
 
-- A metaheuristic for a vehicle routing problem with complex loading constraints,
-  using the `alns` package. The repository is available [here](https://github.com/N-Wouda/OR-Analysis).
-
 - A simulation model and web application studying the feasibility of personalised
   learning in Dutch secondary education.
-
-- A serious game introducing inventory management and logistics to learners
-  between ten and twelve years old. The game is available [here](http://ontdeklogistiek.nl/game/)
-  (both in Dutch and English - switch languages via the menu).

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Test post | Niels Wouda</title>
+<title>Revealed preference for the partial order problem | Niels Wouda</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../../rss.xml">
-<link rel="canonical" href="https://nielswouda.com/posts/test/">
+<link rel="canonical" href="https://nielswouda.com/posts/revealed-preference-for-the-partial-order-problem/">
 <!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
@@ -20,24 +20,16 @@
 <link rel="stylesheet" href="../../assets/css/style.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <meta name="author" content="Niels Wouda">
-<link rel="next" href="../population-and-market-integration-in-the-roman-hinterland/" title="Population and market integration in the Roman hinterland" type="text/html">
+<link rel="prev" href="../population-and-market-integration-in-the-roman-hinterland/" title="Population and market integration in the Roman hinterland" type="text/html">
 <meta property="og:site_name" content="Niels Wouda">
-<meta property="og:title" content="Test post">
-<meta property="og:url" content="https://nielswouda.com/posts/test/">
-<meta property="og:description" content="First post using Nikola. I use this post to compare how things render in various
-themes.
+<meta property="og:title" content="Revealed preference for the partial order problem">
+<meta property="og:url" content="https://nielswouda.com/posts/revealed-preference-for-the-partial-order-problem/">
+<meta property="og:description" content="In this post we consider the problem of recovering a rational ordering of items from revealed preferences.
 
-inline code and emphasis and strong and crossed out.
-Code block (see also here):
-import this
-
-
-
-And a quote:
-
-">
+Problem definition
+We consider the problem of recovering an agent's preference ordering over">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2020-11-22T22:22:40+01:00">
+<meta property="article:published_time" content="2021-09-22T20:03:58+02:00">
 </head>
 <body>
 
@@ -82,49 +74,28 @@ And a quote:
 </section><section class="section"><div class="container" id="content">
     
 
-    <h2 class="subtitle is-6">Posted on 2020-11-22 22:22</h2>
-    <h1 class="title">Test post</h1>
+    <h2 class="subtitle is-6">Posted on 2021-09-22 20:03</h2>
+    <h1 class="title">Revealed preference for the partial order problem</h1>
     <div class="content">
     <div>
-<p>First post using Nikola. I use this post to compare how things render in various
-themes.
+<p>In this post we consider the problem of recovering a rational ordering of items from revealed preferences.
 <!-- TEASER_END --></p>
-<p><code>inline code</code> and <em>emphasis</em> and <strong>strong</strong> and <del>crossed out</del>.</p>
-<p>Code block (see also <a href="https://www.python.org/dev/peps/pep-0020/">here</a>):</p>
-<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">this</span>
-</pre>
-
-
-<p>And a quote:</p>
-<blockquote>
-<p>Something some guy said once.</p>
-</blockquote>
-<p>A table:</p>
-<table>
-<thead><tr>
-<th>Header 1</th>
-<th>Header 2</th>
-</tr></thead>
-<tbody><tr>
-<td>Value 1</td>
-<td>Value 2</td>
-</tr></tbody>
-</table>
-<p>A bit of inline math, like $x = 3$, or display math, like:
-$$\sum_{k=1}^n k = \frac{n(n + 1)}{2}$$</p>
-<p>Many heading levels:</p>
-<h2 id="test-1">Test 1</h2>
-<p>Filler text.</p>
-<h3 id="test-2">Test 2</h3>
-<p>Filler text.</p>
-<h4 id="test-3">Test 3</h4>
-<p>Filler text.</p>
-<h5 id="test-4">Test 4</h5>
-<p>Filler text.</p>
-<h6 id="test-5">Test 5</h6>
-<p>Filler text.</p>
-<h6 id="test-6">Test 6</h6>
-<p>Filler text.</p>
+<h2 id="problem-definition">Problem definition</h2>
+<p>We consider the problem of recovering an agent's preference ordering over $N$ goods $G = \lbrace g_1, g_2, \ldots, g_N \rbrace$.
+We assume a data set of $M$ data points of agent choices are available.
+In particular, we assume each choice consists of the agent choosing one item $g$ from a subset $S$ of the $N$ goods.
+This results in a partial order, since the one item is revealed preferred over the other items in the subset.
+Each data point $i = 1, \ldots, M$ is described as the tuple $(g_i, S_i)$ of the revealed preferred good $g_i$ and the subset $S_i \subseteq G$ of goods that the agent was offered to choose from.</p>
+<p>The problem is that we wish to recover an ordering of $G$ that is consistent with the $M$ data points.
+Two particularly pressing issues are dealt with in this post:</p>
+<ol>
+<li>
+<p>How large must $M$ minimally be to fully recover an ordering of $G$? How does that depend on the subset size $S_i$? ($i = 1,\ldots,M$)</p>
+</li>
+<li>
+<p>TODO time, or inconsistency?</p>
+</li>
+</ol>
 </div>
     </div>
     </div>
