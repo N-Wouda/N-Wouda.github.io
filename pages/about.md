@@ -2,7 +2,7 @@
 .. title: About me
 .. slug: about
 .. date: 2020-11-23 23:19:57 UTC+01:00
-.. updated: 2021-09-23 22:44 UTC+01:00
+.. updated: 2022-02-26 18:44 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -11,15 +11,9 @@
 -->
 
 I'm Niels, and I like to write software tools that help humans make better decisions.
-I received a BA in History (with a special interest in Roman economic history) 
-    and a BSc in Econometrics and Operations Research in 2019.
-At the start of 2021, I completed an MSc in Operations Research (cum laude).
-During my master's I combined my interest in OR and applied mathematics with courses on scientific computing.
-All my degrees are from the University of Groningen (NL).
+I hold a master's degree in operations research (cum laude) from the University of Groningen, and I also have a background in ancient history and econometrics.
+I am currently pursuing a PhD in operations research, having started in 2021.
 
-I started a PhD in Operations Research in May 2021, again in Groningen.
-
-I am available for part-time freelancing work in software development (particularly
-    e-commerce and web development) and data analysis.
-If you want to work together, feel free to reach out via LinkedIn or via 
+I am available for part-time consulting work on optimisation problems in routing and dispatch and e-commerce settings, including research and implementation.
+If you have an exciting opportunity related to any of these topics, feel free to reach out via LinkedIn or via 
     [e-mail](mailto:n.wouda@apium.nl)!
