@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2021-05-28 17:41 UTC+01:00
+.. updated: 2022-03-13 17:35 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -29,12 +29,7 @@ Various materials available online:
   I like the long treatment of various soft skills, particularly in the
   "Intermediate" and "Advanced" sections of the book.
 
-- Michael Lynch's three blog posts on doing better code reviews. The first two,
-  _How to Do Code Reviews Like a Human (Part 1)_ [here](https://mtlynch.io/human-code-reviews-1/)
-  and _How to Do Code Reviews Like a Human (Part 2)_ [here](https://mtlynch.io/human-code-reviews-2/)
-  discuss better reviewing techniques. The third, _How to Make Your Code Reviewer Fall in Love with You_ 
-  [here](https://mtlynch.io/code-review-love/) is complementary to the first two,
-  and focuses on the developer rather than the reviewer. 
+- I like the ['code review pyramid'](https://www.morling.dev/blog/the-code-review-pyramid/).
 
 Physical books:
 
