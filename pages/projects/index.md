@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2022-02-26 18:57 UTC+01:00
+.. updated: 2022-07-28 17:59 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -20,9 +20,19 @@
   currently investigating an interesting e-fuel network design problem arising
   in the Netherlands.
 
-- [early phase] 
+- [early]
+  I organised a team of motivated PhD candidates to join in the [EURO/NeurIPS vehicle routing challenge](https://euro-neurips-vrp-2022.challenges.ortec.com/).
+  Together, we are working on an algorithm for solving VRP-type problems using OR and ML techniques.
+  Stay tuned!
+
+- [early] 
   A project optimising the scheduling of elective hours in Dutch secondary education.
   We are developing a scheduling algorithm that schedules electives based on (changing) learner needs.
+
+- [early]
+  A forecasting and routing tool for planning waste collection.
+  This is initially based on a large dataset obtained from the municipality of Groningen, but the tool will be general enough to also accommodate other municipalities facing the same problem.
+
  
 # Past projects
 
