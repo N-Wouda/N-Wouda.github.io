@@ -1,0 +1,2 @@
+markdown==3.3
+nikola==8.2.2
