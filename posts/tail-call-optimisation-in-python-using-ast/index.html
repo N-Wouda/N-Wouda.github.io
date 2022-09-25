@@ -86,9 +86,8 @@ Most of these packages use some lambda calculus to implemen">
 <p>Python does not have tail-call optimisation (TCO), and it likely never will.
 Several packages exist that add TCO via decorators (e.g., <a href="https://github.com/baruchel/tco"><code>tco</code></a>).
 Most of these packages use some lambda calculus to implement TCO.
-In this post I want to explore an alternative, using the <code>ast</code> module to instead rewrite the decorated function.</p>
-<!-- TEASER_END -->
-
+In this post I want to explore an alternative way to achieve TCO, using the <code>ast</code> module to rewrite the decorated function.
+<!-- TEASER_END --></p>
 <blockquote>
 <p>Note: do not use this. Do not use any of this. It is fun to rewrite function definitions using <code>ast</code>, but you lose a lot of stack information along the way. If you think you need this, you might be better off just rewriting the function yourself.</p>
 </blockquote>
@@ -103,7 +102,7 @@ In this post I want to explore an alternative, using the <code>ast</code> module
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="What's-tail-call-optimisation?">What's tail-call optimisation?<a class="anchor-link" href="#What's-tail-call-optimisation?">¶</a>
 </h2>
-<p>Tail-call optimisation refers to an optimisation technique commonly applied by compilers for functional languages to avoid creating new stack frames for each function call.
+<p>Tail-call optimisation refers to an optimisation technique commonly applied by compilers of functional languages to avoid creating new stack frames for each function call.
 In particular, it applies to cases where a function, upon returning, calls itself recursively.
 If that is the only place in the function definition where recursion occurs, the function itself is tail-call recursive (TCR).</p>
 <p>Such tail-call recursive functions can, for example, be rewritten as iterative functions, using an infinite loop and appropriate variable updating.
@@ -180,7 +179,7 @@ On my system, that's after 3,000 recursive calls:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since the last thing the function does before returning is <em>not</em> calling itself: it's evaluating the multiplication <code>n * &lt;res for n - 1&gt;</code> instead.
+<p>Since the recursive call is not last thing the function does before returning: it is evaluating the multiplication <code>n * &lt;res for n - 1&gt;</code> instead.
 This is clear when we inspect the disassembled bytecode:</p>
 
 </div>
@@ -344,7 +343,7 @@ This is clear when we inspect the disassembled bytecode:</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Our goal is to design a decorator function that turns tail-call recursive functions into their iterative equivalent, and executes that.
+<p>Our goal is to design a decorator function that turns tail-call recursive functions into their iterative equivalent, and executes that iterative function.
 Such a decorator should only work on functions that are, in fact, tail-call recursive.
 As such, we need a way to programmatically determine whether a function is tail-call recursive.
 Let's first do that.</p>
@@ -358,7 +357,7 @@ Let's first do that.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We will design something simple: an <code>is_tcr</code> function that takes a callable argument <code>f</code> and determines whether <code>f</code> is TCR, by parsing and evaluating its abstract syntax tree (AST) representation.
-In particular, we check that any recursive function call to <code>f</code> occurs only in a <code>return</code> statement. 
+In particular, we check that any recursive function call to <code>f</code> occurs only in a <code>return</code> statement, and that the <code>return</code> statement does nothing else. 
 For this, we will use the <code>ast</code> module, and particularly the <code>ast.NodeVisitor</code> class.</p>
 
 </div>
@@ -641,6 +640,7 @@ In particular, we need to do two things given the AST of a function <code>f</cod
 This decorator is by no means complete:</p>
 <ul>
 <li>Earlier, we had to rewrite <code>factorial_not_tcr</code> into an alternative TCR function, using an accumulator. We could also do this programmatically.</li>
+<li>The decorator does not detect cycles where <code>f</code> calls <code>g</code>, which in turn calls <code>f</code> again.</li>
 <li>The decorator does not support keyword or variable function arguments.</li>
 </ul>
 <p>Feel free to patch any of these omissions!</p>
