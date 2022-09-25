@@ -77,8 +77,7 @@ Most of these packages use some lambda calculus to implemen">
     <h2 class="subtitle is-6">Posted on 2022-09-25 11:15</h2>
     <h1 class="title">Tail-call optimisation in Python using ast</h1>
     <div class="content">
-    <div>
-<div class="cell border-box-sizing text_cell rendered">
+    <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -88,7 +87,6 @@ Several packages exist that add TCO via decorators (e.g., <a href="https://githu
 Most of these packages use some lambda calculus to implement TCO.
 In this post I want to explore an alternative, using the <code>ast</code> module to instead rewrite the decorated function.</p>
 <!-- TEASER_END -->
-
 <blockquote>
 <p>Note: do not use this. Do not use any of this. It is fun to rewrite function definitions using <code>ast</code>, but you lose a lot of stack information along the way. If you think you need this, you might be better off just rewriting the function yourself.</p>
 </blockquote>
@@ -384,7 +382,7 @@ For this, we will use the <code>ast</code> module, and particularly the <code>as
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TCRVisitor</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">NodeVisitor</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_fname</span> <span class="o">=</span> <span class="n">fname</span>
 
     <span class="k">def</span> <span class="nf">visit_Return</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
@@ -475,7 +473,7 @@ In particular, we need to do two things given the AST of a function <code>f</cod
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TailCallRewriter</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">NodeTransformer</span><span class="p">):</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_fname</span> <span class="o">=</span> <span class="n">fname</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_args</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -522,7 +520,7 @@ In particular, we need to do two things given the AST of a function <code>f</cod
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="n">wraps</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
 </pre></div>
 
     </div>
@@ -661,7 +659,6 @@ This decorator is by no means complete:</p>
 </div>
 </div>
 
-</div>
 </div>
     </div>
     </div>
