@@ -77,7 +77,8 @@ Most of these packages use some lambda calculus to implemen">
     <h2 class="subtitle is-6">Posted on 2022-09-25 11:15</h2>
     <h1 class="title">Tail-call optimisation in Python using ast</h1>
     <div class="content">
-    <div class="cell border-box-sizing text_cell rendered">
+    <div>
+<div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -87,6 +88,7 @@ Several packages exist that add TCO via decorators (e.g., <a href="https://githu
 Most of these packages use some lambda calculus to implement TCO.
 In this post I want to explore an alternative, using the <code>ast</code> module to instead rewrite the decorated function.</p>
 <!-- TEASER_END -->
+
 <blockquote>
 <p>Note: do not use this. Do not use any of this. It is fun to rewrite function definitions using <code>ast</code>, but you lose a lot of stack information along the way. If you think you need this, you might be better off just rewriting the function yourself.</p>
 </blockquote>
@@ -106,7 +108,7 @@ In particular, it applies to cases where a function, upon returning, calls itsel
 If that is the only place in the function definition where recursion occurs, the function itself is tail-call recursive (TCR).</p>
 <p>Such tail-call recursive functions can, for example, be rewritten as iterative functions, using an infinite loop and appropriate variable updating.
 This is explained very well on <a href="https://en.wikipedia.org/wiki/Tail_call#Relation_to_the_while_statement">the wiki</a>.
-Rewriting the function in this way avoids the recursive calls entirely, which, in Python, avoids a <code>RecursionError</code>, which occurs after a fixed recursion depth.
+Rewriting the function in this way avoids the recursive calls entirely, which in Python also avoids a <code>RecursionError</code> after a fixed recursion depth.
 On my system, that's after 3,000 recursive calls:</p>
 
 </div>
@@ -382,7 +384,7 @@ For this, we will use the <code>ast</code> module, and particularly the <code>as
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TCRVisitor</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">NodeVisitor</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_fname</span> <span class="o">=</span> <span class="n">fname</span>
 
     <span class="k">def</span> <span class="nf">visit_Return</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">):</span>
@@ -471,9 +473,8 @@ In particular, we need to do two things given the AST of a function <code>f</cod
 <div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TailCallRewriter</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">NodeTransformer</span><span class="p">):</span>
-
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TCRRewriter</span><span class="p">(</span><span class="n">ast</span><span class="o">.</span><span class="n">NodeTransformer</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_fname</span> <span class="o">=</span> <span class="n">fname</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_args</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -520,7 +521,7 @@ In particular, we need to do two things given the AST of a function <code>f</cod
 <div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="n">wraps</span>
 </pre></div>
 
     </div>
@@ -540,7 +541,7 @@ In particular, we need to do two things given the AST of a function <code>f</cod
     <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">tree</span> <span class="o">=</span> <span class="n">ast</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">getsource</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
     
-        <span class="n">transformer</span> <span class="o">=</span> <span class="n">TailCallRewriter</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+        <span class="n">transformer</span> <span class="o">=</span> <span class="n">TCRRewriter</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
         <span class="n">transformer</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
 
         <span class="c1"># Add location (line numbers and column offsets) for newly generated</span>
@@ -659,6 +660,7 @@ This decorator is by no means complete:</p>
 </div>
 </div>
 
+</div>
 </div>
     </div>
     </div>
