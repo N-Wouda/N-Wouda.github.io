@@ -152,6 +152,7 @@ NAVIGATION_LINKS = {
 NAVIGATION_ALT_LINKS = {
     DEFAULT_LANG: (
         ("https://linkedin.com/in/nawouda", "fa fa-linkedin"),
+        ("https://scholar.google.com/citations?user=Z0gs2XMAAAAJ", "fa fa-graduation-cap"),
         ("https://github.com/N-Wouda", "fa fa-github"),
         ("/rss.xml", "fa fa-rss"),
     ),
