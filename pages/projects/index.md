@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2022-12-8 17:12 UTC+01:00
+.. updated: 2023-01-21 13:01 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -70,5 +70,5 @@ A selection:
 
 - A Python implementation of the adaptive large neighbourhood search (ALNS) 
   metaheuristic. The package is available on the Python package index as `alns`; 
-  the repository is available [here](https://github.com/N-Wouda/ALNS). A paper
-  has been submitted to the _Journal of Open Source Software_.
+  the repository is available [here](https://github.com/N-Wouda/ALNS). We published 
+  [a paper](https://doi.org/10.21105/joss.05028) in the _Journal of Open Source Software_.
