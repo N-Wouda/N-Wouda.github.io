@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2022-03-13 17:35 UTC+01:00
+.. updated: 2023-03-20 20:38 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -62,8 +62,8 @@ Most of my projects use numbers in some way, so in Python I often work with
 In C++ I use [Armadillo](http://arma.sourceforge.net/) (`arma`) as a
 `numpy`-equivalent. 
 
-Interfacing C++ and Python is achieved by the excellent [pybind11](https://github.com/pybind/pybind11)
-project. I complement `pybind11` with [carma](https://github.com/RUrlus/carma) 
+Interfacing C++ and Python is achieved by the excellent [pybind11](https://github.com/pybind/pybind11) 
+project. I sometimes complement `pybind11` with [carma](https://github.com/RUrlus/carma) 
 for the conversion between `numpy` and `arma` types.
 
 My mathematical programming problems are mostly solved with [Gurobi](https://www.gurobi.com/), 

@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2023-01-21 13:01 UTC+01:00
+.. updated: 2023-03-20 20:29 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -15,21 +15,22 @@
 Most recently started first:
 
 - [early]
-  My second PhD project, on solving deterministic equivalent formulations of
-  stochastic optimisation problems using column generation.
+  A project optimising waste collection for the Municipality of Groningen.
+  One of the neat/unusual aspects of this particular waste collection problem is that we have some sensor data about arrivals at each waste container, but that data is incomplete: we do not observe the amounts.
+  We are currently working on efficiently emptying a system with such containers making good use of the available data.
+  More on this later in 2023. 
 
 - [early] 
   A project optimising the scheduling of elective hours in Dutch secondary
   education. We are developing a scheduling algorithm that schedules electives 
   based on (changing) learner needs.
+  More on this later in 2023. 
 
-- [early]
-  We are spinning off two papers from our work on the
-  [EURO meets NeurIPS 2022 vehicle routing challenge](https://euro-neurips-vrp-2022.challenges.ortec.com/),
-  where we finished in overall second place.
-  The first paper describes our solution approach for the static variant (to be submitted to _INFORMS Journal on Computing_),
-  and the second our solution approach for the dynamic variant (to be submitted to
-  _Transportation Science_). More on this later in 2023.
+- [ongoing]
+  A high-performance vehicle routing problem (VRP) solver that achieves exceptional performance on a number of VRP variants.
+  The solver is writting in C++ and Python, and available on the Python package index as `pyvrp`;
+  the repository is available [here](https://github.com/N-Wouda/PyVRP/).
+  We submitted a paper to _INFORMS Journal on Computing_.
 
 - [nearing completion]
   My first PhD project, on optimising supply chain network design problems under
