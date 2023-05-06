@@ -162,7 +162,7 @@ $$ \min_{y} \sum_{k \in \mathcal{K}} y_k $$
 such that
 $$ \sum_{k \in \mathcal{K}} \mathbf{1}_{c \in k} y_{k} \ge 1 \qquad \forall c \in C $$
 $$ y_k \in \{0, 1\} \qquad \forall k \in \mathcal{K} $$</p>
-<p>The set $\mathcal{k}$ is exponentially large, which makes solving this problem directly prohibitively expensive.
+<p>The set $\mathcal{K}$ is exponentially large, which makes solving this problem directly prohibitively expensive.
 This is where column generation comes in: rather than solving the problem with <em>all</em> patterns, we start with a subset of them, and iteratively add new patterns that will improve the current solution.</p>
 <p>In particular, suppose we start with some subset $K \subset \mathcal{K}$ of initial patterns.
 If we solve the LP relaxation of the above problem, we can obtain dual multipliers $\pi_c$ ($c \in C$) for each of the cover constraints.
@@ -191,8 +191,9 @@ Note that:</p>
 <li>We do not need to find the "most negative" objective value - just any negative value suffices.</li>
 <li>If we start with a good set of initial patterns $K$, we do not have to find too many new patterns. That should speed up the search quite a bit.</li>
 </ol>
-<p>Let's write some code for the column generation method.
-I will use Gurobi to implement these.</p>
+<p>We use both these insights to improve the base algorithm.
+Let's write some code for the basic column generation method, before we work on enhancements.
+I will use Gurobi to implement the exact formulations.</p>
 
 </div>
 </div>
@@ -222,7 +223,7 @@ I will use Gurobi to implement these.</p>
 <span class="k">class</span> <span class="nc">Instance</span><span class="p">:</span>
     <span class="sd">"""</span>
 <span class="sd">    A simple data class for the instance data. This instance can be</span>
-<span class="sd">    further restricted to a particular pattern ("sub Instance").</span>
+<span class="sd">    further restricted to a particular pattern ("sub instance").</span>
 <span class="sd">    """</span>
     <span class="n">radii</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
     <span class="n">width</span><span class="p">:</span> <span class="nb">float</span>
