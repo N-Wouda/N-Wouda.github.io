@@ -153,9 +153,9 @@ $$ \sqrt{(z^x_{c_1p} - z^x_{c_2p})^2 + (z^y_{c_1p} - z^y_{c_2p})^2} \ge (r_{c_1}
 </h2>
 <p>The problem looks a little like the cutting stock problem (CSP), but then in two dimensions, for circles instead of lines.
 CSP can be solved efficiently using column generation, by iteratively generating cutting <em>patterns</em>: a subset of lines that can that can be cut from a single beam.
-We will attempt to do the same thing here for our problem.</p>
-<p>Consider the set $\mathcal{K}$ of all cutting patterns of circles from a single pallet.
-Each pattern $k \in \mathcal{K}$ is a subset of the circles $C$, such that all circles $c \in k$ can be cut from the same pallet.
+We will attempt to do the same thing here for our problem, by generating packing patterns.</p>
+<p>Consider the set $\mathcal{K}$ of all packing patterns of circles on a single pallet.
+Each pattern $k \in \mathcal{K}$ is a subset of the circles $C$, such that all circles $c \in k$ can be packed on the same pallet.
 With some abuse of notation, let $y_k \in \{0, 1\}$ now indicate whether pattern $k \in \mathcal{K}$ is selected.
 The main or master problem we want to solve is then simply the following set covering problem
 $$ \min_{y} \sum_{k \in \mathcal{K}} y_k $$
@@ -3954,7 +3954,7 @@ L 506.7 1149.6
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">¶</a>
 </h2>
-<p>In this notebook we explored how to solve the 2D bin-packing problem of unequal circles on rectangular pallets.
+<p>In this post we explored how to solve the 2D bin-packing problem of unequal circles on rectangular pallets.
 We used column generation for this, using simple heuristics to generate the initial packing patterns and improve the generation of new packings.
 These turn out to work very well for instances with up to 100 circles.</p>
 <p>What might be interesting to explore further is how to heuristically determine the initial pattern set $K$, and the generation of new patterns.
