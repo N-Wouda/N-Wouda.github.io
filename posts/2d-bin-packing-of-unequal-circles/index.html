@@ -114,7 +114,7 @@ We aim to efficiently solve a 2D packing of unequally-sized circles onto a minim
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="The-problem">The problem<a class="anchor-link" href="#The-problem">¶</a>
 </h2>
-<p>We are given sets $C = \{ c_1, c_2, \ldots c_n \}$ of $n$ circles, and $P = \{ p_1, \ldots, p_m \}$ of $m$ rectangular pallets.
+<p>We are given sets $C = \{ c_1, c_2, \ldots, c_n \}$ of $n$ circles, and $P = \{ p_1, \ldots, p_m \}$ of $m$ rectangular pallets.
 Each circle $c \in C$ has a (unique) radius $r_c &gt; 0$.
 Each pallet $p \in P$ has width $w &gt; 0$ and height $h &gt; 0$.
 The goal is to pack all circles onto as few pallets as possible, such that no circles overlap and each circle fits on one of the pallets.</p>
@@ -569,7 +569,7 @@ The <code>plot</code> method will be used for this.</p>
 
 
 <div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="136.8pt" viewbox="0 0 684 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-07T14:21:16.808748</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 136.8 
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="136.8pt" viewbox="0 0 684 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-09T09:55:34.375377</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 136.8 
 L 684 136.8 
 L 684 0 
 L 0 0 
@@ -589,7 +589,7 @@ C 40.441336 36.601712 33.447647 52.16957 33.447647 68.4
 C 33.447647 84.63043 40.441336 100.198288 52.888434 111.674935 
 C 65.335533 123.151582 82.219791 129.6 99.822647 129.6 
 z
-" clip-path="url(#p27d98156c5)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 27.1125 129.6 
+" clip-path="url(#p4b2361015c)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 27.1125 129.6 
 C 32.393357 129.6 37.458634 127.665475 41.192764 124.222481 
 C 44.926893 120.779486 47.025 116.109129 47.025 111.24 
 C 47.025 106.370871 44.926893 101.700514 41.192764 98.257519 
@@ -599,7 +599,7 @@ C 9.298107 101.700514 7.2 106.370871 7.2 111.24
 C 7.2 116.109129 9.298107 120.779486 13.032236 124.222481 
 C 16.766366 127.665475 21.831643 129.6 27.1125 129.6 
 z
-" clip-path="url(#p27d98156c5)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_5"><path d="M 7.2 129.6 
+" clip-path="url(#p4b2361015c)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_5"><path d="M 7.2 129.6 
 L 7.2 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_6"><path d="M 166.5 129.6 
 L 166.5 7.2 
@@ -622,7 +622,7 @@ C 183.59432 45.901541 177.3 59.912613 177.3 74.52
 C 177.3 89.127387 183.59432 103.138459 194.796709 113.467442 
 C 205.999097 123.796424 221.19493 129.6 237.0375 129.6 
 z
-" clip-path="url(#p1ad212794c)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_11"><path d="M 177.3 129.6 
+" clip-path="url(#p3c8b79ca2b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_11"><path d="M 177.3 129.6 
 L 177.3 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_12"><path d="M 336.6 129.6 
 L 336.6 7.2 
@@ -645,7 +645,7 @@ C 350.197475 92.400685 347.4 98.627828 347.4 105.12
 C 347.4 111.612172 350.197475 117.839315 355.176315 122.429974 
 C 360.155154 127.020633 366.908858 129.6 373.95 129.6 
 z
-" clip-path="url(#pb03e57e383)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_17"><path d="M 347.4 129.6 
+" clip-path="url(#pb7def96049)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_17"><path d="M 347.4 129.6 
 L 347.4 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_18"><path d="M 506.7 129.6 
 L 506.7 7.2 
@@ -653,7 +653,7 @@ L 506.7 7.2
 L 506.7 129.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_20"><path d="M 347.4 7.2 
 L 506.7 7.2 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_4"></g></g><defs><clippath id="p27d98156c5"><rect x="7.2" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="p1ad212794c"><rect x="177.3" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="pb03e57e383"><rect x="347.4" y="7.2" width="159.3" height="122.4"></rect></clippath></defs></svg>
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_4"></g></g><defs><clippath id="p4b2361015c"><rect x="7.2" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="p3c8b79ca2b"><rect x="177.3" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="pb7def96049"><rect x="347.4" y="7.2" width="159.3" height="122.4"></rect></clippath></defs></svg>
 </div>
 
 </div>
@@ -769,7 +769,7 @@ We will see that the <code>greedy</code> packing is considerably more efficient 
 
 
 <div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="136.8pt" viewbox="0 0 684 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-07T14:21:17.179620</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 136.8 
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="136.8pt" viewbox="0 0 684 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-09T09:55:34.752380</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 136.8 
 L 684 136.8 
 L 684 0 
 L 0 0 
@@ -789,7 +789,7 @@ C 14.193689 36.601712 7.2 52.16957 7.2 68.4
 C 7.2 84.63043 14.193689 100.198288 26.640787 111.674935 
 C 39.087886 123.151582 55.972144 129.6 73.575 129.6 
 z
-" clip-path="url(#p9481150fbf)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_4"><path d="M 7.2 129.6 
+" clip-path="url(#pbe85e48cec)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_4"><path d="M 7.2 129.6 
 L 7.2 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_5"><path d="M 166.5 129.6 
 L 166.5 7.2 
@@ -812,7 +812,7 @@ C 180.097475 92.400685 177.3 98.627828 177.3 105.12
 C 177.3 111.612172 180.097475 117.839315 185.076315 122.429974 
 C 190.055154 127.020633 196.808858 129.6 203.85 129.6 
 z
-" clip-path="url(#pe7f9f6a395)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_10"><path d="M 177.3 129.6 
+" clip-path="url(#p17da0e2d7b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_10"><path d="M 177.3 129.6 
 L 177.3 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_11"><path d="M 336.6 129.6 
 L 336.6 7.2 
@@ -835,7 +835,7 @@ C 353.69432 45.901541 347.4 59.912613 347.4 74.52
 C 347.4 89.127387 353.69432 103.138459 364.896709 113.467442 
 C 376.099097 123.796424 391.29493 129.6 407.1375 129.6 
 z
-" clip-path="url(#pa2e26d38cb)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_16"><path d="M 347.4 129.6 
+" clip-path="url(#p1c98522653)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_16"><path d="M 347.4 129.6 
 L 347.4 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_17"><path d="M 506.7 129.6 
 L 506.7 7.2 
@@ -858,7 +858,7 @@ C 519.598107 101.700514 517.5 106.370871 517.5 111.24
 C 517.5 116.109129 519.598107 120.779486 523.332236 124.222481 
 C 527.066366 127.665475 532.131643 129.6 537.4125 129.6 
 z
-" clip-path="url(#pdcf1197a40)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_22"><path d="M 517.5 129.6 
+" clip-path="url(#p639115ef2d)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_22"><path d="M 517.5 129.6 
 L 517.5 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_23"><path d="M 676.8 129.6 
 L 676.8 7.2 
@@ -866,7 +866,7 @@ L 676.8 7.2
 L 676.8 129.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_25"><path d="M 517.5 7.2 
 L 676.8 7.2 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g></g><defs><clippath id="p9481150fbf"><rect x="7.2" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="pe7f9f6a395"><rect x="177.3" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="pa2e26d38cb"><rect x="347.4" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="pdcf1197a40"><rect x="517.5" y="7.2" width="159.3" height="122.4"></rect></clippath></defs></svg>
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g></g><defs><clippath id="pbe85e48cec"><rect x="7.2" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="p17da0e2d7b"><rect x="177.3" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="p1c98522653"><rect x="347.4" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="p639115ef2d"><rect x="517.5" y="7.2" width="159.3" height="122.4"></rect></clippath></defs></svg>
 </div>
 
 </div>
@@ -898,7 +898,7 @@ L 676.8 7.2
 
 
 <div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="136.8pt" viewbox="0 0 684 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-07T14:21:17.404620</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 136.8 
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="136.8pt" viewbox="0 0 684 136.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-09T09:55:35.082346</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 136.8 
 L 684 136.8 
 L 684 0 
 L 0 0 
@@ -918,7 +918,7 @@ C 40.441336 36.601712 33.447647 52.16957 33.447647 68.4
 C 33.447647 84.63043 40.441336 100.198288 52.888434 111.674935 
 C 65.335533 123.151582 82.219791 129.6 99.822647 129.6 
 z
-" clip-path="url(#p55ce70cc54)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 27.1125 129.6 
+" clip-path="url(#p8b688cf3c8)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 27.1125 129.6 
 C 32.393357 129.6 37.458634 127.665475 41.192764 124.222481 
 C 44.926893 120.779486 47.025 116.109129 47.025 111.24 
 C 47.025 106.370871 44.926893 101.700514 41.192764 98.257519 
@@ -928,7 +928,7 @@ C 9.298107 101.700514 7.2 106.370871 7.2 111.24
 C 7.2 116.109129 9.298107 120.779486 13.032236 124.222481 
 C 16.766366 127.665475 21.831643 129.6 27.1125 129.6 
 z
-" clip-path="url(#p55ce70cc54)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_5"><path d="M 7.2 129.6 
+" clip-path="url(#p8b688cf3c8)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_5"><path d="M 7.2 129.6 
 L 7.2 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_6"><path d="M 166.5 129.6 
 L 166.5 7.2 
@@ -951,7 +951,7 @@ C 180.097475 92.400685 177.3 98.627828 177.3 105.12
 C 177.3 111.612172 180.097475 117.839315 185.076315 122.429974 
 C 190.055154 127.020633 196.808858 129.6 203.85 129.6 
 z
-" clip-path="url(#p12b7a9f37f)" style="fill: #1f77b4"></path></g><g id="patch_11"><path d="M 276.8625 117.799417 
+" clip-path="url(#pb73f0f588b)" style="fill: #1f77b4"></path></g><g id="patch_11"><path d="M 276.8625 117.799417 
 C 292.70507 117.799417 307.900903 111.995841 319.103291 101.666858 
 C 330.30568 91.337876 336.6 77.326804 336.6 62.719417 
 C 336.6 48.11203 330.30568 34.100958 319.103291 23.771975 
@@ -961,7 +961,7 @@ C 223.41932 34.100958 217.125 48.11203 217.125 62.719417
 C 217.125 77.326804 223.41932 91.337876 234.621709 101.666858 
 C 245.824097 111.995841 261.01993 117.799417 276.8625 117.799417 
 z
-" clip-path="url(#p12b7a9f37f)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_12"><path d="M 177.3 129.6 
+" clip-path="url(#pb73f0f588b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_12"><path d="M 177.3 129.6 
 L 177.3 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_13"><path d="M 336.6 129.6 
 L 336.6 7.2 
@@ -969,7 +969,7 @@ L 336.6 7.2
 L 336.6 129.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_15"><path d="M 177.3 7.2 
 L 336.6 7.2 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_3"></g><g id="axes_4"></g></g><defs><clippath id="p55ce70cc54"><rect x="7.2" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="p12b7a9f37f"><rect x="177.3" y="7.2" width="159.3" height="122.4"></rect></clippath></defs></svg>
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_3"></g><g id="axes_4"></g></g><defs><clippath id="p8b688cf3c8"><rect x="7.2" y="7.2" width="159.3" height="122.4"></rect></clippath><clippath id="pb73f0f588b"><rect x="177.3" y="7.2" width="159.3" height="122.4"></rect></clippath></defs></svg>
 </div>
 
 </div>
@@ -1062,8 +1062,8 @@ Let's see how much the initial pattern selection matters.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: total: 11.2 s
-Wall time: 4.8 s
+<pre>CPU times: total: 21.5 s
+Wall time: 10.6 s
 </pre>
 </div>
 </div>
@@ -1098,8 +1098,8 @@ Wall time: 4.8 s
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: total: 2.28 s
-Wall time: 979 ms
+<pre>CPU times: total: 3.95 s
+Wall time: 2.21 s
 </pre>
 </div>
 </div>
@@ -1142,7 +1142,7 @@ This suggests it might be worthwhile to explore if we can do better than <code>g
 
 
 <div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="280.8pt" viewbox="0 0 684 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-07T14:21:24.234703</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 280.8 
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="280.8pt" viewbox="0 0 684 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-09T09:55:50.321867</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 280.8 
 L 684 280.8 
 L 684 0 
 L 0 0 
@@ -1162,7 +1162,7 @@ C 140.196565 119.85041 139.10542 122.386442 139.10542 125.030409
 C 139.10542 127.674375 140.196565 130.210408 142.138545 132.079974 
 C 144.080524 133.949541 146.714783 135 149.461157 135 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 8.566296 135 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 8.566296 135 
 C 8.928642 135 9.276196 134.861407 9.532413 134.614743 
 C 9.78863 134.36808 9.932592 134.033485 9.932592 133.684651 
 C 9.932592 133.335816 9.78863 133.001222 9.532413 132.754558 
@@ -1172,7 +1172,7 @@ C 7.343962 133.001222 7.2 133.335816 7.2 133.684651
 C 7.2 134.033485 7.343962 134.36808 7.600179 134.614743 
 C 7.856396 134.861407 8.20395 135 8.566296 135 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="patch_5"><path d="M 102.122234 131.154479 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="patch_5"><path d="M 102.122234 131.154479 
 C 119.195417 131.154479 135.571625 124.624166 147.644189 113.001766 
 C 159.716752 101.379366 166.5 85.613796 166.5 69.17724 
 C 166.5 52.740683 159.716752 36.975113 147.644189 25.352713 
@@ -1182,7 +1182,7 @@ C 44.527715 36.975113 37.744467 52.740683 37.744467 69.17724
 C 37.744467 85.613796 44.527715 101.379366 56.600278 113.001766 
 C 68.672842 124.624166 85.04905 131.154479 102.122234 131.154479 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="patch_6"><path d="M 21.294008 96.440275 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="patch_6"><path d="M 21.294008 96.440275 
 C 25.031783 96.440275 28.616972 95.010616 31.259977 92.466163 
 C 33.902983 89.92171 35.388017 86.470206 35.388017 82.871806 
 C 35.388017 79.273406 33.902983 75.821903 31.259977 73.27745 
@@ -1192,7 +1192,7 @@ C 8.685034 75.821903 7.2 79.273406 7.2 82.871806
 C 7.2 86.470206 8.685034 89.92171 11.32804 92.466163 
 C 13.971045 95.010616 17.556234 96.440275 21.294008 96.440275 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="patch_7"><path d="M 19.373474 66.392063 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="patch_7"><path d="M 19.373474 66.392063 
 C 22.601917 66.392063 25.698567 65.157217 27.981421 62.959487 
 C 30.264275 60.761756 31.546949 57.780575 31.546949 54.672515 
 C 31.546949 51.564454 30.264275 48.583273 27.981421 46.385543 
@@ -1202,7 +1202,7 @@ C 8.482674 48.583273 7.2 51.564454 7.2 54.672515
 C 7.2 57.780575 8.482674 60.761756 10.765528 62.959487 
 C 13.048382 65.157217 16.145031 66.392063 19.373474 66.392063 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="patch_8"><path d="M 27.394079 135 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="patch_8"><path d="M 27.394079 135 
 C 32.749611 135 37.886516 132.951565 41.673449 129.30584 
 C 45.460382 125.660114 47.588158 120.714755 47.588158 115.558921 
 C 47.588158 110.403086 45.460382 105.457727 41.673449 101.812002 
@@ -1212,7 +1212,7 @@ C 9.327776 105.457727 7.2 110.403086 7.2 115.558921
 C 7.2 120.714755 9.327776 125.660114 13.114709 129.30584 
 C 16.901642 132.951565 22.038547 135 27.394079 135 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="patch_9"><path d="M 29.601642 44.419084 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="patch_9"><path d="M 29.601642 44.419084 
 C 34.728107 44.419084 39.645295 42.458265 43.270252 38.968475 
 C 46.89521 35.478686 48.931976 30.74485 48.931976 25.809542 
 C 48.931976 20.874234 46.89521 16.140399 43.270252 12.650609 
@@ -1222,7 +1222,7 @@ C 12.308074 16.140399 10.271308 20.874234 10.271308 25.809542
 C 10.271308 30.74485 12.308074 35.478686 15.933032 38.968475 
 C 19.557989 42.458265 24.475177 44.419084 29.601642 44.419084 
 z
-" clip-path="url(#p5e8a9bbbad)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_10"><path d="M 7.2 135 
+" clip-path="url(#p6c35230e09)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_10"><path d="M 7.2 135 
 L 7.2 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_11"><path d="M 166.5 135 
 L 166.5 7.2 
@@ -1245,7 +1245,7 @@ C 215.244684 36.385832 208.595684 51.839385 208.595684 67.950644
 C 208.595684 84.061903 215.244684 99.515456 227.078318 110.907837 
 C 238.911953 122.300217 254.964059 128.701288 271.699346 128.701288 
 z
-" clip-path="url(#pc678229ed9)" style="fill: #1f77b4"></path></g><g id="patch_16"><path d="M 197.892411 112.598062 
+" clip-path="url(#pc510e436ac)" style="fill: #1f77b4"></path></g><g id="patch_16"><path d="M 197.892411 112.598062 
 C 200.63836 112.598062 203.272212 111.547765 205.213891 109.678488 
 C 207.15557 107.80921 208.246548 105.27357 208.246548 102.630012 
 C 208.246548 99.986455 207.15557 97.450814 205.213891 95.581537 
@@ -1255,7 +1255,7 @@ C 188.629252 97.450814 187.538275 99.986455 187.538275 102.630012
 C 187.538275 105.27357 188.629252 107.80921 190.570931 109.678488 
 C 192.51261 111.547765 195.146462 112.598062 197.892411 112.598062 
 z
-" clip-path="url(#pc678229ed9)" style="fill: #1f77b4"></path></g><g id="patch_17"><path d="M 259.187362 135 
+" clip-path="url(#pc510e436ac)" style="fill: #1f77b4"></path></g><g id="patch_17"><path d="M 259.187362 135 
 C 260.209799 135 261.190498 134.608928 261.91347 133.912914 
 C 262.636443 133.2169 263.042662 132.27277 263.042662 131.288457 
 C 263.042662 130.304145 262.636443 129.360014 261.91347 128.664 
@@ -1265,7 +1265,7 @@ C 255.738281 129.360014 255.332062 130.304145 255.332062 131.288457
 C 255.332062 132.27277 255.738281 133.2169 256.461253 133.912914 
 C 257.184226 134.608928 258.164924 135 259.187362 135 
 z
-" clip-path="url(#pc678229ed9)" style="fill: #1f77b4"></path></g><g id="patch_18"><path d="M 189.368632 135 
+" clip-path="url(#pc510e436ac)" style="fill: #1f77b4"></path></g><g id="patch_18"><path d="M 189.368632 135 
 C 192.569271 135 195.639251 133.775789 197.902444 131.596986 
 C 200.165637 129.418183 201.437264 126.462677 201.437264 123.381385 
 C 201.437264 120.300092 200.165637 117.344586 197.902444 115.165783 
@@ -1275,7 +1275,7 @@ C 178.571627 117.344586 177.3 120.300092 177.3 123.381385
 C 177.3 126.462677 178.571627 129.418183 180.834821 131.596986 
 C 183.098014 133.775789 186.167994 135 189.368632 135 
 z
-" clip-path="url(#pc678229ed9)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_19"><path d="M 177.3 135 
+" clip-path="url(#pc510e436ac)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_19"><path d="M 177.3 135 
 L 177.3 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_20"><path d="M 336.6 135 
 L 336.6 7.2 
@@ -1298,7 +1298,7 @@ C 350.019417 21.771285 347.4 27.859313 347.4 34.206449
 C 347.4 40.553585 350.019417 46.641613 354.681355 51.129716 
 C 359.343293 55.617819 365.667125 58.139563 372.2601 58.139563 
 z
-" clip-path="url(#p4aa3e3f233)" style="fill: #1f77b4"></path></g><g id="patch_25"><path d="M 449.207558 117.897311 
+" clip-path="url(#p2db230d7f5)" style="fill: #1f77b4"></path></g><g id="patch_25"><path d="M 449.207558 117.897311 
 C 464.454732 117.897311 479.079474 112.065428 489.860854 101.686066 
 C 500.642234 91.306703 506.7 77.227291 506.7 62.548656 
 C 506.7 47.870021 500.642234 33.790608 489.860854 23.411246 
@@ -1308,7 +1308,7 @@ C 397.772883 33.790608 391.715117 47.870021 391.715117 62.548656
 C 391.715117 77.227291 397.772883 91.306703 408.554263 101.686066 
 C 419.335643 112.065428 433.960385 117.897311 449.207558 117.897311 
 z
-" clip-path="url(#p4aa3e3f233)" style="fill: #1f77b4"></path></g><g id="patch_26"><path d="M 376.070351 134.38986 
+" clip-path="url(#p2db230d7f5)" style="fill: #1f77b4"></path></g><g id="patch_26"><path d="M 376.070351 134.38986 
 C 383.673816 134.38986 390.966888 131.481614 396.34335 126.30563 
 C 401.719812 121.129646 404.740701 114.10852 404.740701 106.788573 
 C 404.740701 99.468626 401.719812 92.4475 396.34335 87.271516 
@@ -1318,7 +1318,7 @@ C 350.420889 92.4475 347.4 99.468626 347.4 106.788573
 C 347.4 114.10852 350.420889 121.129646 355.797351 126.30563 
 C 361.173814 131.481614 368.466885 134.38986 376.070351 134.38986 
 z
-" clip-path="url(#p4aa3e3f233)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_27"><path d="M 347.4 135 
+" clip-path="url(#p2db230d7f5)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_27"><path d="M 347.4 135 
 L 347.4 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_28"><path d="M 506.7 135 
 L 506.7 7.2 
@@ -1341,7 +1341,7 @@ C 522.619338 43.163456 517.5 55.06178 517.5 67.466499
 C 517.5 79.871219 522.619338 91.769543 531.730539 100.541004 
 C 540.841739 109.312465 553.200914 114.240912 566.086098 114.240912 
 z
-" clip-path="url(#pe9ecb4be45)" style="fill: #1f77b4"></path></g><g id="patch_33"><path d="M 641.969292 135 
+" clip-path="url(#pf29be92077)" style="fill: #1f77b4"></path></g><g id="patch_33"><path d="M 641.969292 135 
 C 651.206504 135 660.066627 131.466864 666.598322 125.178723 
 C 673.130017 118.890583 676.8 110.360837 676.8 101.468064 
 C 676.8 92.575291 673.130017 84.045545 666.598322 77.757405 
@@ -1351,7 +1351,7 @@ C 610.808567 84.045545 607.138584 92.575291 607.138584 101.468064
 C 607.138584 110.360837 610.808567 118.890583 617.340262 125.178723 
 C 623.871957 131.466864 632.73208 135 641.969292 135 
 z
-" clip-path="url(#pe9ecb4be45)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_34"><path d="M 517.5 135 
+" clip-path="url(#pf29be92077)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_34"><path d="M 517.5 135 
 L 517.5 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_35"><path d="M 676.8 135 
 L 676.8 7.2 
@@ -1374,7 +1374,7 @@ C 12.152039 204.845336 7.2 216.354826 7.2 228.354162
 C 7.2 240.353499 12.152039 251.862989 20.965488 260.347801 
 C 29.778938 268.832613 41.734218 273.6 54.198317 273.6 
 z
-" clip-path="url(#p537c167e17)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_9"><g id="xtick_21"></g><g id="xtick_22"></g><g id="xtick_23"></g><g id="xtick_24"></g><g id="xtick_25"></g></g><g id="matplotlib.axis_10"><g id="ytick_21"></g><g id="ytick_22"></g><g id="ytick_23"></g><g id="ytick_24"></g><g id="ytick_25"></g></g><g id="patch_40"><path d="M 7.2 273.6 
+" clip-path="url(#pe12b6c6514)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_9"><g id="xtick_21"></g><g id="xtick_22"></g><g id="xtick_23"></g><g id="xtick_24"></g><g id="xtick_25"></g></g><g id="matplotlib.axis_10"><g id="ytick_21"></g><g id="ytick_22"></g><g id="ytick_23"></g><g id="ytick_24"></g><g id="ytick_25"></g></g><g id="patch_40"><path d="M 7.2 273.6 
 L 7.2 145.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_41"><path d="M 166.5 273.6 
 L 166.5 145.8 
@@ -1397,7 +1397,7 @@ C 261.284666 215.46957 257.097835 225.20057 257.097835 235.345723
 C 257.097835 245.490876 261.284666 255.221875 268.736227 262.395582 
 C 276.187788 269.569288 286.295693 273.6 296.833792 273.6 
 z
-" clip-path="url(#p995c5c4c9e)" style="fill: #1f77b4"></path></g><g id="patch_46"><path d="M 217.199009 273.6 
+" clip-path="url(#p2bf1ce418a)" style="fill: #1f77b4"></path></g><g id="patch_46"><path d="M 217.199009 273.6 
 C 227.78035 273.6 237.929731 269.552748 245.411869 262.349606 
 C 252.894007 255.146463 257.098018 245.375533 257.098018 235.188751 
 C 257.098018 225.001968 252.894007 215.231039 245.411869 208.027896 
@@ -1407,7 +1407,7 @@ C 181.504011 215.231039 177.3 225.001968 177.3 235.188751
 C 177.3 245.375533 181.504011 255.146463 188.986149 262.349606 
 C 196.468287 269.552748 206.617668 273.6 217.199009 273.6 
 z
-" clip-path="url(#p995c5c4c9e)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_11"><g id="xtick_26"></g><g id="xtick_27"></g><g id="xtick_28"></g><g id="xtick_29"></g><g id="xtick_30"></g></g><g id="matplotlib.axis_12"><g id="ytick_26"></g><g id="ytick_27"></g><g id="ytick_28"></g><g id="ytick_29"></g><g id="ytick_30"></g></g><g id="patch_47"><path d="M 177.3 273.6 
+" clip-path="url(#p2bf1ce418a)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_11"><g id="xtick_26"></g><g id="xtick_27"></g><g id="xtick_28"></g><g id="xtick_29"></g><g id="xtick_30"></g></g><g id="matplotlib.axis_12"><g id="ytick_26"></g><g id="ytick_27"></g><g id="ytick_28"></g><g id="ytick_29"></g><g id="ytick_30"></g></g><g id="patch_47"><path d="M 177.3 273.6 
 L 177.3 145.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_48"><path d="M 336.6 273.6 
 L 336.6 145.8 
@@ -1430,7 +1430,7 @@ C 353.221845 192.768859 347.4 206.299944 347.4 220.406915
 C 347.4 234.513886 353.221845 248.044971 363.58334 258.020106 
 C 373.944836 267.995241 388.000013 273.6 402.65338 273.6 
 z
-" clip-path="url(#pc2f12a3579)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_13"><g id="xtick_31"></g><g id="xtick_32"></g><g id="xtick_33"></g><g id="xtick_34"></g><g id="xtick_35"></g></g><g id="matplotlib.axis_14"><g id="ytick_31"></g><g id="ytick_32"></g><g id="ytick_33"></g><g id="ytick_34"></g><g id="ytick_35"></g></g><g id="patch_53"><path d="M 347.4 273.6 
+" clip-path="url(#pf779ce4380)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_13"><g id="xtick_31"></g><g id="xtick_32"></g><g id="xtick_33"></g><g id="xtick_34"></g><g id="xtick_35"></g></g><g id="matplotlib.axis_14"><g id="ytick_31"></g><g id="ytick_32"></g><g id="ytick_33"></g><g id="ytick_34"></g><g id="ytick_35"></g></g><g id="patch_53"><path d="M 347.4 273.6 
 L 347.4 145.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_54"><path d="M 506.7 273.6 
 L 506.7 145.8 
@@ -1438,7 +1438,7 @@ L 506.7 145.8
 L 506.7 273.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_56"><path d="M 347.4 145.8 
 L 506.7 145.8 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_8"></g></g><defs><clippath id="p5e8a9bbbad"><rect x="7.2" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="pc678229ed9"><rect x="177.3" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="p4aa3e3f233"><rect x="347.4" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="pe9ecb4be45"><rect x="517.5" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="p537c167e17"><rect x="7.2" y="145.8" width="159.3" height="127.8"></rect></clippath><clippath id="p995c5c4c9e"><rect x="177.3" y="145.8" width="159.3" height="127.8"></rect></clippath><clippath id="pc2f12a3579"><rect x="347.4" y="145.8" width="159.3" height="127.8"></rect></clippath></defs></svg>
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_8"></g></g><defs><clippath id="p6c35230e09"><rect x="7.2" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="pc510e436ac"><rect x="177.3" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="p2db230d7f5"><rect x="347.4" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="pf29be92077"><rect x="517.5" y="7.2" width="159.3" height="127.8"></rect></clippath><clippath id="pe12b6c6514"><rect x="7.2" y="145.8" width="159.3" height="127.8"></rect></clippath><clippath id="p2bf1ce418a"><rect x="177.3" y="145.8" width="159.3" height="127.8"></rect></clippath><clippath id="pf779ce4380"><rect x="347.4" y="145.8" width="159.3" height="127.8"></rect></clippath></defs></svg>
 </div>
 
 </div>
@@ -1509,8 +1509,8 @@ The plot above shows a possible packing.</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: total: 29.1 s
-Wall time: 11.1 s
+<pre>CPU times: total: 50.5 s
+Wall time: 21.6 s
 </pre>
 </div>
 </div>
@@ -1542,7 +1542,7 @@ Wall time: 11.1 s
 
 
 <div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="712.8pt" viewbox="0 0 684 712.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-07T14:21:37.989671</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 712.8 
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="712.8pt" viewbox="0 0 684 712.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-09T09:56:17.836531</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 712.8 
 L 684 712.8 
 L 684 0 
 L 0 0 
@@ -1562,7 +1562,7 @@ C 8.596456 78.719543 7.2 82.047459 7.2 85.517012
 C 7.2 88.986565 8.596456 92.314481 11.081816 94.767825 
 C 13.567175 97.22117 16.938519 98.599638 20.453347 98.599638 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 129.770243 138.24 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 129.770243 138.24 
 C 130.587902 138.24 131.372183 137.919325 131.950356 137.3486 
 C 132.528529 136.777874 132.853389 136.003696 132.853389 135.196569 
 C 132.853389 134.389442 132.528529 133.615263 131.950356 133.044538 
@@ -1572,7 +1572,7 @@ C 127.011956 133.615263 126.687096 134.389442 126.687096 135.196569
 C 126.687096 136.003696 127.011956 136.777874 127.590129 137.3486 
 C 128.168302 137.919325 128.952583 138.24 129.770243 138.24 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="patch_5"><path d="M 27.418739 137.795159 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="patch_5"><path d="M 27.418739 137.795159 
 C 32.780811 137.795159 37.923989 135.692227 41.715546 131.94951 
 C 45.507104 128.206793 47.637478 123.129866 47.637478 117.836865 
 C 47.637478 112.543863 45.507104 107.466937 41.715546 103.72422 
@@ -1582,7 +1582,7 @@ C 9.330374 107.466937 7.2 112.543863 7.2 117.836865
 C 7.2 123.129866 9.330374 128.206793 13.121932 131.94951 
 C 16.913489 135.692227 22.056667 137.795159 27.418739 137.795159 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="patch_6"><path d="M 52.825403 138.24 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="patch_6"><path d="M 52.825403 138.24 
 C 54.973625 138.24 57.03415 137.397497 58.553172 135.898042 
 C 60.072194 134.398587 60.925691 132.364604 60.925691 130.244055 
 C 60.925691 128.123505 60.072194 126.089523 58.553172 124.590068 
@@ -1592,7 +1592,7 @@ C 45.578613 126.089523 44.725115 128.123505 44.725115 130.244055
 C 44.725115 132.364604 45.578613 134.398587 47.097635 135.898042 
 C 48.616657 137.397497 50.677182 138.24 52.825403 138.24 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="patch_7"><path d="M 9.482538 138.24 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="patch_7"><path d="M 9.482538 138.24 
 C 10.087874 138.24 10.668499 138.002595 11.096536 137.580072 
 C 11.524574 137.157548 11.765076 136.584403 11.765076 135.986864 
 C 11.765076 135.389325 11.524574 134.81618 11.096536 134.393656 
@@ -1602,7 +1602,7 @@ C 7.440503 134.81618 7.2 135.389325 7.2 135.986864
 C 7.2 136.584403 7.440503 137.157548 7.86854 137.580072 
 C 8.296577 138.002595 8.877202 138.24 9.482538 138.24 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="patch_8"><path d="M 27.889823 48.046619 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="patch_8"><path d="M 27.889823 48.046619 
 C 33.376828 48.046619 38.639838 45.894691 42.519737 42.06477 
 C 46.399635 38.23485 48.579645 33.039635 48.579645 27.62331 
 C 48.579645 22.206985 46.399635 17.011769 42.519737 13.181849 
@@ -1612,7 +1612,7 @@ C 9.38001 17.011769 7.2 22.206985 7.2 27.62331
 C 7.2 33.039635 9.38001 38.23485 13.259909 42.06477 
 C 17.139807 45.894691 22.402818 48.046619 27.889823 48.046619 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="patch_9"><path d="M 100.99538 138.24 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="patch_9"><path d="M 100.99538 138.24 
 C 118.367408 138.24 135.030262 131.426927 147.314141 119.301281 
 C 159.59802 107.175635 166.5 90.727421 166.5 73.579168 
 C 166.5 56.430915 159.59802 39.982701 147.314141 27.857055 
@@ -1622,7 +1622,7 @@ C 42.392739 39.982701 35.490759 56.430915 35.490759 73.579168
 C 35.490759 90.727421 42.392739 107.175635 54.676618 119.301281 
 C 66.960497 131.426927 83.623351 138.24 100.99538 138.24 
 z
-" clip-path="url(#paf46b4c04a)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_10"><path d="M 7.2 138.24 
+" clip-path="url(#p6b75fcdea1)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_10"><path d="M 7.2 138.24 
 L 7.2 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_11"><path d="M 166.5 138.24 
 L 166.5 7.2 
@@ -1645,7 +1645,7 @@ C 295.683963 16.395874 293.640795 21.264981 293.640795 26.341317
 C 293.640795 31.417654 295.683963 36.286761 299.320317 39.876273 
 C 302.95667 43.465785 307.889315 45.482635 313.031896 45.482635 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="patch_16"><path d="M 276.445351 138.24 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="patch_16"><path d="M 276.445351 138.24 
 C 278.164659 138.24 279.81378 137.565711 281.029514 136.365637 
 C 282.245249 135.165562 282.928337 133.537684 282.928337 131.840523 
 C 282.928337 130.143362 282.245249 128.515484 281.029514 127.31541 
@@ -1655,7 +1655,7 @@ C 270.645452 128.515484 269.962364 130.143362 269.962364 131.840523
 C 269.962364 133.537684 270.645452 135.165562 271.861187 136.365637 
 C 273.076921 137.565711 274.726042 138.24 276.445351 138.24 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="patch_17"><path d="M 324.330286 69.315206 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="patch_17"><path d="M 324.330286 69.315206 
 C 327.584252 69.315206 330.705382 68.039045 333.006284 65.767782 
 C 335.307185 63.496519 336.6 60.415593 336.6 57.203542 
 C 336.6 53.991491 335.307185 50.910565 333.006284 48.639302 
@@ -1665,7 +1665,7 @@ C 313.353386 50.910565 312.060571 53.991491 312.060571 57.203542
 C 312.060571 60.415593 313.353386 63.496519 315.654287 65.767782 
 C 317.955189 68.039045 321.076319 69.315206 324.330286 69.315206 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="patch_18"><path d="M 241.65618 134.25437 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="patch_18"><path d="M 241.65618 134.25437 
 C 258.723638 134.25437 275.094355 127.560745 287.162871 115.647688 
 C 299.231386 103.734631 306.012359 87.574791 306.012359 70.727185 
 C 306.012359 53.879578 299.231386 37.719738 287.162871 25.806682 
@@ -1675,7 +1675,7 @@ C 184.080973 37.719738 177.3 53.879578 177.3 70.727185
 C 177.3 87.574791 184.080973 103.734631 196.149489 115.647688 
 C 208.218004 127.560745 224.588721 134.25437 241.65618 134.25437 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="patch_19"><path d="M 183.17369 138.24 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="patch_19"><path d="M 183.17369 138.24 
 C 184.731411 138.24 186.225541 137.629083 187.327016 136.541797 
 C 188.428491 135.45451 189.04738 133.979626 189.04738 132.441971 
 C 189.04738 130.904316 188.428491 129.429432 187.327016 128.342146 
@@ -1685,7 +1685,7 @@ C 177.918889 129.429432 177.3 130.904316 177.3 132.441971
 C 177.3 133.979626 177.918889 135.45451 179.020364 136.541797 
 C 180.121839 137.629083 181.615969 138.24 183.17369 138.24 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="patch_20"><path d="M 323.591638 96.358346 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="patch_20"><path d="M 323.591638 96.358346 
 C 327.041496 96.358346 330.350521 95.005358 332.789939 92.597363 
 C 335.229357 90.189368 336.6 86.922968 336.6 83.517548 
 C 336.6 80.112129 335.229357 76.845729 332.789939 74.437734 
@@ -1695,7 +1695,7 @@ C 311.953918 76.845729 310.583275 80.112129 310.583275 83.517548
 C 310.583275 86.922968 311.953918 90.189368 314.393336 92.597363 
 C 316.832754 95.005358 320.141779 96.358346 323.591638 96.358346 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="patch_21"><path d="M 315.006199 138.24 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="patch_21"><path d="M 315.006199 138.24 
 C 320.732942 138.24 326.225903 135.994049 330.275322 131.996793 
 C 334.324741 127.999536 336.6 122.577331 336.6 116.924357 
 C 336.6 111.271382 334.324741 105.849178 330.275322 101.851921 
@@ -1705,7 +1705,7 @@ C 295.687658 105.849178 293.412399 111.271382 293.412399 116.924357
 C 293.412399 122.577331 295.687658 127.999536 299.737076 131.996793 
 C 303.786495 135.994049 309.279456 138.24 315.006199 138.24 
 z
-" clip-path="url(#p203d19c756)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_22"><path d="M 177.3 138.24 
+" clip-path="url(#p38b00991fd)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_22"><path d="M 177.3 138.24 
 L 177.3 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_23"><path d="M 336.6 138.24 
 L 336.6 7.2 
@@ -1728,7 +1728,7 @@ C 489.157767 18.228544 488.18219 20.553456 488.18219 22.977316
 C 488.18219 25.401176 489.157767 27.726088 490.89406 29.440016 
 C 492.630354 31.153944 494.985605 32.116954 497.441095 32.116954 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_28"><path d="M 358.718539 90.83075 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_28"><path d="M 358.718539 90.83075 
 C 361.72025 90.83075 364.599424 89.65352 366.721954 87.55833 
 C 368.844485 85.463141 370.037077 82.621055 370.037077 79.65801 
 C 370.037077 76.694964 368.844485 73.852879 366.721954 71.757689 
@@ -1738,7 +1738,7 @@ C 348.592593 73.852879 347.4 76.694964 347.4 79.65801
 C 347.4 82.621055 348.592593 85.463141 350.715123 87.55833 
 C 352.837654 89.65352 355.716827 90.83075 358.718539 90.83075 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_29"><path d="M 464.237956 138.24 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_29"><path d="M 464.237956 138.24 
 C 465.383049 138.24 466.481397 137.79091 467.291101 136.991636 
 C 468.100804 136.192363 468.555755 135.108163 468.555755 133.97782 
 C 468.555755 132.847476 468.100804 131.763277 467.291101 130.964003 
@@ -1748,7 +1748,7 @@ C 460.375107 131.763277 459.920156 132.847476 459.920156 133.97782
 C 459.920156 135.108163 460.375107 136.192363 461.18481 136.991636 
 C 461.994514 137.79091 463.092862 138.24 464.237956 138.24 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_30"><path d="M 438.710239 133.736422 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_30"><path d="M 438.710239 133.736422 
 C 455.708121 133.736422 472.012101 127.070084 484.031418 115.205592 
 C 496.050736 103.3411 502.804065 87.247136 502.804065 70.468211 
 C 502.804065 53.689285 496.050736 37.595322 484.031418 25.73083 
@@ -1758,7 +1758,7 @@ C 381.369743 37.595322 374.616413 53.689285 374.616413 70.468211
 C 374.616413 87.247136 381.369743 103.3411 393.38906 115.205592 
 C 405.408377 127.070084 421.712358 133.736422 438.710239 133.736422 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_31"><path d="M 350.401961 138.24 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_31"><path d="M 350.401961 138.24 
 C 351.198091 138.24 351.96172 137.927769 352.524668 137.372072 
 C 353.087617 136.816375 353.403923 136.062582 353.403923 135.276708 
 C 353.403923 134.490834 353.087617 133.737041 352.524668 133.181344 
@@ -1768,7 +1768,7 @@ C 347.716306 133.737041 347.4 134.490834 347.4 135.276708
 C 347.4 136.062582 347.716306 136.816375 348.279254 137.372072 
 C 348.842203 137.927769 349.605832 138.24 350.401961 138.24 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_32"><path d="M 365.410792 127.293583 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_32"><path d="M 365.410792 127.293583 
 C 370.18731 127.293583 374.768837 125.420298 378.146345 122.086297 
 C 381.523853 118.752295 383.421584 114.229784 383.421584 109.514795 
 C 383.421584 104.799805 381.523853 100.277294 378.146345 96.943293 
@@ -1778,7 +1778,7 @@ C 349.297731 100.277294 347.4 104.799805 347.4 109.514795
 C 347.4 114.229784 349.297731 118.752295 352.675239 122.086297 
 C 356.052747 125.420298 360.634274 127.293583 365.410792 127.293583 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_33"><path d="M 366.047028 44.013658 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_33"><path d="M 366.047028 44.013658 
 C 370.992278 44.013658 375.735649 42.074199 379.232468 38.622423 
 C 382.729288 35.170647 384.694056 30.488377 384.694056 25.606829 
 C 384.694056 20.725281 382.729288 16.043011 379.232468 12.591235 
@@ -1788,7 +1788,7 @@ C 349.364769 16.043011 347.4 20.725281 347.4 25.606829
 C 347.4 30.488377 349.364769 35.170647 352.861588 38.622423 
 C 356.358408 42.074199 361.101778 44.013658 366.047028 44.013658 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_34"><path d="M 497.346155 138.24 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_34"><path d="M 497.346155 138.24 
 C 499.826823 138.24 502.206224 137.267115 503.960322 135.535613 
 C 505.71442 133.80411 506.7 131.455359 506.7 129.006645 
 C 506.7 126.55793 505.71442 124.209179 503.960322 122.477677 
@@ -1798,7 +1798,7 @@ C 488.977889 124.209179 487.992309 126.55793 487.992309 129.006645
 C 487.992309 131.455359 488.977889 133.80411 490.731987 135.535613 
 C 492.486085 137.267115 494.865486 138.24 497.346155 138.24 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="patch_35"><path d="M 352.348299 69.267553 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="patch_35"><path d="M 352.348299 69.267553 
 C 353.660603 69.267553 354.919336 68.752885 355.847275 67.836899 
 C 356.775214 66.920913 357.296598 65.678395 357.296598 64.382995 
 C 357.296598 63.087595 356.775214 61.845077 355.847275 60.92909 
@@ -1808,7 +1808,7 @@ C 347.921384 61.845077 347.4 63.087595 347.4 64.382995
 C 347.4 65.678395 347.921384 66.920913 348.849323 67.836899 
 C 349.777262 68.752885 351.035995 69.267553 352.348299 69.267553 
 z
-" clip-path="url(#pba76ecae49)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_36"><path d="M 347.4 138.24 
+" clip-path="url(#pbdf37113c5)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_36"><path d="M 347.4 138.24 
 L 347.4 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_37"><path d="M 506.7 138.24 
 L 506.7 7.2 
@@ -1831,7 +1831,7 @@ C 541.976568 43.76623 535.340358 59.581083 535.340358 76.06902
 C 535.340358 92.556956 541.976568 108.37181 553.78744 120.030541 
 C 565.598312 131.689273 581.61954 138.24 598.322635 138.24 
 z
-" clip-path="url(#p95bec18244)" style="fill: #1f77b4"></path></g><g id="patch_42"><path d="M 534.676521 44.922094 
+" clip-path="url(#pa1493d1ee8)" style="fill: #1f77b4"></path></g><g id="patch_42"><path d="M 534.676521 44.922094 
 C 539.231788 44.922094 543.601096 43.13558 546.822156 39.956012 
 C 550.043216 36.776443 551.853043 32.463418 551.853043 27.966829 
 C 551.853043 23.47024 550.043216 19.157215 546.822156 15.977647 
@@ -1841,7 +1841,7 @@ C 519.309827 19.157215 517.5 23.47024 517.5 27.966829
 C 517.5 32.463418 519.309827 36.776443 522.530887 39.956012 
 C 525.751947 43.13558 530.121255 44.922094 534.676521 44.922094 
 z
-" clip-path="url(#p95bec18244)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_43"><path d="M 517.5 138.24 
+" clip-path="url(#pa1493d1ee8)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_43"><path d="M 517.5 138.24 
 L 517.5 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_44"><path d="M 676.8 138.24 
 L 676.8 7.2 
@@ -1864,7 +1864,7 @@ C 48.352079 180.131408 41.781516 195.789817 41.781516 212.114651
 C 41.781516 228.439486 48.352079 244.097895 60.046115 255.641296 
 C 71.740151 267.184697 87.602893 273.670622 104.140758 273.670622 
 z
-" clip-path="url(#p1608f0954b)" style="fill: #1f77b4"></path></g><g id="patch_49"><path d="M 30.879502 280.08 
+" clip-path="url(#p1be55cb464)" style="fill: #1f77b4"></path></g><g id="patch_49"><path d="M 30.879502 280.08 
 C 37.159379 280.08 43.182895 277.617118 47.623439 273.233774 
 C 52.063982 268.85043 54.559004 262.904506 54.559004 256.705522 
 C 54.559004 250.506538 52.063982 244.560614 47.623439 240.17727 
@@ -1874,7 +1874,7 @@ C 9.695022 244.560614 7.2 250.506538 7.2 256.705522
 C 7.2 262.904506 9.695022 268.85043 14.135566 273.233774 
 C 18.576109 277.617118 24.599625 280.08 30.879502 280.08 
 z
-" clip-path="url(#p1608f0954b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_9"><g id="xtick_21"></g><g id="xtick_22"></g><g id="xtick_23"></g><g id="xtick_24"></g><g id="xtick_25"></g></g><g id="matplotlib.axis_10"><g id="ytick_21"></g><g id="ytick_22"></g><g id="ytick_23"></g><g id="ytick_24"></g><g id="ytick_25"></g></g><g id="patch_50"><path d="M 7.2 280.08 
+" clip-path="url(#p1be55cb464)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_9"><g id="xtick_21"></g><g id="xtick_22"></g><g id="xtick_23"></g><g id="xtick_24"></g><g id="xtick_25"></g></g><g id="matplotlib.axis_10"><g id="ytick_21"></g><g id="ytick_22"></g><g id="ytick_23"></g><g id="ytick_24"></g><g id="ytick_25"></g></g><g id="patch_50"><path d="M 7.2 280.08 
 L 7.2 149.04 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_51"><path d="M 166.5 280.08 
 L 166.5 149.04 
@@ -1897,7 +1897,7 @@ C 179.862221 243.603962 177.3 249.710029 177.3 256.075972
 C 177.3 262.441915 179.862221 268.547982 184.422363 273.049383 
 C 188.982505 277.550784 195.168253 280.08 201.617267 280.08 
 z
-" clip-path="url(#pe4cac8f0ca)" style="fill: #1f77b4"></path></g><g id="patch_56"><path d="M 275.410598 273.837161 
+" clip-path="url(#p887f504b3b)" style="fill: #1f77b4"></path></g><g id="patch_56"><path d="M 275.410598 273.837161 
 C 291.638217 273.837161 307.203379 267.472909 318.678039 256.146059 
 C 330.152699 244.819209 336.6 229.454546 336.6 213.435961 
 C 336.6 197.417376 330.152699 182.052713 318.678039 170.725863 
@@ -1907,7 +1907,7 @@ C 220.668497 182.052713 214.221195 197.417376 214.221195 213.435961
 C 214.221195 229.454546 220.668497 244.819209 232.143156 256.146059 
 C 243.617816 267.472909 259.182978 273.837161 275.410598 273.837161 
 z
-" clip-path="url(#pe4cac8f0ca)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_11"><g id="xtick_26"></g><g id="xtick_27"></g><g id="xtick_28"></g><g id="xtick_29"></g><g id="xtick_30"></g></g><g id="matplotlib.axis_12"><g id="ytick_26"></g><g id="ytick_27"></g><g id="ytick_28"></g><g id="ytick_29"></g><g id="ytick_30"></g></g><g id="patch_57"><path d="M 177.3 280.08 
+" clip-path="url(#p887f504b3b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_11"><g id="xtick_26"></g><g id="xtick_27"></g><g id="xtick_28"></g><g id="xtick_29"></g><g id="xtick_30"></g></g><g id="matplotlib.axis_12"><g id="ytick_26"></g><g id="ytick_27"></g><g id="ytick_28"></g><g id="ytick_29"></g><g id="ytick_30"></g></g><g id="patch_57"><path d="M 177.3 280.08 
 L 177.3 149.04 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_58"><path d="M 336.6 280.08 
 L 336.6 149.04 
@@ -1930,7 +1930,7 @@ C 392.34722 178.705595 385.987717 193.861025 385.987717 209.661474
 C 385.987717 225.461922 392.34722 240.617353 403.665621 251.789957 
 C 414.984022 262.962562 430.337222 269.240146 446.343858 269.240146 
 z
-" clip-path="url(#pde673a75f8)" style="fill: #1f77b4"></path></g><g id="patch_63"><path d="M 373.198455 280.08 
+" clip-path="url(#p84502c5582)" style="fill: #1f77b4"></path></g><g id="patch_63"><path d="M 373.198455 280.08 
 C 380.040285 280.08 386.602813 277.396727 391.440718 272.621141 
 C 396.278622 267.845556 398.99691 261.367562 398.99691 254.613864 
 C 398.99691 247.860166 396.278622 241.382172 391.440718 236.606587 
@@ -1940,7 +1940,7 @@ C 350.118288 241.382172 347.4 247.860166 347.4 254.613864
 C 347.4 261.367562 350.118288 267.845556 354.956193 272.621141 
 C 359.794097 277.396727 366.356625 280.08 373.198455 280.08 
 z
-" clip-path="url(#pde673a75f8)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_13"><g id="xtick_31"></g><g id="xtick_32"></g><g id="xtick_33"></g><g id="xtick_34"></g><g id="xtick_35"></g></g><g id="matplotlib.axis_14"><g id="ytick_31"></g><g id="ytick_32"></g><g id="ytick_33"></g><g id="ytick_34"></g><g id="ytick_35"></g></g><g id="patch_64"><path d="M 347.4 280.08 
+" clip-path="url(#p84502c5582)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_13"><g id="xtick_31"></g><g id="xtick_32"></g><g id="xtick_33"></g><g id="xtick_34"></g><g id="xtick_35"></g></g><g id="matplotlib.axis_14"><g id="ytick_31"></g><g id="ytick_32"></g><g id="ytick_33"></g><g id="ytick_34"></g><g id="ytick_35"></g></g><g id="patch_64"><path d="M 347.4 280.08 
 L 347.4 149.04 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_65"><path d="M 506.7 280.08 
 L 506.7 149.04 
@@ -1963,7 +1963,7 @@ C 523.758144 190.988418 517.5 205.902296 517.5 221.450912
 C 517.5 236.999528 523.758144 251.913406 534.896148 262.907938 
 C 546.034153 273.902469 561.142649 280.08 576.894165 280.08 
 z
-" clip-path="url(#pfd557e3967)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_15"><g id="xtick_36"></g><g id="xtick_37"></g><g id="xtick_38"></g><g id="xtick_39"></g><g id="xtick_40"></g></g><g id="matplotlib.axis_16"><g id="ytick_36"></g><g id="ytick_37"></g><g id="ytick_38"></g><g id="ytick_39"></g><g id="ytick_40"></g></g><g id="patch_70"><path d="M 517.5 280.08 
+" clip-path="url(#pc12e2be391)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_15"><g id="xtick_36"></g><g id="xtick_37"></g><g id="xtick_38"></g><g id="xtick_39"></g><g id="xtick_40"></g></g><g id="matplotlib.axis_16"><g id="ytick_36"></g><g id="ytick_37"></g><g id="ytick_38"></g><g id="ytick_39"></g><g id="ytick_40"></g></g><g id="patch_70"><path d="M 517.5 280.08 
 L 517.5 149.04 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_71"><path d="M 676.8 280.08 
 L 676.8 149.04 
@@ -1986,7 +1986,7 @@ C 10.389612 376.512362 7.2 384.113574 7.2 392.038295
 C 7.2 399.963016 10.389612 407.564227 16.06636 413.167851 
 C 21.743108 418.771475 29.443511 421.92 37.471645 421.92 
 z
-" clip-path="url(#p0ef74811a7)" style="fill: #1f77b4"></path></g><g id="patch_76"><path d="M 111.492548 404.533812 
+" clip-path="url(#p8dd0f5904a)" style="fill: #1f77b4"></path></g><g id="patch_76"><path d="M 111.492548 404.533812 
 C 126.080695 404.533812 140.073313 398.812539 150.38869 388.630038 
 C 160.704068 378.447536 166.5 364.635162 166.5 350.23493 
 C 166.5 335.834698 160.704068 322.022324 150.38869 311.839823 
@@ -1996,7 +1996,7 @@ C 62.281028 322.022324 56.485096 335.834698 56.485096 350.23493
 C 56.485096 364.635162 62.281028 378.447536 72.596405 388.630038 
 C 82.911783 398.812539 96.904401 404.533812 111.492548 404.533812 
 z
-" clip-path="url(#p0ef74811a7)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_17"><g id="xtick_41"></g><g id="xtick_42"></g><g id="xtick_43"></g><g id="xtick_44"></g><g id="xtick_45"></g></g><g id="matplotlib.axis_18"><g id="ytick_41"></g><g id="ytick_42"></g><g id="ytick_43"></g><g id="ytick_44"></g><g id="ytick_45"></g></g><g id="patch_77"><path d="M 7.2 421.92 
+" clip-path="url(#p8dd0f5904a)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_17"><g id="xtick_41"></g><g id="xtick_42"></g><g id="xtick_43"></g><g id="xtick_44"></g><g id="xtick_45"></g></g><g id="matplotlib.axis_18"><g id="ytick_41"></g><g id="ytick_42"></g><g id="ytick_43"></g><g id="ytick_44"></g><g id="ytick_45"></g></g><g id="patch_77"><path d="M 7.2 421.92 
 L 7.2 290.88 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_78"><path d="M 166.5 421.92 
 L 166.5 290.88 
@@ -2019,7 +2019,7 @@ C 234.938931 333.328843 229.285252 346.802213 229.285252 360.849012
 C 229.285252 374.89581 234.938931 388.36918 245.001133 398.301767 
 C 255.063335 408.234353 268.712524 413.815206 282.942626 413.815206 
 z
-" clip-path="url(#p4ba030dd21)" style="fill: #1f77b4"></path></g><g id="patch_83"><path d="M 206.702162 421.92 
+" clip-path="url(#p2ec14927d3)" style="fill: #1f77b4"></path></g><g id="patch_83"><path d="M 206.702162 421.92 
 C 214.450103 421.92 221.881751 418.881363 227.360373 413.473314 
 C 232.838994 408.065264 235.917284 400.729345 235.917284 393.081209 
 C 235.917284 385.433072 232.838994 378.097153 227.360373 372.689104 
@@ -2029,7 +2029,7 @@ C 180.56533 378.097153 177.48704 385.433072 177.48704 393.081209
 C 177.48704 400.729345 180.56533 408.065264 186.043951 413.473314 
 C 191.522573 418.881363 198.954221 421.92 206.702162 421.92 
 z
-" clip-path="url(#p4ba030dd21)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_19"><g id="xtick_46"></g><g id="xtick_47"></g><g id="xtick_48"></g><g id="xtick_49"></g><g id="xtick_50"></g></g><g id="matplotlib.axis_20"><g id="ytick_46"></g><g id="ytick_47"></g><g id="ytick_48"></g><g id="ytick_49"></g><g id="ytick_50"></g></g><g id="patch_84"><path d="M 177.3 421.92 
+" clip-path="url(#p2ec14927d3)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_19"><g id="xtick_46"></g><g id="xtick_47"></g><g id="xtick_48"></g><g id="xtick_49"></g><g id="xtick_50"></g></g><g id="matplotlib.axis_20"><g id="ytick_46"></g><g id="ytick_47"></g><g id="ytick_48"></g><g id="ytick_49"></g><g id="ytick_50"></g></g><g id="patch_84"><path d="M 177.3 421.92 
 L 177.3 290.88 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_85"><path d="M 336.6 421.92 
 L 336.6 290.88 
@@ -2052,7 +2052,7 @@ C 350.863113 372.618764 347.4 380.871762 347.4 389.476009
 C 347.4 398.080256 350.863113 406.333254 357.026629 412.417375 
 C 363.190145 418.501496 371.55084 421.92 380.267367 421.92 
 z
-" clip-path="url(#p34722e9735)" style="fill: #1f77b4"></path></g><g id="patch_90"><path d="M 453.454175 397.242403 
+" clip-path="url(#p2cf82e8acd)" style="fill: #1f77b4"></path></g><g id="patch_90"><path d="M 453.454175 397.242403 
 C 467.575133 397.242403 481.119634 391.704356 491.104659 381.847951 
 C 501.089684 371.991547 506.7 358.621518 506.7 344.682457 
 C 506.7 330.743396 501.089684 317.373367 491.104659 307.516963 
@@ -2062,7 +2062,7 @@ C 405.818667 317.373367 400.208351 330.743396 400.208351 344.682457
 C 400.208351 358.621518 405.818667 371.991547 415.803692 381.847951 
 C 425.788717 391.704356 439.333218 397.242403 453.454175 397.242403 
 z
-" clip-path="url(#p34722e9735)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_21"><g id="xtick_51"></g><g id="xtick_52"></g><g id="xtick_53"></g><g id="xtick_54"></g><g id="xtick_55"></g></g><g id="matplotlib.axis_22"><g id="ytick_51"></g><g id="ytick_52"></g><g id="ytick_53"></g><g id="ytick_54"></g><g id="ytick_55"></g></g><g id="patch_91"><path d="M 347.4 421.92 
+" clip-path="url(#p2cf82e8acd)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_21"><g id="xtick_51"></g><g id="xtick_52"></g><g id="xtick_53"></g><g id="xtick_54"></g><g id="xtick_55"></g></g><g id="matplotlib.axis_22"><g id="ytick_51"></g><g id="ytick_52"></g><g id="ytick_53"></g><g id="ytick_54"></g><g id="ytick_55"></g></g><g id="patch_91"><path d="M 347.4 421.92 
 L 347.4 290.88 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_92"><path d="M 506.7 421.92 
 L 506.7 290.88 
@@ -2085,7 +2085,7 @@ C 522.991276 315.595083 517.5 328.681427 517.5 342.324729
 C 517.5 355.968031 522.991276 369.054375 532.764439 378.701646 
 C 542.537602 388.348917 555.794715 393.769458 569.616054 393.769458 
 z
-" clip-path="url(#p6bf111e4ea)" style="fill: #1f77b4"></path></g><g id="patch_97"><path d="M 642.2623 421.92 
+" clip-path="url(#p590fcd4ba1)" style="fill: #1f77b4"></path></g><g id="patch_97"><path d="M 642.2623 421.92 
 C 651.314295 421.92 659.996762 418.369931 666.397489 412.051654 
 C 672.798215 405.733377 676.394611 397.162752 676.394611 388.22736 
 C 676.394611 379.291967 672.798215 370.721342 666.397489 364.403065 
@@ -2095,7 +2095,7 @@ C 611.726385 370.721342 608.129989 379.291967 608.129989 388.22736
 C 608.129989 397.162752 611.726385 405.733377 618.127112 412.051654 
 C 624.527839 418.369931 633.210306 421.92 642.2623 421.92 
 z
-" clip-path="url(#p6bf111e4ea)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_23"><g id="xtick_56"></g><g id="xtick_57"></g><g id="xtick_58"></g><g id="xtick_59"></g><g id="xtick_60"></g></g><g id="matplotlib.axis_24"><g id="ytick_56"></g><g id="ytick_57"></g><g id="ytick_58"></g><g id="ytick_59"></g><g id="ytick_60"></g></g><g id="patch_98"><path d="M 517.5 421.92 
+" clip-path="url(#p590fcd4ba1)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_23"><g id="xtick_56"></g><g id="xtick_57"></g><g id="xtick_58"></g><g id="xtick_59"></g><g id="xtick_60"></g></g><g id="matplotlib.axis_24"><g id="ytick_56"></g><g id="ytick_57"></g><g id="ytick_58"></g><g id="ytick_59"></g><g id="ytick_60"></g></g><g id="patch_98"><path d="M 517.5 421.92 
 L 517.5 290.88 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_99"><path d="M 676.8 421.92 
 L 676.8 290.88 
@@ -2118,7 +2118,7 @@ C 10.837194 511.980534 7.2 520.648386 7.2 529.685143
 C 7.2 538.721901 10.837194 547.389753 17.310532 553.779706 
 C 23.78387 560.169658 32.564833 563.76 41.719515 563.76 
 z
-" clip-path="url(#p301e797a7d)" style="fill: #1f77b4"></path></g><g id="patch_104"><path d="M 115.050559 536.180935 
+" clip-path="url(#p37afd37b68)" style="fill: #1f77b4"></path></g><g id="patch_104"><path d="M 115.050559 536.180935 
 C 128.69511 536.180935 141.782653 530.829728 151.430808 521.305855 
 C 161.078962 511.781981 166.5 498.863024 166.5 485.394233 
 C 166.5 471.925442 161.078962 459.006485 151.430808 449.482611 
@@ -2128,7 +2128,7 @@ C 69.022155 459.006485 63.601118 471.925442 63.601118 485.394233
 C 63.601118 498.863024 69.022155 511.781981 78.67031 521.305855 
 C 88.318465 530.829728 101.406008 536.180935 115.050559 536.180935 
 z
-" clip-path="url(#p301e797a7d)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_25"><g id="xtick_61"></g><g id="xtick_62"></g><g id="xtick_63"></g><g id="xtick_64"></g><g id="xtick_65"></g></g><g id="matplotlib.axis_26"><g id="ytick_61"></g><g id="ytick_62"></g><g id="ytick_63"></g><g id="ytick_64"></g><g id="ytick_65"></g></g><g id="patch_105"><path d="M 7.2 563.76 
+" clip-path="url(#p37afd37b68)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_25"><g id="xtick_61"></g><g id="xtick_62"></g><g id="xtick_63"></g><g id="xtick_64"></g><g id="xtick_65"></g></g><g id="matplotlib.axis_26"><g id="ytick_61"></g><g id="ytick_62"></g><g id="ytick_63"></g><g id="ytick_64"></g><g id="ytick_65"></g></g><g id="patch_105"><path d="M 7.2 563.76 
 L 7.2 432.72 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_106"><path d="M 166.5 563.76 
 L 166.5 432.72 
@@ -2151,7 +2151,7 @@ C 181.579109 502.842168 177.3 513.039777 177.3 523.671398
 C 177.3 534.30302 181.579109 544.500629 189.194902 552.01832 
 C 196.810695 559.536012 207.141378 563.76 217.911736 563.76 
 z
-" clip-path="url(#p54ceafacce)" style="fill: #1f77b4"></path></g><g id="patch_111"><path d="M 291.184033 524.006023 
+" clip-path="url(#p5522bf1471)" style="fill: #1f77b4"></path></g><g id="patch_111"><path d="M 291.184033 524.006023 
 C 303.228488 524.006023 314.781255 519.282352 323.297971 510.875342 
 C 331.814687 502.468333 336.6 491.064382 336.6 479.175075 
 C 336.6 467.285769 331.814687 455.881817 323.297971 447.474808 
@@ -2161,7 +2161,7 @@ C 250.553379 455.881817 245.768066 467.285769 245.768066 479.175075
 C 245.768066 491.064382 250.553379 502.468333 259.070095 510.875342 
 C 267.586811 519.282352 279.139578 524.006023 291.184033 524.006023 
 z
-" clip-path="url(#p54ceafacce)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_27"><g id="xtick_66"></g><g id="xtick_67"></g><g id="xtick_68"></g><g id="xtick_69"></g><g id="xtick_70"></g></g><g id="matplotlib.axis_28"><g id="ytick_66"></g><g id="ytick_67"></g><g id="ytick_68"></g><g id="ytick_69"></g><g id="ytick_70"></g></g><g id="patch_112"><path d="M 177.3 563.76 
+" clip-path="url(#p5522bf1471)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_27"><g id="xtick_66"></g><g id="xtick_67"></g><g id="xtick_68"></g><g id="xtick_69"></g><g id="xtick_70"></g></g><g id="matplotlib.axis_28"><g id="ytick_66"></g><g id="ytick_67"></g><g id="ytick_68"></g><g id="ytick_69"></g><g id="ytick_70"></g></g><g id="patch_112"><path d="M 177.3 563.76 
 L 177.3 432.72 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_113"><path d="M 336.6 563.76 
 L 336.6 432.72 
@@ -2184,7 +2184,7 @@ C 351.64898 503.271089 347.4 513.396897 347.4 523.953661
 C 347.4 534.510426 351.64898 544.636234 359.21115 552.100993 
 C 366.773321 559.565753 377.031265 563.76 387.72579 563.76 
 z
-" clip-path="url(#pd906149649)" style="fill: #1f77b4"></path></g><g id="patch_118"><path d="M 462.725083 529.364916 
+" clip-path="url(#pf3a642746b)" style="fill: #1f77b4"></path></g><g id="patch_118"><path d="M 462.725083 529.364916 
 C 474.387368 529.364916 485.573565 524.791127 493.820045 516.650873 
 C 502.066525 508.510618 506.7 497.468514 506.7 485.956456 
 C 506.7 474.444398 502.066525 463.402294 493.820045 455.26204 
@@ -2194,7 +2194,7 @@ C 423.383641 463.402294 418.750167 474.444398 418.750167 485.956456
 C 418.750167 497.468514 423.383641 508.510618 431.630122 516.650873 
 C 439.876602 524.791127 451.062799 529.364916 462.725083 529.364916 
 z
-" clip-path="url(#pd906149649)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_29"><g id="xtick_71"></g><g id="xtick_72"></g><g id="xtick_73"></g><g id="xtick_74"></g><g id="xtick_75"></g></g><g id="matplotlib.axis_30"><g id="ytick_71"></g><g id="ytick_72"></g><g id="ytick_73"></g><g id="ytick_74"></g><g id="ytick_75"></g></g><g id="patch_119"><path d="M 347.4 563.76 
+" clip-path="url(#pf3a642746b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_29"><g id="xtick_71"></g><g id="xtick_72"></g><g id="xtick_73"></g><g id="xtick_74"></g><g id="xtick_75"></g></g><g id="matplotlib.axis_30"><g id="ytick_71"></g><g id="ytick_72"></g><g id="ytick_73"></g><g id="ytick_74"></g><g id="ytick_75"></g></g><g id="patch_119"><path d="M 347.4 563.76 
 L 347.4 432.72 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_120"><path d="M 506.7 563.76 
 L 506.7 432.72 
@@ -2217,7 +2217,7 @@ C 601.064912 504.777503 596.921749 514.651138 596.921749 524.944997
 C 596.921749 535.238856 601.064912 545.112491 608.438755 552.391349 
 C 615.812598 559.670206 625.815078 563.76 636.243266 563.76 
 z
-" clip-path="url(#pa75488a228)" style="fill: #1f77b4"></path></g><g id="patch_125"><path d="M 557.185611 563.76 
+" clip-path="url(#pcf31b16dd3)" style="fill: #1f77b4"></path></g><g id="patch_125"><path d="M 557.185611 563.76 
 C 567.710358 563.76 577.805456 559.632337 585.247576 552.286082 
 C 592.689696 544.939827 596.871222 534.974767 596.871222 524.585593 
 C 596.871222 514.196419 592.689696 504.23136 585.247576 496.885105 
@@ -2227,7 +2227,7 @@ C 521.681526 504.23136 517.5 514.196419 517.5 524.585593
 C 517.5 534.974767 521.681526 544.939827 529.123646 552.286082 
 C 536.565766 559.632337 546.660864 563.76 557.185611 563.76 
 z
-" clip-path="url(#pa75488a228)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_31"><g id="xtick_76"></g><g id="xtick_77"></g><g id="xtick_78"></g><g id="xtick_79"></g><g id="xtick_80"></g></g><g id="matplotlib.axis_32"><g id="ytick_76"></g><g id="ytick_77"></g><g id="ytick_78"></g><g id="ytick_79"></g><g id="ytick_80"></g></g><g id="patch_126"><path d="M 517.5 563.76 
+" clip-path="url(#pcf31b16dd3)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_31"><g id="xtick_76"></g><g id="xtick_77"></g><g id="xtick_78"></g><g id="xtick_79"></g><g id="xtick_80"></g></g><g id="matplotlib.axis_32"><g id="ytick_76"></g><g id="ytick_77"></g><g id="ytick_78"></g><g id="ytick_79"></g><g id="ytick_80"></g></g><g id="patch_126"><path d="M 517.5 563.76 
 L 517.5 432.72 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_127"><path d="M 676.8 563.76 
 L 676.8 432.72 
@@ -2250,7 +2250,7 @@ C 70.944147 651.167954 67.120626 660.279846 67.120626 669.779542
 C 67.120626 679.279239 70.944147 688.391131 77.749104 695.108431 
 C 84.554061 701.825731 93.784858 705.6 103.40852 705.6 
 z
-" clip-path="url(#p644352a082)" style="fill: #1f77b4"></path></g><g id="patch_132"><path d="M 43.221453 665.776331 
+" clip-path="url(#pd3976e4a74)" style="fill: #1f77b4"></path></g><g id="patch_132"><path d="M 43.221453 665.776331 
 C 52.774453 665.776331 61.937474 662.029774 68.692466 655.361796 
 C 75.447458 648.693818 79.242905 639.648829 79.242905 630.218884 
 C 79.242905 620.788939 75.447458 611.74395 68.692466 605.075972 
@@ -2260,7 +2260,7 @@ C 10.995447 611.74395 7.2 620.788939 7.2 630.218884
 C 7.2 639.648829 10.995447 648.693818 17.750439 655.361796 
 C 24.505431 662.029774 33.668452 665.776331 43.221453 665.776331 
 z
-" clip-path="url(#p644352a082)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_33"><g id="xtick_81"></g><g id="xtick_82"></g><g id="xtick_83"></g><g id="xtick_84"></g><g id="xtick_85"></g></g><g id="matplotlib.axis_34"><g id="ytick_81"></g><g id="ytick_82"></g><g id="ytick_83"></g><g id="ytick_84"></g><g id="ytick_85"></g></g><g id="patch_133"><path d="M 7.2 705.6 
+" clip-path="url(#pd3976e4a74)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_33"><g id="xtick_81"></g><g id="xtick_82"></g><g id="xtick_83"></g><g id="xtick_84"></g><g id="xtick_85"></g></g><g id="matplotlib.axis_34"><g id="ytick_81"></g><g id="ytick_82"></g><g id="ytick_83"></g><g id="ytick_84"></g><g id="ytick_85"></g></g><g id="patch_133"><path d="M 7.2 705.6 
 L 7.2 574.56 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_134"><path d="M 166.5 705.6 
 L 166.5 574.56 
@@ -2268,7 +2268,7 @@ L 166.5 574.56
 L 166.5 705.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_136"><path d="M 7.2 574.56 
 L 166.5 574.56 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_18"></g><g id="axes_19"></g><g id="axes_20"></g></g><defs><clippath id="paf46b4c04a"><rect x="7.2" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="p203d19c756"><rect x="177.3" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="pba76ecae49"><rect x="347.4" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="p95bec18244"><rect x="517.5" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="p1608f0954b"><rect x="7.2" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="pe4cac8f0ca"><rect x="177.3" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="pde673a75f8"><rect x="347.4" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="pfd557e3967"><rect x="517.5" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="p0ef74811a7"><rect x="7.2" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p4ba030dd21"><rect x="177.3" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p34722e9735"><rect x="347.4" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p6bf111e4ea"><rect x="517.5" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p301e797a7d"><rect x="7.2" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="p54ceafacce"><rect x="177.3" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="pd906149649"><rect x="347.4" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="pa75488a228"><rect x="517.5" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="p644352a082"><rect x="7.2" y="574.56" width="159.3" height="131.04"></rect></clippath></defs></svg>
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_18"></g><g id="axes_19"></g><g id="axes_20"></g></g><defs><clippath id="p6b75fcdea1"><rect x="7.2" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="p38b00991fd"><rect x="177.3" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="pbdf37113c5"><rect x="347.4" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="pa1493d1ee8"><rect x="517.5" y="7.2" width="159.3" height="131.04"></rect></clippath><clippath id="p1be55cb464"><rect x="7.2" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="p887f504b3b"><rect x="177.3" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="p84502c5582"><rect x="347.4" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="pc12e2be391"><rect x="517.5" y="149.04" width="159.3" height="131.04"></rect></clippath><clippath id="p8dd0f5904a"><rect x="7.2" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p2ec14927d3"><rect x="177.3" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p2cf82e8acd"><rect x="347.4" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p590fcd4ba1"><rect x="517.5" y="290.88" width="159.3" height="131.04"></rect></clippath><clippath id="p37afd37b68"><rect x="7.2" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="p5522bf1471"><rect x="177.3" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="pf3a642746b"><rect x="347.4" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="pcf31b16dd3"><rect x="517.5" y="432.72" width="159.3" height="131.04"></rect></clippath><clippath id="pd3976e4a74"><rect x="7.2" y="574.56" width="159.3" height="131.04"></rect></clippath></defs></svg>
 </div>
 
 </div>
@@ -2378,8 +2378,8 @@ Can we do better if we initially generate patterns using some sort of heuristic,
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: total: 10 s
-Wall time: 2.82 s
+<pre>CPU times: total: 15 s
+Wall time: 5.81 s
 </pre>
 </div>
 </div>
@@ -2437,8 +2437,8 @@ Wall time: 2.82 s
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: total: 33.6 s
-Wall time: 9.96 s
+<pre>CPU times: total: 44.7 s
+Wall time: 13.5 s
 </pre>
 </div>
 </div>
@@ -2480,7 +2480,7 @@ Wall time: 9.96 s
 
 
 <div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="1288.8pt" viewbox="0 0 684 1288.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-07T14:22:16.704602</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 1288.8 
+<?xml version="1.0" encoding="utf-8" standalone="no"?><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="1288.8pt" viewbox="0 0 684 1288.8" xmlns="http://www.w3.org/2000/svg" version="1.1"><metadata><rdf xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><work><type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></type><date>2023-05-09T09:57:12.109908</date><format>image/svg+xml</format><creator><agent><title>Matplotlib v3.5.1, https://matplotlib.org/</title></agent></creator></work></rdf></metadata><defs><style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style></defs><g id="figure_1"><g id="patch_1"><path d="M 0 1288.8 
 L 684 1288.8 
 L 684 0 
 L 0 0 
@@ -2500,7 +2500,7 @@ C 8.589756 77.001581 7.2 80.337793 7.2 83.815994
 C 7.2 87.294194 8.589756 90.630406 11.063189 93.089865 
 C 13.536623 95.549325 16.89179 96.931229 20.389753 96.931229 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 27.85585 48.249666 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="patch_4"><path d="M 27.85585 48.249666 
 C 33.330027 48.249666 38.580733 46.087041 42.451561 42.238082 
 C 46.322388 38.389123 48.497302 33.168083 48.497302 27.724833 
 C 48.497302 22.281584 46.322388 17.060543 42.451561 13.211584 
@@ -2510,7 +2510,7 @@ C 9.389312 17.060543 7.214399 22.281584 7.214399 27.724833
 C 7.214399 33.168083 9.389312 38.389123 13.26014 42.238082 
 C 17.130967 46.087041 22.381673 48.249666 27.85585 48.249666 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="patch_5"><path d="M 28.065378 139.2 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="patch_5"><path d="M 28.065378 139.2 
 C 33.598941 139.2 38.906609 137.013913 42.819429 133.123199 
 C 46.732249 129.232486 48.930756 123.954805 48.930756 118.452505 
 C 48.930756 112.950205 46.732249 107.672525 42.819429 103.781811 
@@ -2520,7 +2520,7 @@ C 9.398508 107.672525 7.2 112.950205 7.2 118.452505
 C 7.2 123.954805 9.398508 129.232486 13.311328 133.123199 
 C 17.224148 137.013913 22.531815 139.2 28.065378 139.2 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="patch_6"><path d="M 7.661448 132.641885 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="patch_6"><path d="M 7.661448 132.641885 
 C 7.783825 132.641885 7.901207 132.593539 7.98774 132.507494 
 C 8.074274 132.421449 8.122895 132.30473 8.122895 132.183044 
 C 8.122895 132.061359 8.074274 131.94464 7.98774 131.858595 
@@ -2530,7 +2530,7 @@ C 7.248621 131.94464 7.2 132.061359 7.2 132.183044
 C 7.2 132.30473 7.248621 132.421449 7.335155 132.507494 
 C 7.421689 132.593539 7.53907 132.641885 7.661448 132.641885 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="patch_7"><path d="M 145.15108 139.2 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="patch_7"><path d="M 145.15108 139.2 
 C 147.261053 139.2 149.28489 138.366435 150.776866 136.882888 
 C 152.268842 135.399341 153.107144 133.386938 153.107144 131.288886 
 C 153.107144 129.190834 152.268842 127.17843 150.776866 125.694883 
@@ -2540,7 +2540,7 @@ C 138.033317 127.17843 137.195016 129.190834 137.195016 131.288886
 C 137.195016 133.386938 138.033317 135.399341 139.525293 136.882888 
 C 141.017269 138.366435 143.041107 139.2 145.15108 139.2 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="patch_8"><path d="M 9.648371 139.2 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="patch_8"><path d="M 9.648371 139.2 
 C 10.297687 139.2 10.920495 138.943482 11.379631 138.48694 
 C 11.838766 138.030399 12.096742 137.411109 12.096742 136.765461 
 C 12.096742 136.119814 11.838766 135.500524 11.379631 135.043983 
@@ -2550,7 +2550,7 @@ C 7.457976 135.500524 7.2 136.119814 7.2 136.765461
 C 7.2 137.411109 7.457976 138.030399 7.917111 138.48694 
 C 8.376247 138.943482 8.999056 139.2 9.648371 139.2 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="patch_9"><path d="M 101.077451 137.757184 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="patch_9"><path d="M 101.077451 137.757184 
 C 118.427714 137.757184 135.069691 130.902797 147.338179 118.703622 
 C 159.606668 106.504447 166.5 89.956493 166.5 72.704254 
 C 166.5 55.452016 159.606668 38.904061 147.338179 26.704886 
@@ -2560,7 +2560,7 @@ C 42.548235 38.904061 35.654902 55.452016 35.654902 72.704254
 C 35.654902 89.956493 42.548235 106.504447 54.816723 118.703622 
 C 67.085212 130.902797 83.727188 137.757184 101.077451 137.757184 
 z
-" clip-path="url(#p9d46de984f)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_10"><path d="M 7.2 139.2 
+" clip-path="url(#pc2f578f893)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_1"><g id="xtick_1"></g><g id="xtick_2"></g><g id="xtick_3"></g><g id="xtick_4"></g><g id="xtick_5"></g></g><g id="matplotlib.axis_2"><g id="ytick_1"></g><g id="ytick_2"></g><g id="ytick_3"></g><g id="ytick_4"></g><g id="ytick_5"></g></g><g id="patch_10"><path d="M 7.2 139.2 
 L 7.2 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_11"><path d="M 166.5 139.2 
 L 166.5 7.2 
@@ -2583,7 +2583,7 @@ C 295.706145 106.586626 293.431914 112.046085 293.431914 117.737901
 C 293.431914 123.429716 295.706145 128.889176 299.753734 132.913897 
 C 303.801323 136.938618 309.291802 139.2 315.015957 139.2 
 z
-" clip-path="url(#p8b1d14158e)" style="fill: #1f77b4"></path></g><g id="patch_16"><path d="M 286.106336 139.2 
+" clip-path="url(#p528d6eee8d)" style="fill: #1f77b4"></path></g><g id="patch_16"><path d="M 286.106336 139.2 
 C 288.211536 139.2 290.230796 138.368321 291.719398 136.888129 
 C 293.207999 135.407938 294.044404 133.400086 294.044404 131.30678 
 C 294.044404 129.213473 293.207999 127.205621 291.719398 125.72543 
@@ -2593,7 +2593,7 @@ C 279.004673 127.205621 278.168268 129.213473 278.168268 131.30678
 C 278.168268 133.400086 279.004673 135.407938 280.493274 136.888129 
 C 281.981876 138.368321 284.001136 139.2 286.106336 139.2 
 z
-" clip-path="url(#p8b1d14158e)" style="fill: #1f77b4"></path></g><g id="patch_17"><path d="M 321.413522 93.921773 
+" clip-path="url(#p528d6eee8d)" style="fill: #1f77b4"></path></g><g id="patch_17"><path d="M 321.413522 93.921773 
 C 325.441023 93.921773 329.30411 92.33067 332.151984 89.498887 
 C 334.999857 86.667103 336.6 82.825841 336.6 78.821094 
 C 336.6 74.816347 334.999857 70.975085 332.151984 68.143302 
@@ -2603,7 +2603,7 @@ C 307.827187 70.975085 306.227044 74.816347 306.227044 78.821094
 C 306.227044 82.825841 307.827187 86.667103 310.67506 89.498887 
 C 313.522933 92.33067 317.386021 93.921773 321.413522 93.921773 
 z
-" clip-path="url(#p8b1d14158e)" style="fill: #1f77b4"></path></g><g id="patch_18"><path d="M 241.802036 136.785039 
+" clip-path="url(#p528d6eee8d)" style="fill: #1f77b4"></path></g><g id="patch_18"><path d="M 241.802036 136.785039 
 C 258.908176 136.785039 275.315995 130.027095 287.411863 117.999566 
 C 299.50773 105.972037 306.304071 89.656917 306.304071 72.647422 
 C 306.304071 55.637927 299.50773 39.322807 287.411863 27.295277 
@@ -2613,7 +2613,7 @@ C 184.096341 39.322807 177.3 55.637927 177.3 72.647422
 C 177.3 89.656917 184.096341 105.972037 196.192209 117.999566 
 C 208.288076 130.027095 224.695896 136.785039 241.802036 136.785039 
 z
-" clip-path="url(#p8b1d14158e)" style="fill: #1f77b4"></path></g><g id="patch_19"><path d="M 180.716902 139.2 
+" clip-path="url(#p528d6eee8d)" style="fill: #1f77b4"></path></g><g id="patch_19"><path d="M 180.716902 139.2 
 C 181.623075 139.2 182.492256 138.842008 183.133017 138.204867 
 C 183.773778 137.567726 184.133804 136.703456 184.133804 135.802402 
 C 184.133804 134.901349 183.773778 134.037079 183.133017 133.399938 
@@ -2623,7 +2623,7 @@ C 177.660026 134.037079 177.3 134.901349 177.3 135.802402
 C 177.3 136.703456 177.660026 137.567726 178.300787 138.204867 
 C 178.941549 138.842008 179.810729 139.2 180.716902 139.2 
 z
-" clip-path="url(#p8b1d14158e)" style="fill: #1f77b4"></path></g><g id="patch_20"><path d="M 315.308223 49.542969 
+" clip-path="url(#p528d6eee8d)" style="fill: #1f77b4"></path></g><g id="patch_20"><path d="M 315.308223 49.542969 
 C 320.954868 49.542969 326.371002 47.312207 330.363783 43.341984 
 C 334.356564 39.371761 336.6 33.986228 336.6 28.371484 
 C 336.6 22.756741 334.356564 17.371207 330.363783 13.400984 
@@ -2633,7 +2633,7 @@ C 296.259882 17.371207 294.016446 22.756741 294.016446 28.371484
 C 294.016446 33.986228 296.259882 39.371761 300.252663 43.341984 
 C 304.245445 47.312207 309.661578 49.542969 315.308223 49.542969 
 z
-" clip-path="url(#p8b1d14158e)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_21"><path d="M 177.3 139.2 
+" clip-path="url(#p528d6eee8d)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_3"><g id="xtick_6"></g><g id="xtick_7"></g><g id="xtick_8"></g><g id="xtick_9"></g><g id="xtick_10"></g></g><g id="matplotlib.axis_4"><g id="ytick_6"></g><g id="ytick_7"></g><g id="ytick_8"></g><g id="ytick_9"></g><g id="ytick_10"></g></g><g id="patch_21"><path d="M 177.3 139.2 
 L 177.3 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_22"><path d="M 336.6 139.2 
 L 336.6 7.2 
@@ -2656,7 +2656,7 @@ C 347.43862 138.646174 347.4 138.738884 347.4 138.83554
 C 347.4 138.932196 347.43862 139.024906 347.507354 139.093252 
 C 347.576089 139.161598 347.669325 139.2 347.766531 139.2 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_27"><path d="M 449.201499 139.2 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_27"><path d="M 449.201499 139.2 
 C 451.241125 139.2 453.197488 138.394226 454.639722 136.960141 
 C 456.081955 135.526055 456.892308 133.580745 456.892308 131.552642 
 C 456.892308 129.524539 456.081955 127.579229 454.639722 126.145143 
@@ -2666,7 +2666,7 @@ C 442.321042 127.579229 441.51069 129.524539 441.51069 131.552642
 C 441.51069 133.580745 442.321042 135.526055 443.763276 136.960141 
 C 445.205509 138.394226 447.161872 139.2 449.201499 139.2 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_28"><path d="M 349.087195 126.331795 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_28"><path d="M 349.087195 126.331795 
 C 349.534644 126.331795 349.963827 126.155025 350.280221 125.840419 
 C 350.596616 125.525812 350.774389 125.099053 350.774389 124.654132 
 C 350.774389 124.209211 350.596616 123.782453 350.280221 123.467846 
@@ -2676,7 +2676,7 @@ C 347.577773 123.782453 347.4 124.209211 347.4 124.654132
 C 347.4 125.099053 347.577773 125.525812 347.894168 125.840419 
 C 348.210562 126.155025 348.639745 126.331795 349.087195 126.331795 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_29"><path d="M 352.509542 139.2 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_29"><path d="M 352.509542 139.2 
 C 353.864608 139.2 355.164356 138.664668 356.122533 137.711905 
 C 357.08071 136.759142 357.619083 135.466736 357.619083 134.119326 
 C 357.619083 132.771915 357.08071 131.47951 356.122533 130.526747 
@@ -2686,7 +2686,7 @@ C 347.938374 131.47951 347.4 132.771915 347.4 134.119326
 C 347.4 135.466736 347.938374 136.759142 348.89655 137.711905 
 C 349.854727 138.664668 351.154475 139.2 352.509542 139.2 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_30"><path d="M 484.290793 139.2 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_30"><path d="M 484.290793 139.2 
 C 490.233784 139.2 495.934166 136.852165 500.136495 132.673577 
 C 504.338825 128.49499 506.7 122.826814 506.7 116.917399 
 C 506.7 111.007984 504.338825 105.339808 500.136495 101.16122 
@@ -2696,7 +2696,7 @@ C 464.242761 105.339808 461.881586 111.007984 461.881586 116.917399
 C 461.881586 122.826814 464.242761 128.49499 468.445091 132.673577 
 C 472.64742 136.852165 478.347802 139.2 484.290793 139.2 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_31"><path d="M 485.247405 49.862787 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_31"><path d="M 485.247405 49.862787 
 C 490.9367 49.862787 496.393742 47.615177 500.416681 43.614967 
 C 504.439619 39.614756 506.7 34.188545 506.7 28.531394 
 C 506.7 22.874242 504.439619 17.448031 500.416681 13.447821 
@@ -2706,7 +2706,7 @@ C 466.055191 17.448031 463.794811 22.874242 463.794811 28.531394
 C 463.794811 34.188545 466.055191 39.614756 470.07813 43.614967 
 C 474.101069 47.615177 479.558111 49.862787 485.247405 49.862787 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_32"><path d="M 411.282439 134.37125 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_32"><path d="M 411.282439 134.37125 
 C 428.22426 134.37125 444.474469 127.678222 456.454145 115.766227 
 C 468.433822 103.854233 475.164878 87.695833 475.164878 70.849729 
 C 475.164878 54.003624 468.433822 37.845225 456.454145 25.93323 
@@ -2716,7 +2716,7 @@ C 354.131057 37.845225 347.4 54.003624 347.4 70.849729
 C 347.4 87.695833 354.131057 103.854233 366.110733 115.766227 
 C 378.09041 127.678222 394.340618 134.37125 411.282439 134.37125 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="patch_33"><path d="M 490.649881 95.163265 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="patch_33"><path d="M 490.649881 95.163265 
 C 494.866854 95.163265 498.911679 93.497309 501.893529 90.532305 
 C 504.87538 87.567302 506.550801 83.545329 506.550801 79.35218 
 C 506.550801 75.159031 504.87538 71.137059 501.893529 68.172055 
@@ -2726,7 +2726,7 @@ C 476.424381 71.137059 474.74896 75.159031 474.74896 79.35218
 C 474.74896 83.545329 476.424381 87.567302 479.406232 90.532305 
 C 482.388082 93.497309 486.432907 95.163265 490.649881 95.163265 
 z
-" clip-path="url(#p0e2185d55f)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_34"><path d="M 347.4 139.2 
+" clip-path="url(#p1c91025ef2)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_5"><g id="xtick_11"></g><g id="xtick_12"></g><g id="xtick_13"></g><g id="xtick_14"></g><g id="xtick_15"></g></g><g id="matplotlib.axis_6"><g id="ytick_11"></g><g id="ytick_12"></g><g id="ytick_13"></g><g id="ytick_14"></g><g id="ytick_15"></g></g><g id="patch_34"><path d="M 347.4 139.2 
 L 347.4 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_35"><path d="M 506.7 139.2 
 L 506.7 7.2 
@@ -2749,7 +2749,7 @@ C 518.017845 131.773894 517.5 133.017019 517.5 134.313053
 C 517.5 135.609086 518.017845 136.852212 518.939486 137.768646 
 C 519.861127 138.68508 521.111316 139.2 522.414714 139.2 
 z
-" clip-path="url(#p127e5b2598)" style="fill: #1f77b4"></path></g><g id="patch_40"><path d="M 653.006837 54.517476 
+" clip-path="url(#pd89079cbfa)" style="fill: #1f77b4"></path></g><g id="patch_40"><path d="M 653.006837 54.517476 
 C 659.316858 54.517476 665.369286 52.024642 669.831144 47.587992 
 C 674.293002 43.151342 676.8 37.133109 676.8 30.858738 
 C 676.8 24.584367 674.293002 18.566134 669.831144 14.129484 
@@ -2759,7 +2759,7 @@ C 631.720672 18.566134 629.213675 24.584367 629.213675 30.858738
 C 629.213675 37.133109 631.720672 43.151342 636.182531 47.587992 
 C 640.644389 52.024642 646.696817 54.517476 653.006837 54.517476 
 z
-" clip-path="url(#p127e5b2598)" style="fill: #1f77b4"></path></g><g id="patch_41"><path d="M 654.836644 138.101838 
+" clip-path="url(#pd89079cbfa)" style="fill: #1f77b4"></path></g><g id="patch_41"><path d="M 654.836644 138.101838 
 C 660.661394 138.101838 666.248361 135.800715 670.367082 131.705264 
 C 674.485802 127.609814 676.8 122.054411 676.8 116.262569 
 C 676.8 110.470727 674.485802 104.915324 670.367082 100.819873 
@@ -2769,7 +2769,7 @@ C 635.187485 104.915324 632.873287 110.470727 632.873287 116.262569
 C 632.873287 122.054411 635.187485 127.609814 639.306205 131.705264 
 C 643.424926 135.800715 649.011893 138.101838 654.836644 138.101838 
 z
-" clip-path="url(#p127e5b2598)" style="fill: #1f77b4"></path></g><g id="patch_42"><path d="M 528.201063 28.48121 
+" clip-path="url(#pd89079cbfa)" style="fill: #1f77b4"></path></g><g id="patch_42"><path d="M 528.201063 28.48121 
 C 531.039018 28.48121 533.76112 27.360049 535.767857 25.364649 
 C 537.774594 23.369249 538.902126 20.662526 538.902126 17.840605 
 C 538.902126 15.018684 537.774594 12.311961 535.767857 10.316561 
@@ -2779,7 +2779,7 @@ C 518.627531 12.311961 517.5 15.018684 517.5 17.840605
 C 517.5 20.662526 518.627531 23.369249 520.634269 25.364649 
 C 522.641006 27.360049 525.363108 28.48121 528.201063 28.48121 
 z
-" clip-path="url(#p127e5b2598)" style="fill: #1f77b4"></path></g><g id="patch_43"><path d="M 580.085632 139.2 
+" clip-path="url(#pd89079cbfa)" style="fill: #1f77b4"></path></g><g id="patch_43"><path d="M 580.085632 139.2 
 C 596.683535 139.2 612.603866 132.64284 624.340356 120.972657 
 C 636.076846 109.302475 642.671263 93.47209 642.671263 76.96796 
 C 642.671263 60.463829 636.076846 44.633444 624.340356 32.963262 
@@ -2789,7 +2789,7 @@ C 524.094417 44.633444 517.5 60.463829 517.5 76.96796
 C 517.5 93.47209 524.094417 109.302475 535.830907 120.972657 
 C 547.567397 132.64284 563.487728 139.2 580.085632 139.2 
 z
-" clip-path="url(#p127e5b2598)" style="fill: #1f77b4"></path></g><g id="patch_44"><path d="M 659.404065 92.262151 
+" clip-path="url(#pd89079cbfa)" style="fill: #1f77b4"></path></g><g id="patch_44"><path d="M 659.404065 92.262151 
 C 663.836152 92.262151 668.08731 90.511212 671.221269 87.394959 
 C 674.355228 84.278706 676.116115 80.051566 676.116115 75.644519 
 C 676.116115 71.237472 674.355228 67.010332 671.221269 63.894079 
@@ -2799,7 +2799,7 @@ C 644.452902 67.010332 642.692015 71.237472 642.692015 75.644519
 C 642.692015 80.051566 644.452902 84.278706 647.586861 87.394959 
 C 650.72082 90.511212 654.971977 92.262151 659.404065 92.262151 
 z
-" clip-path="url(#p127e5b2598)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_45"><path d="M 517.5 139.2 
+" clip-path="url(#pd89079cbfa)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_7"><g id="xtick_16"></g><g id="xtick_17"></g><g id="xtick_18"></g><g id="xtick_19"></g><g id="xtick_20"></g></g><g id="matplotlib.axis_8"><g id="ytick_16"></g><g id="ytick_17"></g><g id="ytick_18"></g><g id="ytick_19"></g><g id="ytick_20"></g></g><g id="patch_45"><path d="M 517.5 139.2 
 L 517.5 7.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_46"><path d="M 676.8 139.2 
 L 676.8 7.2 
@@ -2822,7 +2822,7 @@ C 7.419806 278.847896 7.2 279.375556 7.2 279.925674
 C 7.2 280.475791 7.419806 281.003452 7.811008 281.392444 
 C 8.20221 281.781436 8.732869 282 9.286112 282 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_51"><path d="M 26.582992 239.792794 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_51"><path d="M 26.582992 239.792794 
 C 30.971247 239.792794 35.180362 238.059171 38.283327 234.973737 
 C 41.386291 231.888303 43.129764 227.702969 43.129764 223.339506 
 C 43.129764 218.976044 41.386291 214.79071 38.283327 211.705276 
@@ -2832,7 +2832,7 @@ C 11.779693 214.79071 10.03622 218.976044 10.03622 223.339506
 C 10.03622 227.702969 11.779693 231.888303 14.882658 234.973737 
 C 17.985623 238.059171 22.194737 239.792794 26.582992 239.792794 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_52"><path d="M 104.791318 282 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_52"><path d="M 104.791318 282 
 C 121.156652 282 136.853907 275.534719 148.425946 264.028059 
 C 159.997984 252.521399 166.5 236.912829 166.5 220.639955 
 C 166.5 204.367081 159.997984 188.758511 148.425946 177.251851 
@@ -2842,7 +2842,7 @@ C 49.584653 188.758511 43.082637 204.367081 43.082637 220.639955
 C 43.082637 236.912829 49.584653 252.521399 61.156691 264.028059 
 C 72.728729 275.534719 88.425985 282 104.791318 282 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_53"><path d="M 154.116412 177.829018 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_53"><path d="M 154.116412 177.829018 
 C 157.400578 177.829018 160.550675 176.531577 162.872931 174.222441 
 C 165.195187 171.913306 166.5 168.781006 166.5 165.515394 
 C 166.5 162.249783 165.195187 159.117483 162.872931 156.808348 
@@ -2852,7 +2852,7 @@ C 143.037638 159.117483 141.732825 162.249783 141.732825 165.515394
 C 141.732825 168.781006 143.037638 171.913306 145.359894 174.222441 
 C 147.682149 176.531577 150.832247 177.829018 154.116412 177.829018 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_54"><path d="M 28.307481 282 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_54"><path d="M 28.307481 282 
 C 33.90525 282 39.274503 279.788548 43.232723 275.85269 
 C 47.190944 271.916832 49.414961 266.577914 49.414961 261.011771 
 C 49.414961 255.445627 47.190944 250.106709 43.232723 246.170851 
@@ -2862,7 +2862,7 @@ C 9.424017 250.106709 7.2 255.445627 7.2 261.011771
 C 7.2 266.577914 9.424017 271.916832 13.382238 275.85269 
 C 17.340459 279.788548 22.709711 282 28.307481 282 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_55"><path d="M 65.228561 171.126572 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_55"><path d="M 65.228561 171.126572 
 C 67.779124 171.126572 70.225567 170.118947 72.029088 168.325616 
 C 73.832608 166.532285 74.845958 164.099664 74.845958 161.56351 
 C 74.845958 159.027357 73.832608 156.594736 72.029088 154.801405 
@@ -2872,7 +2872,7 @@ C 56.624513 156.594736 55.611164 159.027357 55.611164 161.56351
 C 55.611164 164.099664 56.624513 166.532285 58.428034 168.325616 
 C 60.231555 170.118947 62.677997 171.126572 65.228561 171.126572 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_56"><path d="M 31.611605 198.547374 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_56"><path d="M 31.611605 198.547374 
 C 38.085639 198.547374 44.295384 195.989745 48.873217 191.437775 
 C 53.45105 186.885806 56.023211 180.711144 56.023211 174.273687 
 C 56.023211 167.83623 53.45105 161.661568 48.873217 157.109598 
@@ -2882,7 +2882,7 @@ C 9.772161 161.661568 7.2 167.83623 7.2 174.273687
 C 7.2 180.711144 9.772161 186.885806 14.349994 191.437775 
 C 18.927827 195.989745 25.137572 198.547374 31.611605 198.547374 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="patch_57"><path d="M 9.90645 248.224668 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="patch_57"><path d="M 9.90645 248.224668 
 C 10.624209 248.224668 11.312667 247.941111 11.820199 247.436446 
 C 12.327731 246.931781 12.6129 246.247213 12.6129 245.533509 
 C 12.6129 244.819805 12.327731 244.135237 11.820199 243.630572 
@@ -2892,7 +2892,7 @@ C 7.485169 244.135237 7.2 244.819805 7.2 245.533509
 C 7.2 246.247213 7.485169 246.931781 7.992701 247.436446 
 C 8.500233 247.941111 9.188691 248.224668 9.90645 248.224668 
 z
-" clip-path="url(#p5b48e0a568)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_9"><g id="xtick_21"></g><g id="xtick_22"></g><g id="xtick_23"></g><g id="xtick_24"></g><g id="xtick_25"></g></g><g id="matplotlib.axis_10"><g id="ytick_21"></g><g id="ytick_22"></g><g id="ytick_23"></g><g id="ytick_24"></g><g id="ytick_25"></g></g><g id="patch_58"><path d="M 7.2 282 
+" clip-path="url(#p5d8d9e4c63)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_9"><g id="xtick_21"></g><g id="xtick_22"></g><g id="xtick_23"></g><g id="xtick_24"></g><g id="xtick_25"></g></g><g id="matplotlib.axis_10"><g id="ytick_21"></g><g id="ytick_22"></g><g id="ytick_23"></g><g id="ytick_24"></g><g id="ytick_25"></g></g><g id="patch_58"><path d="M 7.2 282 
 L 7.2 150 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_59"><path d="M 166.5 282 
 L 166.5 150 
@@ -2915,7 +2915,7 @@ C 177.744507 232.681805 177.3 233.748877 177.3 234.861365
 C 177.3 235.973853 177.744507 237.040925 178.535624 237.827573 
 C 179.326741 238.61422 180.399877 239.056216 181.518686 239.056216 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_64"><path d="M 328.465409 269.282353 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_64"><path d="M 328.465409 269.282353 
 C 330.364606 269.282353 332.186272 268.532057 333.529208 267.196709 
 C 334.872143 265.861361 335.626702 264.049987 335.626702 262.161519 
 C 335.626702 260.273052 334.872143 258.461677 333.529208 257.126329 
@@ -2925,7 +2925,7 @@ C 322.058674 258.461677 321.304115 260.273052 321.304115 262.161519
 C 321.304115 264.049987 322.058674 265.861361 323.401609 267.196709 
 C 324.744545 268.532057 326.566211 269.282353 328.465409 269.282353 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_65"><path d="M 196.532253 231.039657 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_65"><path d="M 196.532253 231.039657 
 C 201.632706 231.039657 206.524944 229.024674 210.131509 225.438485 
 C 213.738074 221.852296 215.764505 216.987698 215.764505 211.916061 
 C 215.764505 206.844424 213.738074 201.979825 210.131509 198.393636 
@@ -2935,7 +2935,7 @@ C 179.326431 201.979825 177.3 206.844424 177.3 211.916061
 C 177.3 216.987698 179.326431 221.852296 182.932996 225.438485 
 C 186.539561 229.024674 191.4318 231.039657 196.532253 231.039657 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_66"><path d="M 311.209933 282 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_66"><path d="M 311.209933 282 
 C 313.147162 282 315.005307 281.23468 316.375134 279.872591 
 C 317.744961 278.510503 318.51463 276.662856 318.51463 274.736573 
 C 318.51463 272.81029 317.744961 270.962643 316.375134 269.600554 
@@ -2945,7 +2945,7 @@ C 304.674906 270.962643 303.905237 272.81029 303.905237 274.736573
 C 303.905237 276.662856 304.674906 278.510503 306.044733 279.872591 
 C 307.41456 281.23468 309.272705 282 311.209933 282 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_67"><path d="M 201.435915 282 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_67"><path d="M 201.435915 282 
 C 207.836834 282 213.97645 279.471256 218.502584 274.970693 
 C 223.028717 270.470131 225.57183 264.365202 225.57183 258.000446 
 C 225.57183 251.63569 223.028717 245.530761 218.502584 241.030199 
@@ -2955,7 +2955,7 @@ C 179.843112 245.530761 177.3 251.63569 177.3 258.000446
 C 177.3 264.365202 179.843112 270.470131 184.369246 274.970693 
 C 188.895379 279.471256 195.034995 282 201.435915 282 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_68"><path d="M 197.270798 191.556457 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_68"><path d="M 197.270798 191.556457 
 C 202.567115 191.556457 207.647222 189.464096 211.392284 185.740193 
 C 215.137346 182.016289 217.241596 176.964883 217.241596 171.698489 
 C 217.241596 166.432094 215.137346 161.380688 211.392284 157.656785 
@@ -2965,7 +2965,7 @@ C 179.404249 161.380688 177.3 166.432094 177.3 171.698489
 C 177.3 176.964883 179.404249 182.016289 183.149311 185.740193 
 C 186.894373 189.464096 191.97448 191.556457 197.270798 191.556457 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_69"><path d="M 276.313852 276.770624 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_69"><path d="M 276.313852 276.770624 
 C 292.301925 276.770624 307.637321 270.454383 318.942596 259.21298 
 C 330.247871 247.971576 336.6 232.722821 336.6 216.825076 
 C 336.6 200.927331 330.247871 185.678576 318.942596 174.437172 
@@ -2975,7 +2975,7 @@ C 222.379833 185.678576 216.027704 200.927331 216.027704 216.825076
 C 216.027704 232.722821 222.379833 247.971576 233.685108 259.21298 
 C 244.990383 270.454383 260.325778 276.770624 276.313852 276.770624 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_70"><path d="M 324.646962 282 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_70"><path d="M 324.646962 282 
 C 326.23632 282 327.760796 281.372109 328.884641 280.254613 
 C 330.008487 279.137116 330.639946 277.621254 330.639946 276.040875 
 C 330.639946 274.460497 330.008487 272.944634 328.884641 271.827138 
@@ -2985,7 +2985,7 @@ C 319.285437 272.944634 318.653979 274.460497 318.653979 276.040875
 C 318.653979 277.621254 319.285437 279.137116 320.409283 280.254613 
 C 321.533129 281.372109 323.057604 282 324.646962 282 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="patch_71"><path d="M 324.219834 174.620443 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="patch_71"><path d="M 324.219834 174.620443 
 C 327.503092 174.620443 330.652319 173.323361 332.973933 171.014863 
 C 335.295548 168.706365 336.6 165.574931 336.6 162.310222 
 C 336.6 159.045513 335.295548 155.914078 332.973933 153.60558 
@@ -2995,7 +2995,7 @@ C 313.14412 155.914078 311.839668 159.045513 311.839668 162.310222
 C 311.839668 165.574931 313.14412 168.706365 315.465734 171.014863 
 C 317.787349 173.323361 320.936575 174.620443 324.219834 174.620443 
 z
-" clip-path="url(#pf51c9c738f)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_11"><g id="xtick_26"></g><g id="xtick_27"></g><g id="xtick_28"></g><g id="xtick_29"></g><g id="xtick_30"></g></g><g id="matplotlib.axis_12"><g id="ytick_26"></g><g id="ytick_27"></g><g id="ytick_28"></g><g id="ytick_29"></g><g id="ytick_30"></g></g><g id="patch_72"><path d="M 177.3 282 
+" clip-path="url(#pedf097e2e8)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_11"><g id="xtick_26"></g><g id="xtick_27"></g><g id="xtick_28"></g><g id="xtick_29"></g><g id="xtick_30"></g></g><g id="matplotlib.axis_12"><g id="ytick_26"></g><g id="ytick_27"></g><g id="ytick_28"></g><g id="ytick_29"></g><g id="ytick_30"></g></g><g id="patch_72"><path d="M 177.3 282 
 L 177.3 150 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_73"><path d="M 336.6 282 
 L 336.6 150 
@@ -3018,7 +3018,7 @@ C 390.261404 190.978097 383.914167 206.21511 383.914167 222.100613
 C 383.914167 237.986116 390.261404 253.223129 401.557974 264.455876 
 C 412.854543 275.688623 428.17813 282 444.153892 282 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="patch_78"><path d="M 362.529196 180.087441 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="patch_78"><path d="M 362.529196 180.087441 
 C 366.541506 180.087441 370.390022 178.50234 373.227154 175.681238 
 C 376.064285 172.860135 377.658393 169.033362 377.658393 165.043721 
 C 377.658393 161.054079 376.064285 157.227306 373.227154 154.406204 
@@ -3028,7 +3028,7 @@ C 348.994108 157.227306 347.4 161.054079 347.4 165.043721
 C 347.4 169.033362 348.994108 172.860135 351.831239 175.681238 
 C 354.66837 178.50234 358.516887 180.087441 362.529196 180.087441 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="patch_79"><path d="M 491.957594 179.318231 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="patch_79"><path d="M 491.957594 179.318231 
 C 495.867326 179.318231 499.617451 177.773654 502.382049 175.024675 
 C 505.146647 172.275697 506.7 168.546758 506.7 164.659115 
 C 506.7 160.771473 505.146647 157.042534 502.382049 154.293556 
@@ -3038,7 +3038,7 @@ C 478.768541 157.042534 477.215188 160.771473 477.215188 164.659115
 C 477.215188 168.546758 478.768541 172.275697 481.533139 175.024675 
 C 484.297737 177.773654 488.047862 179.318231 491.957594 179.318231 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="patch_80"><path d="M 368.696271 217.155457 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="patch_80"><path d="M 368.696271 217.155457 
 C 373.710277 217.155457 378.519597 215.174626 382.065035 211.649219 
 C 385.610473 208.123812 387.602558 203.341663 387.602558 198.355984 
 C 387.602558 193.370306 385.610473 188.588157 382.065035 185.06275 
@@ -3048,7 +3048,7 @@ C 351.782068 188.588157 349.789983 193.370306 349.789983 198.355984
 C 349.789983 203.341663 351.782068 208.123812 355.327506 211.649219 
 C 358.872944 215.174626 363.682264 217.155457 368.696271 217.155457 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="patch_81"><path d="M 365.895159 253.832308 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="patch_81"><path d="M 365.895159 253.832308 
 C 370.800133 253.832308 375.504871 251.894551 378.973211 248.445806 
 C 382.441551 244.997061 384.390318 240.318903 384.390318 235.441641 
 C 384.390318 230.564379 382.441551 225.886221 378.973211 222.437476 
@@ -3058,7 +3058,7 @@ C 349.348767 225.886221 347.4 230.564379 347.4 235.441641
 C 347.4 240.318903 349.348767 244.997061 352.817107 248.445806 
 C 356.285447 251.894551 360.990186 253.832308 365.895159 253.832308 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="patch_82"><path d="M 381.924225 282 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="patch_82"><path d="M 381.924225 282 
 C 386.185089 282 390.272013 280.316705 393.284899 277.320841 
 C 396.297785 274.324977 397.990644 270.261143 397.990644 266.024352 
 C 397.990644 261.787561 396.297785 257.723727 393.284899 254.727863 
@@ -3068,7 +3068,7 @@ C 367.550666 257.723727 365.857807 261.787561 365.857807 266.024352
 C 365.857807 270.261143 367.550666 274.324977 370.563552 277.320841 
 C 373.576438 280.316705 377.663361 282 381.924225 282 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="patch_83"><path d="M 393.479271 181.368156 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="patch_83"><path d="M 393.479271 181.368156 
 C 397.66237 181.368156 401.674704 179.715582 404.632602 176.774396 
 C 407.5905 173.833209 409.252463 169.843544 409.252463 165.684078 
 C 409.252463 161.524612 407.5905 157.534947 404.632602 154.59376 
@@ -3078,7 +3078,7 @@ C 379.368042 157.534947 377.706079 161.524612 377.706079 165.684078
 C 377.706079 169.843544 379.368042 173.833209 382.32594 176.774396 
 C 385.283838 179.715582 389.296171 181.368156 393.479271 181.368156 
 z
-" clip-path="url(#pf68370c7b7)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_13"><g id="xtick_31"></g><g id="xtick_32"></g><g id="xtick_33"></g><g id="xtick_34"></g><g id="xtick_35"></g></g><g id="matplotlib.axis_14"><g id="ytick_31"></g><g id="ytick_32"></g><g id="ytick_33"></g><g id="ytick_34"></g><g id="ytick_35"></g></g><g id="patch_84"><path d="M 347.4 282 
+" clip-path="url(#pe772e1d30a)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_13"><g id="xtick_31"></g><g id="xtick_32"></g><g id="xtick_33"></g><g id="xtick_34"></g><g id="xtick_35"></g></g><g id="matplotlib.axis_14"><g id="ytick_31"></g><g id="ytick_32"></g><g id="ytick_33"></g><g id="ytick_34"></g><g id="ytick_35"></g></g><g id="patch_84"><path d="M 347.4 282 
 L 347.4 150 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_85"><path d="M 506.7 282 
 L 506.7 150 
@@ -3101,7 +3101,7 @@ C 523.766984 192.128968 517.5 207.173326 517.5 222.857974
 C 517.5 238.542623 523.766984 253.58698 534.92072 264.677702 
 C 546.074457 275.768423 561.204294 282 576.97806 282 
 z
-" clip-path="url(#p9cf74fca54)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_15"><g id="xtick_36"></g><g id="xtick_37"></g><g id="xtick_38"></g><g id="xtick_39"></g><g id="xtick_40"></g></g><g id="matplotlib.axis_16"><g id="ytick_36"></g><g id="ytick_37"></g><g id="ytick_38"></g><g id="ytick_39"></g><g id="ytick_40"></g></g><g id="patch_90"><path d="M 517.5 282 
+" clip-path="url(#pfc5a290e6e)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_15"><g id="xtick_36"></g><g id="xtick_37"></g><g id="xtick_38"></g><g id="xtick_39"></g><g id="xtick_40"></g></g><g id="matplotlib.axis_16"><g id="ytick_36"></g><g id="ytick_37"></g><g id="ytick_38"></g><g id="ytick_39"></g><g id="ytick_40"></g></g><g id="patch_90"><path d="M 517.5 282 
 L 517.5 150 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_91"><path d="M 676.8 282 
 L 676.8 150 
@@ -3124,7 +3124,7 @@ C 13.44228 335.283231 7.2 350.268285 7.2 365.891106
 C 7.2 381.513927 13.44228 396.498982 24.55205 407.545984 
 C 35.66182 418.592987 50.732016 424.8 66.443604 424.8 
 z
-" clip-path="url(#p5b2ead4eda)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_17"><g id="xtick_41"></g><g id="xtick_42"></g><g id="xtick_43"></g><g id="xtick_44"></g><g id="xtick_45"></g></g><g id="matplotlib.axis_18"><g id="ytick_41"></g><g id="ytick_42"></g><g id="ytick_43"></g><g id="ytick_44"></g><g id="ytick_45"></g></g><g id="patch_96"><path d="M 7.2 424.8 
+" clip-path="url(#p8616d7dcf2)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_17"><g id="xtick_41"></g><g id="xtick_42"></g><g id="xtick_43"></g><g id="xtick_44"></g><g id="xtick_45"></g></g><g id="matplotlib.axis_18"><g id="ytick_41"></g><g id="ytick_42"></g><g id="ytick_43"></g><g id="ytick_44"></g><g id="ytick_45"></g></g><g id="patch_96"><path d="M 7.2 424.8 
 L 7.2 292.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_97"><path d="M 166.5 424.8 
 L 166.5 292.8 
@@ -3147,7 +3147,7 @@ C 225.027398 322.10807 218.822508 337.003367 218.822508 352.532611
 C 218.822508 368.061854 225.027398 382.957151 236.070623 393.937984 
 C 247.113847 404.918818 262.093776 411.088652 277.711254 411.088652 
 z
-" clip-path="url(#p76f0684998)" style="fill: #1f77b4"></path></g><g id="patch_102"><path d="M 204.539167 424.8 
+" clip-path="url(#pf282d0af22)" style="fill: #1f77b4"></path></g><g id="patch_102"><path d="M 204.539167 424.8 
 C 211.763078 424.8 218.692089 421.946125 223.800166 416.866907 
 C 228.908243 411.78769 231.778333 404.897825 231.778333 397.714727 
 C 231.778333 390.531629 228.908243 383.641764 223.800166 378.562547 
@@ -3157,7 +3157,7 @@ C 180.17009 383.641764 177.3 390.531629 177.3 397.714727
 C 177.3 404.897825 180.17009 411.78769 185.278167 416.866907 
 C 190.386244 421.946125 197.315255 424.8 204.539167 424.8 
 z
-" clip-path="url(#p76f0684998)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_19"><g id="xtick_46"></g><g id="xtick_47"></g><g id="xtick_48"></g><g id="xtick_49"></g><g id="xtick_50"></g></g><g id="matplotlib.axis_20"><g id="ytick_46"></g><g id="ytick_47"></g><g id="ytick_48"></g><g id="ytick_49"></g><g id="ytick_50"></g></g><g id="patch_103"><path d="M 177.3 424.8 
+" clip-path="url(#pf282d0af22)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_19"><g id="xtick_46"></g><g id="xtick_47"></g><g id="xtick_48"></g><g id="xtick_49"></g><g id="xtick_50"></g></g><g id="matplotlib.axis_20"><g id="ytick_46"></g><g id="ytick_47"></g><g id="ytick_48"></g><g id="ytick_49"></g><g id="ytick_50"></g></g><g id="patch_103"><path d="M 177.3 424.8 
 L 177.3 292.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_104"><path d="M 336.6 424.8 
 L 336.6 292.8 
@@ -3180,7 +3180,7 @@ C 350.390089 381.92094 347.4 389.098869 347.4 396.582293
 C 347.4 404.065716 350.390089 411.243645 355.711734 416.535225 
 C 361.033379 421.826804 368.252092 424.8 375.778035 424.8 
 z
-" clip-path="url(#pb90f8b6f3e)" style="fill: #1f77b4"></path></g><g id="patch_109"><path d="M 448.856803 408.601412 
+" clip-path="url(#p12af768a6b)" style="fill: #1f77b4"></path></g><g id="patch_109"><path d="M 448.856803 408.601412 
 C 464.196998 408.601412 478.910964 402.541121 489.75812 391.755249 
 C 500.605276 380.969376 506.7 366.33854 506.7 351.085013 
 C 506.7 335.831485 500.605276 321.20065 489.75812 310.414777 
@@ -3190,7 +3190,7 @@ C 397.108331 321.20065 391.013607 335.831485 391.013607 351.085013
 C 391.013607 366.33854 397.108331 380.969376 407.955487 391.755249 
 C 418.802643 402.541121 433.516608 408.601412 448.856803 408.601412 
 z
-" clip-path="url(#pb90f8b6f3e)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_21"><g id="xtick_51"></g><g id="xtick_52"></g><g id="xtick_53"></g><g id="xtick_54"></g><g id="xtick_55"></g></g><g id="matplotlib.axis_22"><g id="ytick_51"></g><g id="ytick_52"></g><g id="ytick_53"></g><g id="ytick_54"></g><g id="ytick_55"></g></g><g id="patch_110"><path d="M 347.4 424.8 
+" clip-path="url(#p12af768a6b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_21"><g id="xtick_51"></g><g id="xtick_52"></g><g id="xtick_53"></g><g id="xtick_54"></g><g id="xtick_55"></g></g><g id="matplotlib.axis_22"><g id="ytick_51"></g><g id="ytick_52"></g><g id="ytick_53"></g><g id="ytick_54"></g><g id="ytick_55"></g></g><g id="patch_110"><path d="M 347.4 424.8 
 L 347.4 292.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_111"><path d="M 506.7 424.8 
 L 506.7 292.8 
@@ -3213,7 +3213,7 @@ C 568.259297 323.509648 562.22302 338.000176 562.22302 353.107425
 C 562.22302 368.214673 568.259297 382.705202 579.00243 393.387639 
 C 589.745564 404.070077 604.318425 410.072251 619.51151 410.072251 
 z
-" clip-path="url(#p4ce9cf88c6)" style="fill: #1f77b4"></path></g><g id="patch_116"><path d="M 545.849279 424.8 
+" clip-path="url(#p855b4054d5)" style="fill: #1f77b4"></path></g><g id="patch_116"><path d="M 545.849279 424.8 
 C 553.367596 424.8 560.578994 421.829817 565.895247 416.5436 
 C 571.2115 411.257382 574.198559 404.086726 574.198559 396.610886 
 C 574.198559 389.135046 571.2115 381.96439 565.895247 376.678172 
@@ -3223,7 +3223,7 @@ C 520.487059 381.96439 517.5 389.135046 517.5 396.610886
 C 517.5 404.086726 520.487059 411.257382 525.803312 416.5436 
 C 531.119565 421.829817 538.330963 424.8 545.849279 424.8 
 z
-" clip-path="url(#p4ce9cf88c6)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_23"><g id="xtick_56"></g><g id="xtick_57"></g><g id="xtick_58"></g><g id="xtick_59"></g><g id="xtick_60"></g></g><g id="matplotlib.axis_24"><g id="ytick_56"></g><g id="ytick_57"></g><g id="ytick_58"></g><g id="ytick_59"></g><g id="ytick_60"></g></g><g id="patch_117"><path d="M 517.5 424.8 
+" clip-path="url(#p855b4054d5)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_23"><g id="xtick_56"></g><g id="xtick_57"></g><g id="xtick_58"></g><g id="xtick_59"></g><g id="xtick_60"></g></g><g id="matplotlib.axis_24"><g id="ytick_56"></g><g id="ytick_57"></g><g id="ytick_58"></g><g id="ytick_59"></g><g id="ytick_60"></g></g><g id="patch_117"><path d="M 517.5 424.8 
 L 517.5 292.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_118"><path d="M 676.8 424.8 
 L 676.8 292.8 
@@ -3246,7 +3246,7 @@ C 58.257697 469.894796 52.238015 484.345487 52.238015 499.411203
 C 52.238015 514.476919 58.257697 528.92761 68.971295 539.580679 
 C 79.684894 550.233749 94.217691 556.219421 109.369008 556.219421 
 z
-" clip-path="url(#pd1988d6746)" style="fill: #1f77b4"></path></g><g id="patch_123"><path d="M 34.905655 567.6 
+" clip-path="url(#p3ec20b574c)" style="fill: #1f77b4"></path></g><g id="patch_123"><path d="M 34.905655 567.6 
 C 42.253281 567.6 49.300956 564.69725 54.496512 559.531048 
 C 59.692068 554.364845 62.611311 547.356987 62.611311 540.050874 
 C 62.611311 532.74476 59.692068 525.736902 54.496512 520.5707 
@@ -3256,7 +3256,7 @@ C 10.119243 525.736902 7.2 532.74476 7.2 540.050874
 C 7.2 547.356987 10.119243 554.364845 15.314799 559.531048 
 C 20.510355 564.69725 27.55803 567.6 34.905655 567.6 
 z
-" clip-path="url(#pd1988d6746)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_25"><g id="xtick_61"></g><g id="xtick_62"></g><g id="xtick_63"></g><g id="xtick_64"></g><g id="xtick_65"></g></g><g id="matplotlib.axis_26"><g id="ytick_61"></g><g id="ytick_62"></g><g id="ytick_63"></g><g id="ytick_64"></g><g id="ytick_65"></g></g><g id="patch_124"><path d="M 7.2 567.6 
+" clip-path="url(#p3ec20b574c)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_25"><g id="xtick_61"></g><g id="xtick_62"></g><g id="xtick_63"></g><g id="xtick_64"></g><g id="xtick_65"></g></g><g id="matplotlib.axis_26"><g id="ytick_61"></g><g id="ytick_62"></g><g id="ytick_63"></g><g id="ytick_64"></g><g id="ytick_65"></g></g><g id="patch_124"><path d="M 7.2 567.6 
 L 7.2 435.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_125"><path d="M 166.5 567.6 
 L 166.5 435.6 
@@ -3279,7 +3279,7 @@ C 183.141846 483.825615 177.3 497.849398 177.3 512.470035
 C 177.3 527.090673 183.141846 541.114455 193.538938 551.452807 
 C 203.936031 561.791159 218.039494 567.6 232.743203 567.6 
 z
-" clip-path="url(#p1d7c9e3df8)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_27"><g id="xtick_66"></g><g id="xtick_67"></g><g id="xtick_68"></g><g id="xtick_69"></g><g id="xtick_70"></g></g><g id="matplotlib.axis_28"><g id="ytick_66"></g><g id="ytick_67"></g><g id="ytick_68"></g><g id="ytick_69"></g><g id="ytick_70"></g></g><g id="patch_130"><path d="M 177.3 567.6 
+" clip-path="url(#pb6afcbf7a4)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_27"><g id="xtick_66"></g><g id="xtick_67"></g><g id="xtick_68"></g><g id="xtick_69"></g><g id="xtick_70"></g></g><g id="matplotlib.axis_28"><g id="ytick_66"></g><g id="ytick_67"></g><g id="ytick_68"></g><g id="ytick_69"></g><g id="ytick_70"></g></g><g id="patch_130"><path d="M 177.3 567.6 
 L 177.3 435.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_131"><path d="M 336.6 567.6 
 L 336.6 435.6 
@@ -3302,7 +3302,7 @@ C 350.702524 520.240493 347.4 528.168446 347.4 536.433815
 C 347.4 544.699184 350.702524 552.627137 356.58023 558.471636 
 C 362.457936 564.316134 370.430934 567.6 378.743266 567.6 
 z
-" clip-path="url(#pbb0106c936)" style="fill: #1f77b4"></path></g><g id="patch_136"><path d="M 452.40427 546.987873 
+" clip-path="url(#pc740f173be)" style="fill: #1f77b4"></path></g><g id="patch_136"><path d="M 452.40427 546.987873 
 C 466.803666 546.987873 480.615238 541.299254 490.797149 531.174869 
 C 500.979059 521.050483 506.7 507.316942 506.7 492.998899 
 C 506.7 478.680855 500.979059 464.947314 490.797149 454.822928 
@@ -3312,7 +3312,7 @@ C 403.82948 464.947314 398.10854 478.680855 398.10854 492.998899
 C 398.10854 507.316942 403.82948 521.050483 414.011391 531.174869 
 C 424.193301 541.299254 438.004874 546.987873 452.40427 546.987873 
 z
-" clip-path="url(#pbb0106c936)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_29"><g id="xtick_71"></g><g id="xtick_72"></g><g id="xtick_73"></g><g id="xtick_74"></g><g id="xtick_75"></g></g><g id="matplotlib.axis_30"><g id="ytick_71"></g><g id="ytick_72"></g><g id="ytick_73"></g><g id="ytick_74"></g><g id="ytick_75"></g></g><g id="patch_137"><path d="M 347.4 567.6 
+" clip-path="url(#pc740f173be)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_29"><g id="xtick_71"></g><g id="xtick_72"></g><g id="xtick_73"></g><g id="xtick_74"></g><g id="xtick_75"></g></g><g id="matplotlib.axis_30"><g id="ytick_71"></g><g id="ytick_72"></g><g id="ytick_73"></g><g id="ytick_74"></g><g id="ytick_75"></g></g><g id="patch_137"><path d="M 347.4 567.6 
 L 347.4 435.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_138"><path d="M 506.7 567.6 
 L 506.7 435.6 
@@ -3335,7 +3335,7 @@ C 523.203083 485.815521 517.5 499.506194 517.5 513.779546
 C 517.5 528.052897 523.203083 541.74357 533.353212 551.836354 
 C 543.503341 561.929137 557.271802 567.6 571.626252 567.6 
 z
-" clip-path="url(#pc8f6fc22a1)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_31"><g id="xtick_76"></g><g id="xtick_77"></g><g id="xtick_78"></g><g id="xtick_79"></g><g id="xtick_80"></g></g><g id="matplotlib.axis_32"><g id="ytick_76"></g><g id="ytick_77"></g><g id="ytick_78"></g><g id="ytick_79"></g><g id="ytick_80"></g></g><g id="patch_143"><path d="M 517.5 567.6 
+" clip-path="url(#p2726dc915d)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_31"><g id="xtick_76"></g><g id="xtick_77"></g><g id="xtick_78"></g><g id="xtick_79"></g><g id="xtick_80"></g></g><g id="matplotlib.axis_32"><g id="ytick_76"></g><g id="ytick_77"></g><g id="ytick_78"></g><g id="ytick_79"></g><g id="ytick_80"></g></g><g id="patch_143"><path d="M 517.5 567.6 
 L 517.5 435.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_144"><path d="M 676.8 567.6 
 L 676.8 435.6 
@@ -3358,7 +3358,7 @@ C 64.873762 605.158515 59.22202 618.725941 59.22202 632.870798
 C 59.22202 647.015656 64.873762 660.583082 74.932516 670.585007 
 C 84.99127 680.586932 98.635783 686.206744 112.86101 686.206744 
 z
-" clip-path="url(#p1a9c927447)" style="fill: #1f77b4"></path></g><g id="patch_149"><path d="M 39.687427 710.4 
+" clip-path="url(#p868e8f1c97)" style="fill: #1f77b4"></path></g><g id="patch_149"><path d="M 39.687427 710.4 
 C 48.303193 710.4 56.56724 706.996259 62.659507 700.938412 
 C 68.751774 694.880565 72.174854 686.663208 72.174854 678.096118 
 C 72.174854 669.529028 68.751774 661.311671 62.659507 655.253824 
@@ -3368,7 +3368,7 @@ C 10.62308 661.311671 7.2 669.529028 7.2 678.096118
 C 7.2 686.663208 10.62308 694.880565 16.715347 700.938412 
 C 22.807614 706.996259 31.071661 710.4 39.687427 710.4 
 z
-" clip-path="url(#p1a9c927447)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_33"><g id="xtick_81"></g><g id="xtick_82"></g><g id="xtick_83"></g><g id="xtick_84"></g><g id="xtick_85"></g></g><g id="matplotlib.axis_34"><g id="ytick_81"></g><g id="ytick_82"></g><g id="ytick_83"></g><g id="ytick_84"></g><g id="ytick_85"></g></g><g id="patch_150"><path d="M 7.2 710.4 
+" clip-path="url(#p868e8f1c97)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_33"><g id="xtick_81"></g><g id="xtick_82"></g><g id="xtick_83"></g><g id="xtick_84"></g><g id="xtick_85"></g></g><g id="matplotlib.axis_34"><g id="ytick_81"></g><g id="ytick_82"></g><g id="ytick_83"></g><g id="ytick_84"></g><g id="ytick_85"></g></g><g id="patch_150"><path d="M 7.2 710.4 
 L 7.2 578.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_151"><path d="M 166.5 710.4 
 L 166.5 578.4 
@@ -3391,7 +3391,7 @@ C 180.753453 660.876118 177.3 669.166387 177.3 677.809491
 C 177.3 686.452595 180.753453 694.742863 186.899775 700.854461 
 C 193.046098 706.966058 201.38347 710.4 210.075683 710.4 
 z
-" clip-path="url(#p195cf92c17)" style="fill: #1f77b4"></path></g><g id="patch_156"><path d="M 283.00616 685.092741 
+" clip-path="url(#p20c0cac85a)" style="fill: #1f77b4"></path></g><g id="patch_156"><path d="M 283.00616 685.092741 
 C 297.219412 685.092741 310.85244 679.47766 320.902728 669.484154 
 C 330.953015 659.490648 336.6 645.934643 336.6 631.801691 
 C 336.6 617.66874 330.953015 604.112734 320.902728 594.119228 
@@ -3401,7 +3401,7 @@ C 235.059305 604.112734 229.412319 617.66874 229.412319 631.801691
 C 229.412319 645.934643 235.059305 659.490648 245.109592 669.484154 
 C 255.159879 679.47766 268.792907 685.092741 283.00616 685.092741 
 z
-" clip-path="url(#p195cf92c17)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_35"><g id="xtick_86"></g><g id="xtick_87"></g><g id="xtick_88"></g><g id="xtick_89"></g><g id="xtick_90"></g></g><g id="matplotlib.axis_36"><g id="ytick_86"></g><g id="ytick_87"></g><g id="ytick_88"></g><g id="ytick_89"></g><g id="ytick_90"></g></g><g id="patch_157"><path d="M 177.3 710.4 
+" clip-path="url(#p20c0cac85a)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_35"><g id="xtick_86"></g><g id="xtick_87"></g><g id="xtick_88"></g><g id="xtick_89"></g><g id="xtick_90"></g></g><g id="matplotlib.axis_36"><g id="ytick_86"></g><g id="ytick_87"></g><g id="ytick_88"></g><g id="ytick_89"></g><g id="ytick_90"></g></g><g id="patch_157"><path d="M 177.3 710.4 
 L 177.3 578.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_158"><path d="M 336.6 710.4 
 L 336.6 578.4 
@@ -3424,7 +3424,7 @@ C 405.633164 604.085772 400.012532 617.578515 400.012532 631.645513
 C 400.012532 645.71251 405.633164 659.205254 415.63655 669.152123 
 C 425.639935 679.098992 439.209342 684.68787 453.356266 684.68787 
 z
-" clip-path="url(#p0566a003e4)" style="fill: #1f77b4"></path></g><g id="patch_163"><path d="M 380.40487 710.4 
+" clip-path="url(#p2907f991ea)" style="fill: #1f77b4"></path></g><g id="patch_163"><path d="M 380.40487 710.4 
 C 389.157863 710.4 397.553535 706.942046 403.742837 700.787713 
 C 409.932138 694.633379 413.409739 686.28514 413.409739 677.581599 
 C 413.409739 668.878057 409.932138 660.529818 403.742837 654.375484 
@@ -3434,7 +3434,7 @@ C 350.877601 660.529818 347.4 668.878057 347.4 677.581599
 C 347.4 686.28514 350.877601 694.633379 357.066902 700.787713 
 C 363.256204 706.942046 371.651876 710.4 380.40487 710.4 
 z
-" clip-path="url(#p0566a003e4)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_37"><g id="xtick_91"></g><g id="xtick_92"></g><g id="xtick_93"></g><g id="xtick_94"></g><g id="xtick_95"></g></g><g id="matplotlib.axis_38"><g id="ytick_91"></g><g id="ytick_92"></g><g id="ytick_93"></g><g id="ytick_94"></g><g id="ytick_95"></g></g><g id="patch_164"><path d="M 347.4 710.4 
+" clip-path="url(#p2907f991ea)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_37"><g id="xtick_91"></g><g id="xtick_92"></g><g id="xtick_93"></g><g id="xtick_94"></g><g id="xtick_95"></g></g><g id="matplotlib.axis_38"><g id="ytick_91"></g><g id="ytick_92"></g><g id="ytick_93"></g><g id="ytick_94"></g><g id="ytick_95"></g></g><g id="patch_164"><path d="M 347.4 710.4 
 L 347.4 578.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_165"><path d="M 506.7 710.4 
 L 506.7 578.4 
@@ -3457,7 +3457,7 @@ C 522.90084 604.759454 517.5 617.724569 517.5 631.241481
 C 517.5 644.758394 522.90084 657.723509 532.513046 667.281409 
 C 542.125253 676.83931 555.164033 682.209636 568.757747 682.209636 
 z
-" clip-path="url(#p9a4b67111a)" style="fill: #1f77b4"></path></g><g id="patch_170"><path d="M 642.103608 710.4 
+" clip-path="url(#p2a1ba998e7)" style="fill: #1f77b4"></path></g><g id="patch_170"><path d="M 642.103608 710.4 
 C 651.305199 710.4 660.131155 706.764824 666.637662 700.295077 
 C 673.144169 693.825329 676.8 685.049237 676.8 675.899633 
 C 676.8 666.750029 673.144169 657.973937 666.637662 651.50419 
@@ -3467,7 +3467,7 @@ C 611.063048 657.973937 607.407217 666.750029 607.407217 675.899633
 C 607.407217 685.049237 611.063048 693.825329 617.569555 700.295077 
 C 624.076062 706.764824 632.902018 710.4 642.103608 710.4 
 z
-" clip-path="url(#p9a4b67111a)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_39"><g id="xtick_96"></g><g id="xtick_97"></g><g id="xtick_98"></g><g id="xtick_99"></g><g id="xtick_100"></g></g><g id="matplotlib.axis_40"><g id="ytick_96"></g><g id="ytick_97"></g><g id="ytick_98"></g><g id="ytick_99"></g><g id="ytick_100"></g></g><g id="patch_171"><path d="M 517.5 710.4 
+" clip-path="url(#p2a1ba998e7)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_39"><g id="xtick_96"></g><g id="xtick_97"></g><g id="xtick_98"></g><g id="xtick_99"></g><g id="xtick_100"></g></g><g id="matplotlib.axis_40"><g id="ytick_96"></g><g id="ytick_97"></g><g id="ytick_98"></g><g id="ytick_99"></g><g id="ytick_100"></g></g><g id="patch_171"><path d="M 517.5 710.4 
 L 517.5 578.4 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_172"><path d="M 676.8 710.4 
 L 676.8 578.4 
@@ -3490,7 +3490,7 @@ C 12.594025 745.655231 7.2 758.603986 7.2 772.103843
 C 7.2 785.6037 12.594025 798.552455 22.194103 808.098295 
 C 31.794181 817.644136 44.816509 823.007686 58.393069 823.007686 
 z
-" clip-path="url(#p17e31232c6)" style="fill: #1f77b4"></path></g><g id="patch_177"><path d="M 129.974443 853.2 
+" clip-path="url(#pd1507cb776)" style="fill: #1f77b4"></path></g><g id="patch_177"><path d="M 129.974443 853.2 
 C 139.106639 853.2 147.866034 849.592239 154.323472 843.171283 
 C 160.78091 836.750328 164.40917 828.040421 164.40917 818.959819 
 C 164.40917 809.879217 160.78091 801.16931 154.323472 794.748355 
@@ -3500,7 +3500,7 @@ C 99.167975 801.16931 95.539715 809.879217 95.539715 818.959819
 C 95.539715 828.040421 99.167975 836.750328 105.625413 843.171283 
 C 112.082851 849.592239 120.842246 853.2 129.974443 853.2 
 z
-" clip-path="url(#p17e31232c6)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_41"><g id="xtick_101"></g><g id="xtick_102"></g><g id="xtick_103"></g><g id="xtick_104"></g><g id="xtick_105"></g></g><g id="matplotlib.axis_42"><g id="ytick_101"></g><g id="ytick_102"></g><g id="ytick_103"></g><g id="ytick_104"></g><g id="ytick_105"></g></g><g id="patch_178"><path d="M 7.2 853.2 
+" clip-path="url(#pd1507cb776)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_41"><g id="xtick_101"></g><g id="xtick_102"></g><g id="xtick_103"></g><g id="xtick_104"></g><g id="xtick_105"></g></g><g id="matplotlib.axis_42"><g id="ytick_101"></g><g id="ytick_102"></g><g id="ytick_103"></g><g id="ytick_104"></g><g id="ytick_105"></g></g><g id="patch_178"><path d="M 7.2 853.2 
 L 7.2 721.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_179"><path d="M 166.5 853.2 
 L 166.5 721.2 
@@ -3523,7 +3523,7 @@ C 182.691904 745.645618 177.3 758.589283 177.3 772.083834
 C 177.3 785.578384 182.691904 798.52205 192.288209 808.064138 
 C 201.884514 817.606226 214.901723 822.967668 228.472947 822.967668 
 z
-" clip-path="url(#p28df379d91)" style="fill: #1f77b4"></path></g><g id="patch_184"><path d="M 299.082576 853.2 
+" clip-path="url(#p313f443caf)" style="fill: #1f77b4"></path></g><g id="patch_184"><path d="M 299.082576 853.2 
 C 308.073187 853.2 316.696777 849.648173 323.054099 843.326768 
 C 329.411421 837.005363 332.983428 828.430495 332.983428 819.490678 
 C 332.983428 810.550861 329.411421 801.975993 323.054099 795.654588 
@@ -3533,7 +3533,7 @@ C 268.753732 801.975993 265.181724 810.550861 265.181724 819.490678
 C 265.181724 828.430495 268.753732 837.005363 275.111054 843.326768 
 C 281.468376 849.648173 290.091965 853.2 299.082576 853.2 
 z
-" clip-path="url(#p28df379d91)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_43"><g id="xtick_106"></g><g id="xtick_107"></g><g id="xtick_108"></g><g id="xtick_109"></g><g id="xtick_110"></g></g><g id="matplotlib.axis_44"><g id="ytick_106"></g><g id="ytick_107"></g><g id="ytick_108"></g><g id="ytick_109"></g><g id="ytick_110"></g></g><g id="patch_185"><path d="M 177.3 853.2 
+" clip-path="url(#p313f443caf)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_43"><g id="xtick_106"></g><g id="xtick_107"></g><g id="xtick_108"></g><g id="xtick_109"></g><g id="xtick_110"></g></g><g id="matplotlib.axis_44"><g id="ytick_106"></g><g id="ytick_107"></g><g id="ytick_108"></g><g id="ytick_109"></g><g id="ytick_110"></g></g><g id="patch_185"><path d="M 177.3 853.2 
 L 177.3 721.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_186"><path d="M 336.6 853.2 
 L 336.6 721.2 
@@ -3556,7 +3556,7 @@ C 351.171992 799.108141 347.4 808.163087 347.4 817.603412
 C 347.4 827.043738 351.171992 836.098683 357.885238 842.774001 
 C 364.598484 849.449319 373.704878 853.2 383.198841 853.2 
 z
-" clip-path="url(#p349e37d536)" style="fill: #1f77b4"></path></g><g id="patch_191"><path d="M 456.147498 821.92479 
+" clip-path="url(#p4331ad3e08)" style="fill: #1f77b4"></path></g><g id="patch_191"><path d="M 456.147498 821.92479 
 C 469.554178 821.92479 482.41356 816.628353 491.893515 807.201957 
 C 501.373469 797.775562 506.7 784.988832 506.7 771.657895 
 C 506.7 758.326959 501.373469 745.540229 491.893515 736.113833 
@@ -3566,7 +3566,7 @@ C 410.921527 745.540229 405.594996 758.326959 405.594996 771.657895
 C 405.594996 784.988832 410.921527 797.775562 420.401481 807.201957 
 C 429.881436 816.628353 442.740818 821.92479 456.147498 821.92479 
 z
-" clip-path="url(#p349e37d536)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_45"><g id="xtick_111"></g><g id="xtick_112"></g><g id="xtick_113"></g><g id="xtick_114"></g><g id="xtick_115"></g></g><g id="matplotlib.axis_46"><g id="ytick_111"></g><g id="ytick_112"></g><g id="ytick_113"></g><g id="ytick_114"></g><g id="ytick_115"></g></g><g id="patch_192"><path d="M 347.4 853.2 
+" clip-path="url(#p4331ad3e08)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_45"><g id="xtick_111"></g><g id="xtick_112"></g><g id="xtick_113"></g><g id="xtick_114"></g><g id="xtick_115"></g></g><g id="matplotlib.axis_46"><g id="ytick_111"></g><g id="ytick_112"></g><g id="ytick_113"></g><g id="ytick_114"></g><g id="ytick_115"></g></g><g id="patch_192"><path d="M 347.4 853.2 
 L 347.4 721.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_193"><path d="M 506.7 853.2 
 L 506.7 721.2 
@@ -3589,7 +3589,7 @@ C 522.820694 746.746364 517.5 759.519082 517.5 772.835411
 C 517.5 786.151739 522.820694 798.924458 532.29026 808.340525 
 C 541.759827 817.756591 554.605118 823.047224 567.997108 823.047224 
 z
-" clip-path="url(#pcacfc3ff03)" style="fill: #1f77b4"></path></g><g id="patch_198"><path d="M 641.237955 853.2 
+" clip-path="url(#p79e10da386)" style="fill: #1f77b4"></path></g><g id="patch_198"><path d="M 641.237955 853.2 
 C 650.66912 853.2 659.715278 849.474128 666.384118 842.842965 
 C 673.052959 836.211802 676.8 827.216752 676.8 817.838871 
 C 676.8 808.46099 673.052959 799.46594 666.384118 792.834777 
@@ -3599,7 +3599,7 @@ C 609.422952 799.46594 605.675911 808.46099 605.675911 817.838871
 C 605.675911 827.216752 609.422952 836.211802 616.091792 842.842965 
 C 622.760633 849.474128 631.806791 853.2 641.237955 853.2 
 z
-" clip-path="url(#pcacfc3ff03)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_47"><g id="xtick_116"></g><g id="xtick_117"></g><g id="xtick_118"></g><g id="xtick_119"></g><g id="xtick_120"></g></g><g id="matplotlib.axis_48"><g id="ytick_116"></g><g id="ytick_117"></g><g id="ytick_118"></g><g id="ytick_119"></g><g id="ytick_120"></g></g><g id="patch_199"><path d="M 517.5 853.2 
+" clip-path="url(#p79e10da386)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_47"><g id="xtick_116"></g><g id="xtick_117"></g><g id="xtick_118"></g><g id="xtick_119"></g><g id="xtick_120"></g></g><g id="matplotlib.axis_48"><g id="ytick_116"></g><g id="ytick_117"></g><g id="ytick_118"></g><g id="ytick_119"></g><g id="ytick_120"></g></g><g id="patch_199"><path d="M 517.5 853.2 
 L 517.5 721.2 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_200"><path d="M 676.8 853.2 
 L 676.8 721.2 
@@ -3622,7 +3622,7 @@ C 10.756785 944.99429 7.2 953.532616 7.2 962.434334
 C 7.2 971.336053 10.756785 979.874379 17.087015 986.168844 
 C 23.417244 992.46331 32.004083 996 40.95638 996 
 z
-" clip-path="url(#p7fbcce0c58)" style="fill: #1f77b4"></path></g><g id="patch_205"><path d="M 116.350293 975.684999 
+" clip-path="url(#p5285584101)" style="fill: #1f77b4"></path></g><g id="patch_205"><path d="M 116.350293 975.684999 
 C 129.650151 975.684999 142.407071 970.430763 151.811491 961.079475 
 C 161.215911 951.728188 166.5 939.043341 166.5 925.818623 
 C 166.5 912.593906 161.215911 899.909059 151.811491 890.557771 
@@ -3632,7 +3632,7 @@ C 71.484676 899.909059 66.200586 912.593906 66.200586 925.818623
 C 66.200586 939.043341 71.484676 951.728188 80.889095 961.079475 
 C 90.293515 970.430763 103.050435 975.684999 116.350293 975.684999 
 z
-" clip-path="url(#p7fbcce0c58)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_49"><g id="xtick_121"></g><g id="xtick_122"></g><g id="xtick_123"></g><g id="xtick_124"></g><g id="xtick_125"></g></g><g id="matplotlib.axis_50"><g id="ytick_121"></g><g id="ytick_122"></g><g id="ytick_123"></g><g id="ytick_124"></g><g id="ytick_125"></g></g><g id="patch_206"><path d="M 7.2 996 
+" clip-path="url(#p5285584101)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_49"><g id="xtick_121"></g><g id="xtick_122"></g><g id="xtick_123"></g><g id="xtick_124"></g><g id="xtick_125"></g></g><g id="matplotlib.axis_50"><g id="ytick_121"></g><g id="ytick_122"></g><g id="ytick_123"></g><g id="ytick_124"></g><g id="ytick_125"></g></g><g id="patch_206"><path d="M 7.2 996 
 L 7.2 864 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_207"><path d="M 166.5 996 
 L 166.5 864 
@@ -3655,7 +3655,7 @@ C 182.402639 890.191219 177.3 902.44048 177.3 915.211072
 C 177.3 927.981664 182.402639 940.230925 191.484119 949.261097 
 C 200.565599 958.291269 212.884458 963.36508 225.72761 963.36508 
 z
-" clip-path="url(#p3342cb31a6)" style="fill: #1f77b4"></path></g><g id="patch_212"><path d="M 299.345226 996 
+" clip-path="url(#pdba3fdf537)" style="fill: #1f77b4"></path></g><g id="patch_212"><path d="M 299.345226 996 
 C 309.225308 996 318.702057 992.096779 325.688329 985.149977 
 C 332.674602 978.203175 336.6 968.779967 336.6 958.955705 
 C 336.6 949.131443 332.674602 939.708235 325.688329 932.761433 
@@ -3665,7 +3665,7 @@ C 266.01585 939.708235 262.090452 949.131443 262.090452 958.955705
 C 262.090452 968.779967 266.01585 978.203175 273.002123 985.149977 
 C 279.988395 992.096779 289.465144 996 299.345226 996 
 z
-" clip-path="url(#p3342cb31a6)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_51"><g id="xtick_126"></g><g id="xtick_127"></g><g id="xtick_128"></g><g id="xtick_129"></g><g id="xtick_130"></g></g><g id="matplotlib.axis_52"><g id="ytick_126"></g><g id="ytick_127"></g><g id="ytick_128"></g><g id="ytick_129"></g><g id="ytick_130"></g></g><g id="patch_213"><path d="M 177.3 996 
+" clip-path="url(#pdba3fdf537)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_51"><g id="xtick_126"></g><g id="xtick_127"></g><g id="xtick_128"></g><g id="xtick_129"></g><g id="xtick_130"></g></g><g id="matplotlib.axis_52"><g id="ytick_126"></g><g id="ytick_127"></g><g id="ytick_128"></g><g id="ytick_129"></g><g id="ytick_130"></g></g><g id="patch_213"><path d="M 177.3 996 
 L 177.3 864 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_214"><path d="M 336.6 996 
 L 336.6 864 
@@ -3688,7 +3688,7 @@ C 352.498449 911.899902 347.4 924.139106 347.4 936.899213
 C 347.4 949.659321 352.498449 961.898525 361.572473 970.921284 
 C 370.646498 979.944042 382.955243 985.013687 395.787851 985.013687 
 z
-" clip-path="url(#p94fc4b4ffa)" style="fill: #1f77b4"></path></g><g id="patch_219"><path d="M 473.33468 996 
+" clip-path="url(#pe921c130e7)" style="fill: #1f77b4"></path></g><g id="patch_219"><path d="M 473.33468 996 
 C 482.183266 996 490.670629 992.504281 496.927524 986.282736 
 C 503.184419 980.06119 506.7 971.621779 506.7 962.823184 
 C 506.7 954.02459 503.184419 945.585179 496.927524 939.363633 
@@ -3698,7 +3698,7 @@ C 443.48494 945.585179 439.96936 954.02459 439.96936 962.823184
 C 439.96936 971.621779 443.48494 980.06119 449.741836 986.282736 
 C 455.998731 992.504281 464.486093 996 473.33468 996 
 z
-" clip-path="url(#p94fc4b4ffa)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_53"><g id="xtick_131"></g><g id="xtick_132"></g><g id="xtick_133"></g><g id="xtick_134"></g><g id="xtick_135"></g></g><g id="matplotlib.axis_54"><g id="ytick_131"></g><g id="ytick_132"></g><g id="ytick_133"></g><g id="ytick_134"></g><g id="ytick_135"></g></g><g id="patch_220"><path d="M 347.4 996 
+" clip-path="url(#pe921c130e7)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_53"><g id="xtick_131"></g><g id="xtick_132"></g><g id="xtick_133"></g><g id="xtick_134"></g><g id="xtick_135"></g></g><g id="matplotlib.axis_54"><g id="ytick_131"></g><g id="ytick_132"></g><g id="ytick_133"></g><g id="ytick_134"></g><g id="ytick_135"></g></g><g id="patch_220"><path d="M 347.4 996 
 L 347.4 864 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_221"><path d="M 506.7 996 
 L 506.7 864 
@@ -3721,7 +3721,7 @@ C 522.592918 922.965528 517.5 935.191456 517.5 947.937721
 C 517.5 960.683986 522.592918 972.909914 531.657099 981.922884 
 C 540.72128 990.935855 553.016673 996 565.83536 996 
 z
-" clip-path="url(#pdda0b0c579)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_55"><g id="xtick_136"></g><g id="xtick_137"></g><g id="xtick_138"></g><g id="xtick_139"></g><g id="xtick_140"></g></g><g id="matplotlib.axis_56"><g id="ytick_136"></g><g id="ytick_137"></g><g id="ytick_138"></g><g id="ytick_139"></g><g id="ytick_140"></g></g><g id="patch_226"><path d="M 517.5 996 
+" clip-path="url(#pcaa259e8a6)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_55"><g id="xtick_136"></g><g id="xtick_137"></g><g id="xtick_138"></g><g id="xtick_139"></g><g id="xtick_140"></g></g><g id="matplotlib.axis_56"><g id="ytick_136"></g><g id="ytick_137"></g><g id="ytick_138"></g><g id="ytick_139"></g><g id="ytick_140"></g></g><g id="patch_226"><path d="M 517.5 996 
 L 517.5 864 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_227"><path d="M 676.8 996 
 L 676.8 864 
@@ -3744,7 +3744,7 @@ C 12.188212 1067.26706 7.2 1079.241632 7.2 1091.725844
 C 7.2 1104.210056 12.188212 1116.184628 21.06604 1125.012299 
 C 29.943869 1133.83997 41.986478 1138.8 54.541623 1138.8 
 z
-" clip-path="url(#p9110ced180)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_57"><g id="xtick_141"></g><g id="xtick_142"></g><g id="xtick_143"></g><g id="xtick_144"></g><g id="xtick_145"></g></g><g id="matplotlib.axis_58"><g id="ytick_141"></g><g id="ytick_142"></g><g id="ytick_143"></g><g id="ytick_144"></g><g id="ytick_145"></g></g><g id="patch_232"><path d="M 7.2 1138.8 
+" clip-path="url(#p807856da46)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_57"><g id="xtick_141"></g><g id="xtick_142"></g><g id="xtick_143"></g><g id="xtick_144"></g><g id="xtick_145"></g></g><g id="matplotlib.axis_58"><g id="ytick_141"></g><g id="ytick_142"></g><g id="ytick_143"></g><g id="ytick_144"></g><g id="ytick_145"></g></g><g id="patch_232"><path d="M 7.2 1138.8 
 L 7.2 1006.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_233"><path d="M 166.5 1138.8 
 L 166.5 1006.8 
@@ -3767,7 +3767,7 @@ C 182.24354 1030.301534 177.3 1042.168868 177.3 1054.541278
 C 177.3 1066.913688 182.24354 1078.781022 191.041863 1087.529637 
 C 199.840186 1096.278252 211.774948 1101.193863 224.217656 1101.193863 
 z
-" clip-path="url(#pd99449abb1)" style="fill: #1f77b4"></path></g><g id="patch_238"><path d="M 297.379481 1138.8 
+" clip-path="url(#pd79219a98e)" style="fill: #1f77b4"></path></g><g id="patch_238"><path d="M 297.379481 1138.8 
 C 307.780884 1138.8 317.757673 1134.690826 325.112576 1127.377477 
 C 332.467479 1120.064127 336.6 1110.143704 336.6 1099.801066 
 C 336.6 1089.458427 332.467479 1079.538005 325.112576 1072.224655 
@@ -3777,7 +3777,7 @@ C 262.291483 1079.538005 258.158962 1089.458427 258.158962 1099.801066
 C 258.158962 1110.143704 262.291483 1120.064127 269.646386 1127.377477 
 C 277.001289 1134.690826 286.978078 1138.8 297.379481 1138.8 
 z
-" clip-path="url(#pd99449abb1)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_59"><g id="xtick_146"></g><g id="xtick_147"></g><g id="xtick_148"></g><g id="xtick_149"></g><g id="xtick_150"></g></g><g id="matplotlib.axis_60"><g id="ytick_146"></g><g id="ytick_147"></g><g id="ytick_148"></g><g id="ytick_149"></g><g id="ytick_150"></g></g><g id="patch_239"><path d="M 177.3 1138.8 
+" clip-path="url(#pd79219a98e)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_59"><g id="xtick_146"></g><g id="xtick_147"></g><g id="xtick_148"></g><g id="xtick_149"></g><g id="xtick_150"></g></g><g id="matplotlib.axis_60"><g id="ytick_146"></g><g id="ytick_147"></g><g id="ytick_148"></g><g id="ytick_149"></g><g id="ytick_150"></g></g><g id="patch_239"><path d="M 177.3 1138.8 
 L 177.3 1006.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_240"><path d="M 336.6 1138.8 
 L 336.6 1006.8 
@@ -3800,7 +3800,7 @@ C 352.316696 1068.292632 347.4 1080.095523 347.4 1092.400749
 C 347.4 1104.705974 352.316696 1116.508866 361.067242 1125.209974 
 C 369.817788 1133.911082 381.687742 1138.8 394.062883 1138.8 
 z
-" clip-path="url(#p4481e4afbf)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_61"><g id="xtick_151"></g><g id="xtick_152"></g><g id="xtick_153"></g><g id="xtick_154"></g><g id="xtick_155"></g></g><g id="matplotlib.axis_62"><g id="ytick_151"></g><g id="ytick_152"></g><g id="ytick_153"></g><g id="ytick_154"></g><g id="ytick_155"></g></g><g id="patch_245"><path d="M 347.4 1138.8 
+" clip-path="url(#p5eef19e91f)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_61"><g id="xtick_151"></g><g id="xtick_152"></g><g id="xtick_153"></g><g id="xtick_154"></g><g id="xtick_155"></g></g><g id="matplotlib.axis_62"><g id="ytick_151"></g><g id="ytick_152"></g><g id="ytick_153"></g><g id="ytick_154"></g><g id="ytick_155"></g></g><g id="patch_245"><path d="M 347.4 1138.8 
 L 347.4 1006.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_246"><path d="M 506.7 1138.8 
 L 506.7 1006.8 
@@ -3823,7 +3823,7 @@ C 521.859153 1076.288015 517.5 1086.752484 517.5 1097.662324
 C 517.5 1108.572163 521.859153 1119.036632 529.617406 1126.751054 
 C 537.37566 1134.465475 547.899586 1138.8 558.871413 1138.8 
 z
-" clip-path="url(#p4bf3096f6b)" style="fill: #1f77b4"></path></g><g id="patch_251"><path d="M 632.187003 1097.353366 
+" clip-path="url(#p8f6a1f0e36)" style="fill: #1f77b4"></path></g><g id="patch_251"><path d="M 632.187003 1097.353366 
 C 644.018508 1097.353366 655.367018 1092.679217 663.733156 1084.360346 
 C 672.099293 1076.041475 676.8 1064.757081 676.8 1052.99242 
 C 676.8 1041.22776 672.099293 1029.943366 663.733156 1021.624494 
@@ -3833,7 +3833,7 @@ C 592.274713 1029.943366 587.574006 1041.22776 587.574006 1052.99242
 C 587.574006 1064.757081 592.274713 1076.041475 600.64085 1084.360346 
 C 609.006988 1092.679217 620.355498 1097.353366 632.187003 1097.353366 
 z
-" clip-path="url(#p4bf3096f6b)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_63"><g id="xtick_156"></g><g id="xtick_157"></g><g id="xtick_158"></g><g id="xtick_159"></g><g id="xtick_160"></g></g><g id="matplotlib.axis_64"><g id="ytick_156"></g><g id="ytick_157"></g><g id="ytick_158"></g><g id="ytick_159"></g><g id="ytick_160"></g></g><g id="patch_252"><path d="M 517.5 1138.8 
+" clip-path="url(#p8f6a1f0e36)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_63"><g id="xtick_156"></g><g id="xtick_157"></g><g id="xtick_158"></g><g id="xtick_159"></g><g id="xtick_160"></g></g><g id="matplotlib.axis_64"><g id="ytick_156"></g><g id="ytick_157"></g><g id="ytick_158"></g><g id="ytick_159"></g><g id="ytick_160"></g></g><g id="patch_252"><path d="M 517.5 1138.8 
 L 517.5 1006.8 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_253"><path d="M 676.8 1138.8 
 L 676.8 1006.8 
@@ -3856,7 +3856,7 @@ C 11.658878 1178.079001 7.2 1188.782868 7.2 1199.942295
 C 7.2 1211.101721 11.658878 1221.805589 19.594619 1229.696495 
 C 27.53036 1237.587401 38.295045 1242.021088 49.517877 1242.021088 
 z
-" clip-path="url(#pd4fbf1be20)" style="fill: #1f77b4"></path></g><g id="patch_258"><path d="M 124.258259 1281.6 
+" clip-path="url(#pf4d85bb1c9)" style="fill: #1f77b4"></path></g><g id="patch_258"><path d="M 124.258259 1281.6 
 C 135.4609 1281.6 146.206217 1277.17429 154.12768 1269.297581 
 C 162.049144 1261.420871 166.5 1250.736262 166.5 1239.596913 
 C 166.5 1228.457564 162.049144 1217.772954 154.12768 1209.896245 
@@ -3866,7 +3866,7 @@ C 86.467374 1217.772954 82.016518 1228.457564 82.016518 1239.596913
 C 82.016518 1250.736262 86.467374 1261.420871 94.388837 1269.297581 
 C 102.310301 1277.17429 113.055618 1281.6 124.258259 1281.6 
 z
-" clip-path="url(#pd4fbf1be20)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_65"><g id="xtick_161"></g><g id="xtick_162"></g><g id="xtick_163"></g><g id="xtick_164"></g><g id="xtick_165"></g></g><g id="matplotlib.axis_66"><g id="ytick_161"></g><g id="ytick_162"></g><g id="ytick_163"></g><g id="ytick_164"></g><g id="ytick_165"></g></g><g id="patch_259"><path d="M 7.2 1281.6 
+" clip-path="url(#pf4d85bb1c9)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_65"><g id="xtick_161"></g><g id="xtick_162"></g><g id="xtick_163"></g><g id="xtick_164"></g><g id="xtick_165"></g></g><g id="matplotlib.axis_66"><g id="ytick_161"></g><g id="ytick_162"></g><g id="ytick_163"></g><g id="ytick_164"></g><g id="ytick_165"></g></g><g id="patch_259"><path d="M 7.2 1281.6 
 L 7.2 1149.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_260"><path d="M 166.5 1281.6 
 L 166.5 1149.6 
@@ -3889,7 +3889,7 @@ C 181.729829 1218.074499 177.3 1228.70863 177.3 1239.795352
 C 177.3 1250.882074 181.729829 1261.516206 189.613868 1269.355702 
 C 197.497907 1277.195199 208.192459 1281.6 219.342174 1281.6 
 z
-" clip-path="url(#p3214c789d0)" style="fill: #1f77b4"></path></g><g id="patch_265"><path d="M 294.549465 1244.198445 
+" clip-path="url(#p3b9f473935)" style="fill: #1f77b4"></path></g><g id="patch_265"><path d="M 294.549465 1244.198445 
 C 305.701398 1244.198445 316.398077 1239.792768 324.283684 1231.951713 
 C 332.16929 1224.110657 336.6 1213.474411 336.6 1202.385485 
 C 336.6 1191.296558 332.16929 1180.660312 324.283684 1172.819256 
@@ -3899,7 +3899,7 @@ C 256.92964 1180.660312 252.498931 1191.296558 252.498931 1202.385485
 C 252.498931 1213.474411 256.92964 1224.110657 264.815247 1231.951713 
 C 272.700854 1239.792768 283.397533 1244.198445 294.549465 1244.198445 
 z
-" clip-path="url(#p3214c789d0)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_67"><g id="xtick_166"></g><g id="xtick_167"></g><g id="xtick_168"></g><g id="xtick_169"></g><g id="xtick_170"></g></g><g id="matplotlib.axis_68"><g id="ytick_166"></g><g id="ytick_167"></g><g id="ytick_168"></g><g id="ytick_169"></g><g id="ytick_170"></g></g><g id="patch_266"><path d="M 177.3 1281.6 
+" clip-path="url(#p3b9f473935)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_67"><g id="xtick_166"></g><g id="xtick_167"></g><g id="xtick_168"></g><g id="xtick_169"></g><g id="xtick_170"></g></g><g id="matplotlib.axis_68"><g id="ytick_166"></g><g id="ytick_167"></g><g id="ytick_168"></g><g id="ytick_169"></g><g id="ytick_170"></g></g><g id="patch_266"><path d="M 177.3 1281.6 
 L 177.3 1149.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_267"><path d="M 336.6 1281.6 
 L 336.6 1149.6 
@@ -3922,7 +3922,7 @@ C 351.663103 1220.465408 347.4 1230.699303 347.4 1241.368754
 C 347.4 1252.038205 351.663103 1262.2721 359.250411 1269.816541 
 C 366.837718 1277.360982 377.12976 1281.6 387.859833 1281.6 
 z
-" clip-path="url(#p3679722278)" style="fill: #1f77b4"></path></g><g id="patch_272"><path d="M 464.7307 1253.142984 
+" clip-path="url(#pd2389e3f59)" style="fill: #1f77b4"></path></g><g id="patch_272"><path d="M 464.7307 1253.142984 
 C 475.861089 1253.142984 486.537104 1248.745818 494.407477 1240.91991 
 C 502.27785 1233.094003 506.7 1222.478304 506.7 1211.410799 
 C 506.7 1200.343295 502.27785 1189.727596 494.407477 1181.901689 
@@ -3932,7 +3932,7 @@ C 427.183551 1189.727596 422.761401 1200.343295 422.761401 1211.410799
 C 422.761401 1222.478304 427.183551 1233.094003 435.053924 1240.91991 
 C 442.924297 1248.745818 453.600312 1253.142984 464.7307 1253.142984 
 z
-" clip-path="url(#p3679722278)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_69"><g id="xtick_171"></g><g id="xtick_172"></g><g id="xtick_173"></g><g id="xtick_174"></g><g id="xtick_175"></g></g><g id="matplotlib.axis_70"><g id="ytick_171"></g><g id="ytick_172"></g><g id="ytick_173"></g><g id="ytick_174"></g><g id="ytick_175"></g></g><g id="patch_273"><path d="M 347.4 1281.6 
+" clip-path="url(#pd2389e3f59)" style="fill: #1f77b4"></path></g><g id="matplotlib.axis_69"><g id="xtick_171"></g><g id="xtick_172"></g><g id="xtick_173"></g><g id="xtick_174"></g><g id="xtick_175"></g></g><g id="matplotlib.axis_70"><g id="ytick_171"></g><g id="ytick_172"></g><g id="ytick_173"></g><g id="ytick_174"></g><g id="ytick_175"></g></g><g id="patch_273"><path d="M 347.4 1281.6 
 L 347.4 1149.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_274"><path d="M 506.7 1281.6 
 L 506.7 1149.6 
@@ -3940,7 +3940,7 @@ L 506.7 1149.6
 L 506.7 1281.6 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g><g id="patch_276"><path d="M 347.4 1149.6 
 L 506.7 1149.6 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_36"></g></g><defs><clippath id="p9d46de984f"><rect x="7.2" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p8b1d14158e"><rect x="177.3" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p0e2185d55f"><rect x="347.4" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p127e5b2598"><rect x="517.5" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p5b48e0a568"><rect x="7.2" y="150" width="159.3" height="132"></rect></clippath><clippath id="pf51c9c738f"><rect x="177.3" y="150" width="159.3" height="132"></rect></clippath><clippath id="pf68370c7b7"><rect x="347.4" y="150" width="159.3" height="132"></rect></clippath><clippath id="p9cf74fca54"><rect x="517.5" y="150" width="159.3" height="132"></rect></clippath><clippath id="p5b2ead4eda"><rect x="7.2" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="p76f0684998"><rect x="177.3" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="pb90f8b6f3e"><rect x="347.4" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="p4ce9cf88c6"><rect x="517.5" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="pd1988d6746"><rect x="7.2" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="p1d7c9e3df8"><rect x="177.3" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="pbb0106c936"><rect x="347.4" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="pc8f6fc22a1"><rect x="517.5" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="p1a9c927447"><rect x="7.2" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p195cf92c17"><rect x="177.3" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p0566a003e4"><rect x="347.4" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p9a4b67111a"><rect x="517.5" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p17e31232c6"><rect x="7.2" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p28df379d91"><rect x="177.3" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p349e37d536"><rect x="347.4" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="pcacfc3ff03"><rect x="517.5" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p7fbcce0c58"><rect x="7.2" y="864" width="159.3" height="132"></rect></clippath><clippath id="p3342cb31a6"><rect x="177.3" y="864" width="159.3" height="132"></rect></clippath><clippath id="p94fc4b4ffa"><rect x="347.4" y="864" width="159.3" height="132"></rect></clippath><clippath id="pdda0b0c579"><rect x="517.5" y="864" width="159.3" height="132"></rect></clippath><clippath id="p9110ced180"><rect x="7.2" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="pd99449abb1"><rect x="177.3" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="p4481e4afbf"><rect x="347.4" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="p4bf3096f6b"><rect x="517.5" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="pd4fbf1be20"><rect x="7.2" y="1149.6" width="159.3" height="132"></rect></clippath><clippath id="p3214c789d0"><rect x="177.3" y="1149.6" width="159.3" height="132"></rect></clippath><clippath id="p3679722278"><rect x="347.4" y="1149.6" width="159.3" height="132"></rect></clippath></defs></svg>
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path></g></g><g id="axes_36"></g></g><defs><clippath id="pc2f578f893"><rect x="7.2" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p528d6eee8d"><rect x="177.3" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p1c91025ef2"><rect x="347.4" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="pd89079cbfa"><rect x="517.5" y="7.2" width="159.3" height="132"></rect></clippath><clippath id="p5d8d9e4c63"><rect x="7.2" y="150" width="159.3" height="132"></rect></clippath><clippath id="pedf097e2e8"><rect x="177.3" y="150" width="159.3" height="132"></rect></clippath><clippath id="pe772e1d30a"><rect x="347.4" y="150" width="159.3" height="132"></rect></clippath><clippath id="pfc5a290e6e"><rect x="517.5" y="150" width="159.3" height="132"></rect></clippath><clippath id="p8616d7dcf2"><rect x="7.2" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="pf282d0af22"><rect x="177.3" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="p12af768a6b"><rect x="347.4" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="p855b4054d5"><rect x="517.5" y="292.8" width="159.3" height="132"></rect></clippath><clippath id="p3ec20b574c"><rect x="7.2" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="pb6afcbf7a4"><rect x="177.3" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="pc740f173be"><rect x="347.4" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="p2726dc915d"><rect x="517.5" y="435.6" width="159.3" height="132"></rect></clippath><clippath id="p868e8f1c97"><rect x="7.2" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p20c0cac85a"><rect x="177.3" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p2907f991ea"><rect x="347.4" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="p2a1ba998e7"><rect x="517.5" y="578.4" width="159.3" height="132"></rect></clippath><clippath id="pd1507cb776"><rect x="7.2" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p313f443caf"><rect x="177.3" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p4331ad3e08"><rect x="347.4" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p79e10da386"><rect x="517.5" y="721.2" width="159.3" height="132"></rect></clippath><clippath id="p5285584101"><rect x="7.2" y="864" width="159.3" height="132"></rect></clippath><clippath id="pdba3fdf537"><rect x="177.3" y="864" width="159.3" height="132"></rect></clippath><clippath id="pe921c130e7"><rect x="347.4" y="864" width="159.3" height="132"></rect></clippath><clippath id="pcaa259e8a6"><rect x="517.5" y="864" width="159.3" height="132"></rect></clippath><clippath id="p807856da46"><rect x="7.2" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="pd79219a98e"><rect x="177.3" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="p5eef19e91f"><rect x="347.4" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="p8f6a1f0e36"><rect x="517.5" y="1006.8" width="159.3" height="132"></rect></clippath><clippath id="pf4d85bb1c9"><rect x="7.2" y="1149.6" width="159.3" height="132"></rect></clippath><clippath id="p3b9f473935"><rect x="177.3" y="1149.6" width="159.3" height="132"></rect></clippath><clippath id="pd2389e3f59"><rect x="347.4" y="1149.6" width="159.3" height="132"></rect></clippath></defs></svg>
 </div>
 
 </div>
@@ -3971,6 +3971,14 @@ This might be done using for example <a href="https://github.com/N-Wouda/ALNS">A
 </div>
     </div>
     </div>
+        <div class="container has-text-centered">
+            <p>
+    </p>
+<hr>
+        © 2023 Niels Wouda.
+        For comments, please send me <a href="mailto:nielswouda@gmail.com">an email</a>.
+    <hr>
+</div>
 </section><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     jax: ["input/TeX", "output/SVG"],
@@ -3981,7 +3989,7 @@ MathJax.Hub.Config({
     },
     displayAlign: 'center' // Change this to 'left' if you want left-aligned equations.
 });
-</script><section class="section"></section><script src="../../assets/js/all-nocdn.js"></script><script>
+</script><script src="../../assets/js/all-nocdn.js"></script><script>
   baguetteBox.run('div#content', {
     ignoreClass: 'islink',
     captions: function (element) {
