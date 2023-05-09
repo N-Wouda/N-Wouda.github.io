@@ -35,7 +35,14 @@
     ${post.text()}
     </div>
     </div>
+    %if content_footer:
+        <div class="container has-text-centered">
+            <p>${content_footer}</p>
+            ${template_hooks['page_footer']()}
+        </div>
+    %endif
 </section>
+
     % if not post.meta('nocomments') and site_has_comments:
         <section class="section comments hidden-print">
         <div class="container">

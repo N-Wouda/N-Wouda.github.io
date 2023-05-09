@@ -64,15 +64,6 @@ ${template_hooks['extra_head']()}
   </div>
 </section>
 
-<section class="section">
-  %if content_footer:
-    <div class="container has-text-centered">
-      <p>${content_footer}</p>
-      ${template_hooks['page_footer']()}
-    </div>
-  %endif
-</section>
-
   ${base.late_load_js()}
   %if date_fanciness != 0:
     <!-- fancy dates -->

@@ -34,15 +34,22 @@
     ${post.text()}
     </div>
     </div>
+    %if content_footer:
+        <div class="container has-text-centered">
+            <p>${content_footer}</p>
+            ${template_hooks['page_footer']()}
+        </div>
+    %endif
 </section>
-    % if not post.meta('nocomments') and site_has_comments:
+
+    %if not post.meta('nocomments') and site_has_comments:
         <section class="section comments hidden-print">
         <div class="container">
         <h2>${messages("Comments")}</h2>
         ${comments.comment_form(post.permalink(absolute=True), post.title(), post._base_path)}
         </div>
         </section>
-    % endif
+    %endif
     ${math.math_scripts_ifpost(post)}
 ${comments.comment_link_script()}
 </%block>
