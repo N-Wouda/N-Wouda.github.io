@@ -116,7 +116,7 @@ We aim to efficiently solve a 2D packing of unequally-sized circles onto a minim
 </h2>
 <p>We are given sets $C = \{ c_1, c_2, \ldots, c_n \}$ of $n$ circles, and $P = \{ p_1, \ldots, p_m \}$ of $m$ rectangular pallets.
 Each circle $c \in C$ has a (unique) radius $r_c &gt; 0$.
-Each pallet $p \in P$ has width $w &gt; 0$ and height $h &gt; 0$.
+Each pallet $p \in P$ has the same width $w &gt; 0$ and height $h &gt; 0$.
 The goal is to pack all circles onto as few pallets as possible, such that no circles overlap and each circle fits on one of the pallets.</p>
 <p>More formally, let $y_p \in \{0, 1\}$ indicate if pallet $p \in P$ is used or not.
 Let $x_{cp} \in \{0, 1\}$ indicate if circle $c \in C$ is assigned to pallet $p \in P$.
@@ -162,17 +162,18 @@ $$ \min_{y} \sum_{k \in \mathcal{K}} y_k $$
 such that
 $$ \sum_{k \in \mathcal{K}} \mathbf{1}_{c \in k} y_{k} \ge 1 \qquad \forall c \in C $$
 $$ y_k \in \{0, 1\} \qquad \forall k \in \mathcal{K} $$</p>
-<p>The set $\mathcal{K}$ is exponentially large, which makes solving this problem directly prohibitively expensive.
+<p>The set $\mathcal{K}$ is combinatorially large, which makes solving this problem directly prohibitively expensive.
 This is where column generation comes in: rather than solving the problem with <em>all</em> patterns, we start with a subset of them, and iteratively add new patterns that will improve the current solution.</p>
 <p>In particular, suppose we start with some subset $K \subset \mathcal{K}$ of initial patterns.
-If we solve the LP relaxation of the above problem, we can obtain dual multipliers $\pi_c$ ($c \in C$) for each of the cover constraints.
-Solving a pattern-generating subproblem lets us then obtain a new pattern that has a negative reduced cost, that is, a pattern that will improve the current solution if it is included into the set $K$.
-This subproblem has the following form:
-$$ \min_{x, z} 1 - \sum_{c \in C} \pi_c x_c $$
+If we solve the LP relaxation of the above problem, we can obtain dual multipliers $\mu_c$ ($c \in C$) for each of the cover constraints.
+Solving a pattern-generating subproblem lets us then obtain a new pattern that has a negative <em>reduced cost</em>, that is, a pattern of circles that will improve the current LP solution if it is included into the set $K$.
+Again with slight abuse of notation, we now let $x_c \in \{0, 1\}$ indicate if circle $c \in C$ is part of this new pattern.
+The subproblem now has the following form:
+$$ \min_{x, z} 1 - \sum_{c \in C} \mu_c x_c $$
 such that</p>
 <ol>
 <li>
-<p>The selected circles fit in the pallet area. This is a valid inequality, and not strictly necessary for optimality.
+<p>The selected circles fit in the pallet area. This is a valid inequality that strengthens the subproblem, but is not strictly necessary for optimality.
 $$ \sum_{c \in C} \pi r_c^2 x_c \le w \times h $$</p>
 </li>
 <li>
@@ -182,7 +183,8 @@ $$ r_c \le z^x_{c} \le w - r_c \qquad \forall c \in C$$</p>
 </li>
 <li>
 <p>The circles do not overlap.
-$$ (z^x_{c_1} - z^x_{c_2})^2 + (z^y_{c_1} - z^y_{c_2})^2 \ge (r_{c_1} + r_{c_2})^2 (x_{c_1} + x_{c_2} - 1) \qquad \forall c_1, c_2 \in C\ (c_1 \ne c_2) $$</p>
+$$ (z^x_{c_1} - z^x_{c_2})^2 + (z^y_{c_1} - z^y_{c_2})^2 \ge (r_{c_1} + r_{c_2})^2 (x_{c_1} + x_{c_2} - 1) \qquad \forall c_1, c_2 \in C\ (c_1 \ne c_2) $$
+Note that here we apply a few modelling tricks: we remove the square root by squaring both sides, and linearise the product of binary variables.</p>
 </li>
 </ol>
 <p>If we can find a solution $(x^*, z^*)$ to this problem with a negative objective value, an improving pattern $k^* \subset C$ contains circle $c \in C$ iff $x^*_c = 1$.
@@ -394,8 +396,8 @@ The <code>plot</code> method will be used for this.</p>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">solve</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="n">sub</span><span class="p">):</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">pi</span> <span class="o">=</span> <span class="n">master</span><span class="o">.</span><span class="n">relax</span><span class="p">()</span>
-        <span class="n">new_pattern</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
+        <span class="n">mu</span> <span class="o">=</span> <span class="n">master</span><span class="o">.</span><span class="n">relax</span><span class="p">()</span>
+        <span class="n">new_pattern</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">mu</span><span class="p">)</span>
         <span class="n">master</span><span class="o">.</span><span class="n">add_pattern</span><span class="p">(</span><span class="n">new_pattern</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">sub</span><span class="o">.</span><span class="n">objective</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
