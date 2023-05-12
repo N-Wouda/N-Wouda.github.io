@@ -981,7 +981,6 @@ LICENSE = ""
 # (translatable)
 CONTENT_FOOTER = """
     <hr>
-        © {date} {author}.
         For comments, please send me <a href="mailto:{email}">an email</a>.
     <hr>
 """
