@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2023-03-20 20:29 UTC+01:00
+.. updated: 2023-06-22 10:15 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -16,20 +16,18 @@ Most recently started first:
 
 - [early]
   A project optimising waste collection for the Municipality of Groningen.
-  One of the neat/unusual aspects of this particular waste collection problem is that we have some sensor data about arrivals at each waste container, but that data is incomplete: we do not observe the amounts.
-  We are currently working on efficiently emptying a system with such containers making good use of the available data.
+  One of the neat/unusual aspects of this particular waste collection problem is that we have some sensor data about arrivals at each waste container, but that data is incomplete: we do not observe the amount of waste arriving.
+  We are currently working on efficiently emptying a system with such containers, while making good use of the available data.
   More on this later in 2023. 
 
 - [early] 
-  A project optimising the scheduling of elective hours in Dutch secondary
-  education. We are developing a scheduling algorithm that schedules electives 
-  based on (changing) learner needs.
+  A project optimising the scheduling of elective hours in Dutch secondary education.
+  We are developing a scheduling algorithm that schedules electives based on (changing) learner needs.
   More on this later in 2023. 
 
 - [ongoing]
   A high-performance vehicle routing problem (VRP) solver that achieves exceptional performance on a number of VRP variants.
-  The solver is writting in C++ and Python, and available on the Python package index as `pyvrp`;
-  the repository is available [here](https://github.com/N-Wouda/PyVRP/).
+  The solver is written in C++ and Python, and available on the Python package index as `pyvrp`; the repository is available [here](https://github.com/PyVRP/PyVRP/).
   We submitted a paper to _INFORMS Journal on Computing_.
 
 - [nearing completion]
