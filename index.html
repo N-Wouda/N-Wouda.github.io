@@ -81,14 +81,14 @@ These sets can be written in equivalent form as bit arrays of size $N + 1$.
 Let $x$ be the bit array form of $X$ (and similarly, $y$ of $Y$): the bit $x_i$ is flipped iff $i \in X$, and not set otherwise (where $i \in \lbrace 0, \ldots, N \rbrace$).
 Such bit arrays enable the following set operations:</p>
 <ul>
-<li>The <em>membership</em> of $i \in X$ is given by <code>(x &gt;&gt; i) &amp; 1</code>.</li>
+<li>The <em>membership</em> test of $i \in X$ is given by <code>(x &gt;&gt; i) &amp; 1</code>.</li>
 <li>The <em>complement</em> $X^\complement$ is given by <code>~x</code>.</li>
 <li>The <em>intersection</em> $X \cap Y$ is given by <code>x &amp; y</code>.</li>
 <li>The <em>union</em> $X \cup Y$ is given by <code>x | y</code>.</li>
 <li>The <em>relative complement</em> $X \setminus Y$ is given by <code>x &amp; ~y</code>.</li>
 <li>The <em>symmetric difference</em> $X~\Delta~Y$ is given by <code>(x &amp; ~y) | (y &amp; ~x)</code>, which is equivalent to <code>x ^ y</code>.</li>
 </ul>
-<p>These operations can be performed very efficiently in hardware, which sometimes offers substantial performance gains over other approaches (e.g., based on hash sets).</p>
+<p>These operations can be performed very efficiently in hardware, which sometimes offers substantial performance gains over other approaches (e.g., those based on hash sets).</p>
 </div>
       </div>
     </article><article><h2 class="subtitle is-6">Posted on 2023-05-04 19:43</h2>
