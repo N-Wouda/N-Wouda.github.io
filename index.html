@@ -20,7 +20,7 @@
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="prefetch" href="posts/set-operations-using-bit-arrays/" type="text/html">
+<link rel="prefetch" href="posts/an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/" type="text/html">
 </head>
 <body>
 
@@ -72,11 +72,24 @@
 
     
 
-    <article><h2 class="subtitle is-6">Posted on 2023-06-30 15:31</h2>
+    <article><h2 class="subtitle is-6">Posted on 2023-08-06 11:26</h2>
+      <h1 class="title"><a href="posts/an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/">An iterated local search metaheuristic using ALNS and PyVRP</a></h1>
+      <div class="content">
+    <div class="cell border-box-sizing text_cell rendered" id="cell-id=0dfa77e2">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I have wanted to try implementing an iterated local search metaheuristic on top of the <a href="https://github.com/N-Wouda/ALNS/"><code>alns</code></a> and <a href="https://github.com/PyVRP/PyVRP/"><code>pyvrp</code></a> packages for some time.
+In this post I am going to do so, by building a very simple metaheuristic that already works very well for the vehicle routing problem with time windows.<a class="button is-link" href="posts/an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/" style="height:28px"> Read more (4 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+</div>
+</div>
+</div>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2023-06-30 15:31</h2>
       <h1 class="title"><a href="posts/set-operations-using-bit-arrays/">Set operations using bit arrays</a></h1>
       <div class="content">
-    <div>
-<p>Let $X, Y \subseteq \lbrace 0, 1, \ldots, N \rbrace$.
+    <p>Let $X, Y \subseteq \lbrace 0, 1, \ldots, N \rbrace$.
 These sets can be written in equivalent form as bit arrays of size $N + 1$.
 Let $x$ be the bit array form of $X$ (and similarly, $y$ of $Y$): the bit $x_i$ is flipped iff $i \in X$, and not set otherwise (where $i \in \lbrace 0, \ldots, N \rbrace$).
 Such bit arrays enable the following set operations:</p>
@@ -89,7 +102,6 @@ Such bit arrays enable the following set operations:</p>
 <li>The <em>symmetric difference</em> $X~\Delta~Y$ is given by <code>(x &amp; ~y) | (y &amp; ~x)</code>, which is equivalent to <code>x ^ y</code>.</li>
 </ul>
 <p>These operations can be performed very efficiently in hardware, which sometimes offers substantial performance gains over other approaches (e.g., those based on hash sets).</p>
-</div>
       </div>
     </article><article><h2 class="subtitle is-6">Posted on 2023-05-04 19:43</h2>
       <h1 class="title"><a href="posts/2d-bin-packing-of-unequal-circles/">2D bin-packing of unequal circles</a></h1>
@@ -100,8 +112,7 @@ Such bit arrays enable the following set operations:</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This post is inspired by <a href="https://github.com/N-Wouda/ALNS/issues/149">this issue</a> in the ALNS repository.
-We aim to efficiently solve a 2D packing of unequally-sized circles onto a minimum number of pallets, using column generation enhanced with some simple heuristics.
-<a class="button is-link" href="posts/2d-bin-packing-of-unequal-circles/" style="height:28px"> Read more (12 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+We aim to efficiently solve a 2D packing of unequally-sized circles onto a minimum number of pallets, using column generation enhanced with some simple heuristics.<a class="button is-link" href="posts/2d-bin-packing-of-unequal-circles/" style="height:28px"> Read more (14 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
 </div>
 </div>
 </div>
@@ -117,8 +128,7 @@ We aim to efficiently solve a 2D packing of unequally-sized circles onto a minim
 <p>Python does not have tail-call optimisation (TCO), and it likely never will.
 Several packages exist that add TCO via decorators (e.g., <a href="https://github.com/baruchel/tco"><code>tco</code></a>).
 Most of these packages use some lambda calculus to implement TCO.
-In this post I want to explore an alternative way to achieve TCO, using the <code>ast</code> module to rewrite the decorated function.
-<a class="button is-link" href="posts/tail-call-optimisation-in-python-using-ast/" style="height:28px"> Read more (4 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+In this post I want to explore an alternative way to achieve TCO, using the <code>ast</code> module to rewrite the decorated function.<a class="button is-link" href="posts/tail-call-optimisation-in-python-using-ast/" style="height:28px"> Read more (4 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
 </div>
 </div>
 </div>
@@ -131,16 +141,15 @@ In this post I want to explore an alternative way to achieve TCO, using the <cod
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>This post is a based on our presentation at the EAA Annual Meeting in August 
- 2020</em> <a href="https://nielswouda.com/slides/eaa_rhp/"><em>(slides)</em></a></p>
-<p>The Roman Empire was a remarkable achievement in world history: extending from 
+<p><em>This post is a based on our presentation at the EAA Annual Meeting in August
+2020</em> <a href="https://nielswouda.com/slides/eaa_rhp/"><em>(slides)</em></a></p>
+<p>The Roman Empire was a remarkable achievement in world history: extending from
 the north of England to the Syrian Desert and Morocco at the height of its powers
-it integrated a population of some 60-100 million into one political, cultural and 
+it integrated a population of some 60-100 million into one political, cultural and
 economic unit. For a few centuries this generated a remarkable growth in population.</p>
-<p>To understand how this could be we have to focus on rural developments, and the 
+<p>To understand how this could be we have to focus on rural developments, and the
 best data for that are obtained by the many archaeological field surveys of the
-last half century. 
-<a class="button is-link" href="posts/population-and-market-integration-in-the-roman-hinterland/" style="height:28px"> Read more (19 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+last half century. <a class="button is-link" href="posts/population-and-market-integration-in-the-roman-hinterland/" style="height:28px"> Read more (19 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
 </div>
 </div>
 </div>
@@ -149,8 +158,7 @@ last half century.
       <h1 class="title"><a href="posts/test/">Test post</a></h1>
       <div class="content">
     <p>First post using Nikola. I use this post to compare how things render in various
-themes.
-<a class="button is-link" href="posts/test/" style="height:28px"> Read more (1 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+themes.<a class="button is-link" href="posts/test/" style="height:28px"> Read more (1 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
       </div>
     </article><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({

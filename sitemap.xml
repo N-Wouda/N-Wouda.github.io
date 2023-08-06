@@ -7,58 +7,62 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://nielswouda.com/</loc>
-  <lastmod>2023-05-05T11:04:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/2020/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/2022/</loc>
-  <lastmod>2022-09-25T09:15:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/2023/</loc>
-  <lastmod>2023-05-05T11:04:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/archive.html</loc>
-  <lastmod>2023-07-01T15:35:00Z</lastmod>
+  <lastmod>2023-08-06T09:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/categories/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/pages/about/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/pages/projects/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/pages/resources/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/2d-bin-packing-of-unequal-circles/</loc>
-  <lastmod>2023-05-05T11:04:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nielswouda.com/posts/an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/</loc>
+  <lastmod>2023-08-06T09:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/population-and-market-integration-in-the-roman-hinterland/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/set-operations-using-bit-arrays/</loc>
-  <lastmod>2023-06-30T13:58:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/tail-call-optimisation-in-python-using-ast/</loc>
-  <lastmod>2022-09-25T09:15:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
  <url>
   <loc>https://nielswouda.com/posts/test/</loc>
-  <lastmod>2021-06-23T13:11:00Z</lastmod>
+  <lastmod>2023-08-06T09:12:00Z</lastmod>
  </url>
 </urlset>

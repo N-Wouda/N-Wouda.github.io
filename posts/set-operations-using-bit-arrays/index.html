@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <meta name="author" content="Niels Wouda">
 <link rel="prev" href="../2d-bin-packing-of-unequal-circles/" title="2D bin-packing of unequal circles" type="text/html">
+<link rel="next" href="../an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/" title="An iterated local search metaheuristic using ALNS and PyVRP" type="text/html">
 <meta property="og:site_name" content="Niels Wouda">
 <meta property="og:title" content="Set operations using bit arrays">
 <meta property="og:url" content="https://nielswouda.com/posts/set-operations-using-bit-arrays/">
@@ -81,8 +82,7 @@ Let $x$ be the bit array form of $X$ (and similarly, $y$ of $Y$): the ">
     <h2 class="subtitle is-6">Posted on 2023-06-30 15:31</h2>
     <h1 class="title">Set operations using bit arrays</h1>
     <div class="content">
-    <div>
-<p>Let $X, Y \subseteq \lbrace 0, 1, \ldots, N \rbrace$.
+    <p>Let $X, Y \subseteq \lbrace 0, 1, \ldots, N \rbrace$.
 These sets can be written in equivalent form as bit arrays of size $N + 1$.
 Let $x$ be the bit array form of $X$ (and similarly, $y$ of $Y$): the bit $x_i$ is flipped iff $i \in X$, and not set otherwise (where $i \in \lbrace 0, \ldots, N \rbrace$).
 Such bit arrays enable the following set operations:</p>
@@ -95,7 +95,6 @@ Such bit arrays enable the following set operations:</p>
 <li>The <em>symmetric difference</em> $X~\Delta~Y$ is given by <code>(x &amp; ~y) | (y &amp; ~x)</code>, which is equivalent to <code>x ^ y</code>.</li>
 </ul>
 <p>These operations can be performed very efficiently in hardware, which sometimes offers substantial performance gains over other approaches (e.g., those based on hash sets).</p>
-</div>
     </div>
     </div>
         <div class="container has-text-centered">
