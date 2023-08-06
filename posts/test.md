@@ -11,8 +11,7 @@
 -->
 
 First post using Nikola. I use this post to compare how things render in various
-themes.
-<!-- TEASER_END -->
+themes.<!-- TEASER_END -->
 
 `inline code` and _emphasis_ and **strong** and ~~crossed out~~.
 
