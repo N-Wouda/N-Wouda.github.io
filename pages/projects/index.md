@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2023-06-22 10:15 UTC+01:00
+.. updated: 2023-09-28 22:49 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -14,33 +14,30 @@
 
 Most recently started first:
 
-- [early]
-  A project optimising waste collection for the Municipality of Groningen.
-  One of the neat/unusual aspects of this particular waste collection problem is that we have some sensor data about arrivals at each waste container, but that data is incomplete: we do not observe the amount of waste arriving.
-  We are currently working on efficiently emptying a system with such containers, while making good use of the available data.
-  More on this later in 2023. 
-
 - [early] 
   A project optimising the scheduling of elective hours in Dutch secondary education.
   We are developing a scheduling algorithm that schedules electives based on (changing) learner needs.
-  More on this later in 2023. 
-
-- [ongoing]
-  A high-performance vehicle routing problem (VRP) solver that achieves exceptional performance on a number of VRP variants.
-  The solver is written in C++ and Python, and available on the Python package index as `pyvrp`; the repository is available [here](https://github.com/PyVRP/PyVRP/).
-  We submitted a paper to _INFORMS Journal on Computing_.
 
 - [nearing completion]
-  My first PhD project, on optimising supply chain network design problems under
-  supply and demand uncertainty. We developed an exact solution approach based on
-  row generation for this problem. Computational experiments show our method is
-  much more performant than the current state-of-the-art. Using our method, we are
-  currently investigating an interesting e-fuel network design problem arising
-  in the Netherlands.
+  A project optimising waste collection for the Municipality of Groningen.
+  One of the unusual aspects of this particular waste collection problem is that we have some sensor data about arrivals at each waste container, but that data is incomplete: we do not observe the amount of waste arriving, only that an arrival has taken place.
+  It is thus not clear which containers are actually full, and which can still take more arrivals.
+  The goal is to select which containers to visit, and then optimise the routing decisions given those containers.
+  We are developing an efficient vehicle routing policy that integrates the routing and container selection decisions based on the available data.
+
+- [nearing completion]
+  A project optimising chance-constrained network design problems under supply and demand uncertainty.
+  We developed an exact solution approach based on row generation for this problem.
+  Computational experiments show our method is much more performant than the current state-of-the-art.
 
 # Past projects
 
 A selection:
+
+- PyVRP, a high-performance vehicle routing problem (VRP) solver that achieves exceptional performance on a number of VRP variants.
+  The solver is written in C++ and Python, and available on the Python package index as `pyvrp`; the repository is available [here](https://github.com/PyVRP/PyVRP/).
+  We submitted a paper to _INFORMS Journal on Computing_.
+  Work is ongoing to support additional VRP variants in new releases of PyVRP.
 
 - I organised a team of motivated PhD candidates to join in the
   [EURO meets NeurIPS 2022 vehicle routing challenge](https://euro-neurips-vrp-2022.challenges.ortec.com/).
