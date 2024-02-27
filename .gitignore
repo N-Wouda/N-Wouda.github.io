@@ -139,6 +139,7 @@ cython_debug/
 
 # Jetbrains IDEs.
 .idea/
+.vscode/
 
 # Nikola cache, data, and compiled pages.
 cache
