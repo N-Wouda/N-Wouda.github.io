@@ -23,9 +23,8 @@
 <meta property="og:site_name" content="Niels Wouda">
 <meta property="og:title" content="Useful resources">
 <meta property="og:url" content="https://nielswouda.com/pages/resources/">
-<meta property="og:description" content="This page contains a number of essays and books I found particularly instructive,
-and software packages I frequently use. The resource list below is obviously not
-exhaustive.
+<meta property="og:description" content="This page contains a number of essays and books I found particularly instructive, and software packages I frequently use.
+The resource list below is obviously not exhaustive.
 Readings in programming
 V">
 <meta property="og:type" content="article">
@@ -66,7 +65,7 @@ V">
 </div>
     <div class="container">
       <nav class="navbar nav-center"><div class="nav-item is-mobile">
-            <a class="level-item" href="../about">About</a>
+            <a class="level-item" href="../../blog/">Blog</a>
           </div>
           <div class="nav-item is-mobile">
             <a class="level-item" href="../projects">Projects</a>
@@ -78,24 +77,23 @@ V">
 </div>
 </section><section class="section"><div class="container" id="content">
     
-    <h2 class="subtitle is-6">Last updated on 2023-09-28 22:43</h2>
+    <h2 class="subtitle is-6">Last updated on 2024-02-02 12:29</h2>
     <h1 class="title">Useful resources</h1>
     <div class="content">
-    <p>This page contains a number of essays and books I found particularly instructive,
-and software packages I frequently use. The resource list below is obviously not
-exhaustive.</p>
+    <p>This page contains a number of essays and books I found particularly instructive, and software packages I frequently use.
+The resource list below is obviously not exhaustive.</p>
 <h2 id="readings-in-programming">Readings in programming</h2>
 <p>Various materials available online:</p>
 <ul>
 <li>
-<p>Peter Norvig's classic <em>Teach Yourself Programming in Ten Years</em>, <a href="https://norvig.com/21-days.html">here</a>.</p>
+<p>Peter Norvig's classic <em>Teach Yourself Programming in Ten Years</em>, <a href="https://norvig.com/21-days.html">here</a>.
+  I re-read this essay about once a year.</p>
 </li>
 <li>
 <p>MIT's <em>The Missing Semester of Your CS Education</em>, <a href="https://missing.csail.mit.edu/">here</a>.</p>
 </li>
 <li>
-<p>Ben Kuhn's <em>Essays on programming I think about a lot</em>, <a href="https://www.benkuhn.net/progessays/">here</a>.
-  Equally interesting are the many blogs people reference in the comments.</p>
+<p>Ben Kuhn's <em>Essays on programming I think about a lot</em>, <a href="https://www.benkuhn.net/progessays/">here</a>. Equally interesting are the many blogs people reference in the comments.</p>
 </li>
 <li>
 <p>I like the <a href="https://www.morling.dev/blog/the-code-review-pyramid/">'code review pyramid'</a>.</p>
@@ -104,44 +102,28 @@ exhaustive.</p>
 <p>Physical books:</p>
 <ul>
 <li>
-<p>GoF's <em>Design Patterns</em>. This is best read once or twice, and then kept as a
-  reference book.</p>
+<p>GoF's <em>Design Patterns</em>.
+  This is best read once or twice, and then kept as a reference book.</p>
 </li>
 <li>
-<p>Martin Fowler's <em>Refactoring</em>. Combined with GoF, this is a great resource on
-  how to do OOP right, and improve the structure of existing code. </p>
+<p>Martin Fowler's <em>Refactoring</em>.
+  Combined with GoF, this is a great resource on how to do OOP, and improve the structure of existing code. </p>
 </li>
 <li>
-<p>Kent Beck's <em>Test-Driven Development</em>. This book is short, to the point, and
-  really hammers down the concepts of TDD. I often sin against the TDD premise 
-  of "test first, code later", but do agree that (almost all) code should - and
-  can - be supported by meaningful tests or validation tools.</p>
-</li>
-<li>
-<p>Andrew Hunt and David Thomas' <em>The Pragmatic Programmer</em>. This book is a classic,
-  touching upon many aspects of software development. I like this book so much, it
-  has not been on my book shelf for years: I keep lending it to friends and 
-  colleagues to read.</p>
+<p>Kent Beck's <em>Test-Driven Development</em>.
+  This book is short, to the point, and really hammers down the concepts of TDD.
+  I often sin against the TDD premise of "test first, code later", but do agree that (almost all) code should - and can - be supported by meaningful tests or validation tools.</p>
 </li>
 </ul>
 <h2 id="software">Software</h2>
-<p>Most of my personal projects are in Python because that language covers almost
-all of my needs, is extremely flexible, and I find its code structure visually
-pleasing (I am the first to concede all these points are extremely subjective).
-When performance is critical for a particular application, I often switch to C or
-C++, sometimes with Python bindings.</p>
-<p>Most of my projects use numbers in some way, so in Python I often work with 
-<a href="https://numpy.org/">numpy</a>, <a href="https://pandas.pydata.org/">pandas</a> and the like.
-In C++ I use <a href="http://arma.sourceforge.net/">Armadillo</a> (<code>arma</code>) as a
-<code>numpy</code>-equivalent. </p>
-<p>Interfacing C++ and Python is achieved by the excellent <a href="https://github.com/pybind/pybind11">pybind11</a> 
-project. I sometimes complement <code>pybind11</code> with <a href="https://github.com/RUrlus/carma">carma</a> 
-for the conversion between <code>numpy</code> and <code>arma</code> types.</p>
-<p>My mathematical programming problems are mostly solved with <a href="https://www.gurobi.com/">Gurobi</a>, 
-but I have also used IBM's <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX</a>
-and Google's <a href="https://developers.google.com/optimization">OR-Tools</a> in the past. 
-For an open-source project, <code>OR-Tools</code> works really well and I intend to use it
-more often in the future.</p>
+<p>Most of my personal projects are in Python because that language covers almost all of my needs, is extremely flexible, and I find its code structure visually pleasing (I concede all these points are extremely subjective).
+When performance is critical for a particular application, I prefer to use C++, sometimes with Python bindings.</p>
+<p>Most of my projects use numbers in some way, so in Python I often work with <a href="https://numpy.org/">numpy</a>, <a href="https://pandas.pydata.org/">pandas</a> and the like.
+In C++ I use <a href="http://arma.sourceforge.net/">Armadillo</a> (<code>arma</code>) as a numpy equivalent, if needed.
+Interfacing C++ and Python is achieved by the excellent <a href="https://github.com/pybind/pybind11">pybind11</a> project. </p>
+<p>My mathematical programming problems are today mostly solved with <a href="https://www.gurobi.com/">Gurobi</a>.
+I have also used <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX</a> and <a href="https://developers.google.com/optimization">OR-Tools</a> in the past.
+I want to use <a href="https://highs.dev/">HiGHS</a> more in the future.</p>
     </div>
     
 

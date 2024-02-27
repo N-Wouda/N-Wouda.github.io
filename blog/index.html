@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html prefix="        og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Personal blog and homepage.">
+<meta name="viewport" content="width=device-width">
+<title>Niels Wouda</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="../rss.xml">
+<link rel="canonical" href="https://nielswouda.com/blog/">
+<!--[if lt IE 9]><script src="../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="section"><div class="container">
+    <nav class="nav"><div class="nav-left">
+        <a class="nav-item" href="https://nielswouda.com/">
+          <h1 class="title is-4">Niels Wouda</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile"><a class="level-item" href="https://linkedin.com/in/nawouda">
+              <span class="icon">
+                <i class="fa fa-linkedin"></i>
+              </span>
+            </a>
+            <a class="level-item" href="https://scholar.google.com/citations?user=Z0gs2XMAAAAJ">
+              <span class="icon">
+                <i class="fa fa-graduation-cap"></i>
+              </span>
+            </a>
+            <a class="level-item" href="https://github.com/N-Wouda">
+              <span class="icon">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+            <a class="level-item" href="../rss.xml">
+              <span class="icon">
+                <i class="fa fa-rss"></i>
+              </span>
+            </a>
+        </nav>
+</div>
+    </nav>
+</div>
+    <div class="container">
+      <nav class="navbar nav-center"><div class="nav-item is-mobile">
+            <a class="level-item" href=".">Blog</a>
+          </div>
+          <div class="nav-item is-mobile">
+            <a class="level-item" href="../pages/projects">Projects</a>
+          </div>
+          <div class="nav-item is-mobile">
+            <a class="level-item" href="../pages/resources">Resources</a>
+          </div>
+      </nav>
+</div>
+</section><section class="section"><div class="container" id="content">
+    
+
+    
+
+    <article><h2 class="subtitle is-6">Posted on 2024-01-03 14:55</h2>
+      <h1 class="title"><a href="../posts/plans-for-the-new-year/">Plans for the new year</a></h1>
+      <div class="content">
+    <p>I figured it would be good to commit some of my thoughts, wishes, and hopes for the new year to paper.
+Doing that here lets me look back in twelve months to see how I did, so here goes nothing!<a class="button is-link" href="../posts/plans-for-the-new-year/" style="height:28px"> Read more (1 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2023-08-06 11:26</h2>
+      <h1 class="title"><a href="../posts/an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/">An iterated local search metaheuristic using ALNS and PyVRP</a></h1>
+      <div class="content">
+    <div class="cell border-box-sizing text_cell rendered" id="cell-id=0dfa77e2">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I have wanted to try implementing an iterated local search metaheuristic on top of the <a href="https://github.com/N-Wouda/ALNS/"><code>alns</code></a> and <a href="https://github.com/PyVRP/PyVRP/"><code>pyvrp</code></a> packages for some time.
+In this post I am going to do so, by building a very simple metaheuristic that already works very well for the vehicle routing problem with time windows.<a class="button is-link" href="../posts/an-iterated-local-search-metaheuristic-using-alns-and-pyvrp/" style="height:28px"> Read more (4 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+</div>
+</div>
+</div>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2023-06-30 15:31</h2>
+      <h1 class="title"><a href="../posts/set-operations-using-bit-arrays/">Set operations using bit arrays</a></h1>
+      <div class="content">
+    <p>Let $X, Y \subseteq \lbrace 0, 1, \ldots, N \rbrace$.
+These sets can be written in equivalent form as bit arrays of size $N + 1$.
+Let $x$ be the bit array form of $X$ (and similarly, $y$ of $Y$): the bit $x_i$ is flipped iff $i \in X$, and not set otherwise (where $i \in \lbrace 0, \ldots, N \rbrace$).
+Such bit arrays enable the following set operations:</p>
+<ul>
+<li>The <em>membership</em> test of $i \in X$ is given by <code>(x &gt;&gt; i) &amp; 1</code>.</li>
+<li>The <em>complement</em> $X^\complement$ is given by <code>~x</code>.</li>
+<li>The <em>intersection</em> $X \cap Y$ is given by <code>x &amp; y</code>.</li>
+<li>The <em>union</em> $X \cup Y$ is given by <code>x | y</code>.</li>
+<li>The <em>relative complement</em> $X \setminus Y$ is given by <code>x &amp; ~y</code>.</li>
+<li>The <em>symmetric difference</em> $X~\Delta~Y$ is given by <code>(x &amp; ~y) | (y &amp; ~x)</code>, which is equivalent to <code>x ^ y</code>.</li>
+</ul>
+<p>These operations can be performed very efficiently in hardware, which sometimes offers substantial performance gains over other approaches (e.g., those based on hash sets).</p>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2023-05-04 19:43</h2>
+      <h1 class="title"><a href="../posts/2d-bin-packing-of-unequal-circles/">2D bin-packing of unequal circles</a></h1>
+      <div class="content">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This post is inspired by <a href="https://github.com/N-Wouda/ALNS/issues/149">this issue</a> in the ALNS repository.
+We aim to efficiently solve a 2D packing of unequally-sized circles onto a minimum number of pallets, using column generation enhanced with some simple heuristics.<a class="button is-link" href="../posts/2d-bin-packing-of-unequal-circles/" style="height:28px"> Read more (14 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+</div>
+</div>
+</div>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2022-09-25 11:15</h2>
+      <h1 class="title"><a href="../posts/tail-call-optimisation-in-python-using-ast/">Tail-call optimisation in Python using ast</a></h1>
+      <div class="content">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Python does not have tail-call optimisation (TCO), and it likely never will.
+Several packages exist that add TCO via decorators (e.g., <a href="https://github.com/baruchel/tco"><code>tco</code></a>).
+Most of these packages use some lambda calculus to implement TCO.
+In this post I want to explore an alternative way to achieve TCO, using the <code>ast</code> module to rewrite the decorated function.<a class="button is-link" href="../posts/tail-call-optimisation-in-python-using-ast/" style="height:28px"> Read more (4 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+</div>
+</div>
+</div>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2020-11-25 15:29</h2>
+      <h1 class="title"><a href="../posts/population-and-market-integration-in-the-roman-hinterland/">Population and market integration in the Roman hinterland</a></h1>
+      <div class="content">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>This post is a based on our presentation at the EAA Annual Meeting in August
+2020</em> <a href="https://nielswouda.com/slides/eaa_rhp/"><em>(slides)</em></a></p>
+<p>The Roman Empire was a remarkable achievement in world history: extending from
+the north of England to the Syrian Desert and Morocco at the height of its powers
+it integrated a population of some 60-100 million into one political, cultural and
+economic unit. For a few centuries this generated a remarkable growth in population.</p>
+<p>To understand how this could be we have to focus on rural developments, and the
+best data for that are obtained by the many archaeological field surveys of the
+last half century. <a class="button is-link" href="../posts/population-and-market-integration-in-the-roman-hinterland/" style="height:28px"> Read more (19 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+</div>
+</div>
+</div>
+      </div>
+    </article><article><h2 class="subtitle is-6">Posted on 2020-11-22 22:22</h2>
+      <h1 class="title"><a href="../posts/test/">Test post</a></h1>
+      <div class="content">
+    <p>First post using Nikola. I use this post to compare how things render in various
+themes.<a class="button is-link" href="../posts/test/" style="height:28px"> Read more (1 min) <span class="icon is-small"> <i class="fa fa-angle-double-right"></i></span></a></p>
+      </div>
+    </article><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/SVG"],
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center' // Change this to 'left' if you want left-aligned equations.
+});
+</script>
+</div>
+</section><script src="../assets/js/all-nocdn.js"></script><script>
+  baguetteBox.run('div#content', {
+    ignoreClass: 'islink',
+    captions: function (element) {
+      return element.getElementsByTagName('img')[0].alt;
+    }
+  });
+</script>
+</body>
+</html>
