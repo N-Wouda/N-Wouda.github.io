@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2024-03-18 18:04 UTC+01:00
+.. updated: 2024-08-28 21:09 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -17,21 +17,14 @@
   We published [a paper](https://doi.org/10.1287/ijoc.2023.0055) in _INFORMS Journal on Computing_.
   Work is ongoing to support additional VRP variants in new releases of PyVRP.
 
-- [nearing completion]
-  A project optimising waste collection for the Municipality of Groningen.
-  One of the unusual aspects of this particular waste collection problem is that we have some sensor data about arrivals at each waste container, but that data is incomplete: we do not observe the amount of waste arriving, only that an arrival has taken place.
-  It is thus not clear which containers are actually full, and which can still take more arrivals.
-  The goal is to select which containers to visit, and then optimise the routing decisions given those containers.
-  We are developing an efficient policy that integrates the routing and container selection decisions based on the available data.
-
 # Past projects
 
 A selection:
 
-- A project optimising chance-constrained network design problems under demand uncertainty.
-  We developed an exact solution approach based on row generation for this problem.
-  Computational experiments show our method is much more performant than the current state-of-the-art.
-  We have submitted [a paper](https://arxiv.org/abs/2403.03567), and the software repository is available [here](https://github.com/N-Wouda/CC-NDP).
+- A project optimising waste collection for the Municipality of Groningen.
+  We developed an efficient policy that integrates routing and waste container selection decisions based on available sensor data.
+  In our simulation environment, this policy on average reduces routing costs by 40% while maintaining a high service level.
+  We are currently investigating, with the municipality, whether we can bring this policy into practice.
 
 - I organised a team of motivated PhD candidates to join in the [EURO meets NeurIPS 2022 vehicle routing challenge](https://euro-neurips-vrp-2022.challenges.ortec.com/).
   Together, we developed algorithms solving two variants of a vehicle routing problem with time windows.

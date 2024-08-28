@@ -2,7 +2,7 @@
 .. title: Useful resources
 .. slug: resources
 .. date: 2020-11-23 19:15:58 UTC+01:00
-.. updated: 2024-02-2 12:29 UTC+01:00
+.. updated: 2024-02-27 12:29 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
