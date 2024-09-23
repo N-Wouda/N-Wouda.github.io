@@ -2,7 +2,7 @@
 .. title: Projects
 .. slug: projects
 .. date: 2020-11-23 18:53:07 UTC+01:00
-.. updated: 2024-08-28 21:09 UTC+01:00
+.. updated: 2024-09-21 13:30 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -24,7 +24,7 @@ A selection:
 - A project optimising waste collection for the Municipality of Groningen.
   We developed an efficient policy that integrates routing and waste container selection decisions based on available sensor data.
   In our simulation environment, this policy on average reduces routing costs by 40% while maintaining a high service level.
-  We are currently investigating, with the municipality, whether we can bring this policy into practice.
+  The software repository is available [here](https://github.com/N-Wouda/Urban-Waste-Collection), and a pre-print of the paper [here](https://arxiv.org/abs/2409.13386).
 
 - I organised a team of motivated PhD candidates to join in the [EURO meets NeurIPS 2022 vehicle routing challenge](https://euro-neurips-vrp-2022.challenges.ortec.com/).
   Together, we developed algorithms solving two variants of a vehicle routing problem with time windows.
