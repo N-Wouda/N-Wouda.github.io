@@ -1,6 +1,6 @@
 <!--
-.. title: Plans for the new year
-.. slug: plans-for-the-new-year
+.. title: Plans for 2024
+.. slug: plans-for-2024
 .. date: 2024-01-03 14:55:54 UTC+01:00
 .. tags: 
 .. category: 
