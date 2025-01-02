@@ -2,6 +2,7 @@
 .. title: PyVRP in 2024 and 2025
 .. slug: pyvrp-in-2024-and-2025
 .. date: 2025-01-02 13:21:16 UTC+01:00
+.. updated: 2025-01-02 13:35 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -26,7 +27,7 @@ Each version added lots of new functionality, some of which includes:
 - 0.9 (June 2024) added support for mixed distance and duration objectives, and different driving profiles.
   The profiles can be used to model zone restrictions, but also to account for the differences between for example cars, trucks, and bicycles.
 
-- 0.10 (Nov 2024) added support for multiple load dimensions.
+- 0.10 (November 2024) added support for multiple load dimensions.
   This can be used to account for e.g. both weight and volume, or different vehicle and driver skills.
 
 Besides new functionality, the adoption of the PyVRP project itself also took off quite a bit.
@@ -43,3 +44,7 @@ Additionally, there will be some updates to the documentation and support for a 
 The release thereafter (0.12) is scheduled for the summer of 2025, and will probably add support for multiple trips to PyVRP.
 At some point we will also write another paper about PyVRP, and that will probably happen based on the 0.12 release.
 There is no roadmap yet for releases later in the year, but good candidates for those are general pickup and delivery between clients ('pickup and delivery'), and groups of clients that all need to be serviced on the same route ('clustered VRP').
+
+I expect that in 2025 PyVRP will continue to be adopted by more organisations, and hope that we will start to see external contributions to the project.
+Additionally, in the second half of the year I will be back in industry and likely work on routing problems.
+It is likely that PyVRP will play a role in that as well. 
